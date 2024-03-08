@@ -67,13 +67,13 @@ public class PatientController {
         if(optionalPatient.isPresent()){
             if(patient.getAdresse() != null){
                 Optional<Adresse> optionalAdresse = adresseService.verifyAdresse(patient.getAdresse());
-                if(optionalAdresse.isPresent())
-                    optionalPatient.get().setAdresse(optionalAdresse.get());
-                else{
-                    optionalPatient.get().setAdresse(adresseService.save(patient.getAdresse()));
+                if(optionalAdresse.isPresent()){
+                    patient.setAdresse(optionalAdresse.get());
+                } else{
+                    patient.setAdresse(adresseService.save(patient.getAdresse()));
                 }
             }
-            return ResponseEntity.ok(service.save(optionalPatient.get()));
+            return ResponseEntity.ok(service.save(patient));
         }
         return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
     }

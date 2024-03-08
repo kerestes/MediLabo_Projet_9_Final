@@ -1,0 +1,40 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.navbar-brand {
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 16px;
+}
+
+.spacer {
+  flex: 1;
+}
+
+button{
+  color: white;
+  text-transform: uppercase;
+  margin-left: 8px;
+}
+
+button.active{
+  font-weight: 600;
+}
+
+.custom-toolbar {
+  background-color: #ff0000;
+}
+
+.img-fluid{
+  padding-top: 10px;
+  height: 60%;
+  width: 60%;
+}
+
+.button-menu{
+  color: black;
+  margin: 0;
+}

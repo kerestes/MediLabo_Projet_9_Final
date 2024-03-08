@@ -23,7 +23,7 @@ public class PatientService {
     }
 
     public Patient save(Patient patient) {
-        return patientRepository.saveAndFlush(patient);
+        return patientRepository.save(patient);
     }
 
     public Optional<Patient> findById(Long id){

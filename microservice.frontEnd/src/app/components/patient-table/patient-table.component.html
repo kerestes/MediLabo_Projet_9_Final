@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="centralizer">
+      <mat-card>
+          <mat-card-title class="card-title">
+              <span style="padding-left: 20px;">List Patients</span>
+              <span>
+                  <button class="buddy-button" id="addPatient" mat-raised-button (click)="addPatient()">
+                      Patient +
+                  </button>
+              </span>
+          </mat-card-title>
+
+          <mat-card-actions class="example-container">
+              <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
+
+                  <ng-container matColumnDef="nom">
+                      <th mat-header-cell *matHeaderCellDef> Nom </th>
+                      <td mat-cell *matCellDef="let element"> {{element.nom}} </td>
+                    </ng-container>
+
+                  <ng-container matColumnDef="prenom">
+                    <th mat-header-cell *matHeaderCellDef> Prenom </th>
+                    <td mat-cell *matCellDef="let element"> {{element.prenom}} </td>
+                  </ng-container>
+
+                  <ng-container matColumnDef="dateNaissance">
+                    <th mat-header-cell *matHeaderCellDef> Date de Naissance </th>
+                    <td mat-cell *matCellDef="let element"> {{element.dateNaissance | date}} </td>
+                  </ng-container>
+
+                  <ng-container matColumnDef="idAdd">
+                    <th mat-header-cell *matHeaderCellDef>  </th>
+                    <td mat-cell *matCellDef="let element"> <button mat-flat-button color="primary" id="{{element.id}}+add" (click)="openPatient(element)">Éditer</button> </td>
+                  </ng-container>
+
+                  <ng-container matColumnDef="idRemove">
+                    <th mat-header-cell *matHeaderCellDef>  </th>
+                    <td mat-cell *matCellDef="let element"> <button mat-flat-button color="warn" id="{{element.id}}+remove" (click)="deletePatient(element)">Delete</button> </td>
+                  </ng-container>
+
+                  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                </table>
+          </mat-card-actions>
+      </mat-card>
+  </div>
+</div>

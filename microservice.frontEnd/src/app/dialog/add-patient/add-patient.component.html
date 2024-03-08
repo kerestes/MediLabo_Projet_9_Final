@@ -1,0 +1,90 @@
+<h1 mat-dialog-title style="background-color: blue; color: white; margin: auto; width: 100%">Ajouter un Patient</h1>
+<div mat-dialog-content style="padding-top: 20px;">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title style="margin: 20px;">Nouveau Patient</mat-card-title>
+      </mat-card-header>
+      <form [formGroup]="addPatient">
+      <mat-card-content>
+          <div style="display: flex; justify-content: space-around;">
+            <mat-form-field appearance="outline" style="margin-left: 20px; margin-right: 20px;">
+              <mat-label>Nom</mat-label>
+              <input matInput formControlName="nom" id="nom" placeholder="Nom" required>
+              @if("nom.invalid && (nom.dirty || nom.touched)"){
+                <mat-error>Rentrez une date de Naissance valid</mat-error>
+              }
+            </mat-form-field>
+            <mat-form-field appearance="outline" style="margin-left: 20px; margin-right: 20px;">
+              <mat-label>Prenom</mat-label>
+              <input matInput formControlName="prenom" id="prenom" placeholder="Prenom" required>
+              @if("prenom.invalid && (prenom.dirty || prenom.touched)"){
+                <mat-error>Rentrez un prenom valid</mat-error>
+              }
+            </mat-form-field>
+          </div>
+          <div style="display: flex; justify-content: space-around;">
+            <div>
+              <fieldset style="margin-left: 20px; margin-right: 20px; border-radius: 5px;" for="genre">
+                <legend>Genre *</legend>
+                <input type="radio" id="genre" formControlName="genre" value="M" /> Masculin
+                <input type="radio" id="genre" formControlName="genre" value="F" /> Feminin
+              </fieldset>
+            </div>
+            <div style="margin-top: 10px;">
+              <mat-form-field appearance="outline" style="margin-left: 20px; margin-right: 20px;">
+                <mat-label>Date de Naissance</mat-label>
+                <input matInput formControlName="dateNaissance" [matDatepicker]="datepicker">
+                <mat-hint>MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="datepicker"></mat-datepicker-toggle>
+                <mat-datepicker #datepicker>
+                  <mat-datepicker-actions>
+                    <button mat-button matDatepickerCancel>Cancel</button>
+                    <button mat-raised-button color="primary" matDatepickerApply>Apply</button>
+                  </mat-datepicker-actions>
+                </mat-datepicker>
+                @if("dateNaissance.invalid && (dateNaissance.dirty || dateNaissance.touched)"){
+                  <mat-error>Rentrez une date valid</mat-error>
+                }
+              </mat-form-field>
+              <mat-form-field appearance="outline" style="margin-left: 20px; margin-right: 20px;">
+                <mat-label>Téléphone</mat-label>
+                <input matInput formControlName="telephone" id="telephone" placeholder="Téléphone" >
+              </mat-form-field>
+            </div>
+          </div>
+
+          <mat-card-header>
+            <mat-card-title style="margin: 20px;">Adresse</mat-card-title>
+          </mat-card-header>
+          <div formGroupName="adresse">
+            <mat-form-field appearance="outline" style="margin-left: 20px; margin-right: 20px;">
+              <mat-label>Adresse</mat-label>
+              <input matInput formControlName="adresse" id="adresse" placeholder="Adresse" (blur)="verifierEtValider()" (input)="verifierEtValider()">
+              @if("adresse.adresse.invalid && (adresse.adresse.dirty || adresse.adresse.touched)"){
+                <mat-error>Rentrez une adresse valid</mat-error>
+              }
+            </mat-form-field>
+            <mat-form-field appearance="outline" style="margin-left: 20px; margin-right: 20px;">
+              <mat-label>Ville</mat-label>
+              <input matInput formControlName="ville" id="ville" placeholder="Ville" (blur)="verifierEtValider()" (input)="verifierEtValider()">
+              @if("adresse.ville.invalid && (adresse.ville.dirty || adresse.ville.touched)"){
+                <mat-error>Rentrez une ville valid</mat-error>
+              }
+            </mat-form-field>
+            <mat-form-field appearance="outline" style="margin-left: 20px; margin-right: 20px;">
+              <mat-label>Code Postal</mat-label>
+              <input matInput formControlName="codePostal" id="codePostal" placeholder="Code Postal" (blur)="verifierEtValider()" (input)="verifierEtValider()">
+              @if("adresse.codePostal.invalid && (adresse.codePostal.dirty || adresse.codePostal.touched)"){
+                <mat-error>Rentrez un code postal valid</mat-error>
+              }
+            </mat-form-field>
+          </div>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" style="margin: 0 auto 20px auto;"
+                  type="submit" [disabled]="addPatient.invalid" (click)="onSubmit()"
+                  mat-dialog-close>Ajouter</button>
+      </mat-card-actions>
+      </form>
+    </mat-card>
+</div>
