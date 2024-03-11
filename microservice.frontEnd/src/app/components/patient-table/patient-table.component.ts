@@ -6,7 +6,8 @@ import { MatTableModule } from '@angular/material/table';
 import { Patient } from '../../models/patient/patient';
 import { PatientService } from '../../services/patient/patient.service';
 import { MatDialog } from '@angular/material/dialog';
-import { AddPatientComponent } from '../../dialog/add-patient/add-patient.component';
+import { AddPatientComponent } from '../../dialogs/add-patient/add-patient.component';
+import { Login401Component } from '../../dialogs/login-401/login-401.component';
 
 @Component({
   selector: 'app-patient-table',
@@ -22,6 +23,7 @@ export class PatientTableComponent {
 
   private patientService:PatientService = inject(PatientService);
   private dialog:MatDialog=inject(MatDialog);
+  private dialogRef?:any;
 
   displayedColumns: string[] = ['nom', 'prenom', 'dateNaissance', 'idAdd', 'idRemove'];
   dataSource!:Patient[];
