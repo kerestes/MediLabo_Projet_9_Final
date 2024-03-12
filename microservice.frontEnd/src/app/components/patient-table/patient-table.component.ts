@@ -23,7 +23,6 @@ export class PatientTableComponent {
 
   private patientService:PatientService = inject(PatientService);
   private dialog:MatDialog=inject(MatDialog);
-  private dialogRef?:any;
 
   displayedColumns: string[] = ['nom', 'prenom', 'dateNaissance', 'idAdd', 'idRemove'];
   dataSource!:Patient[];

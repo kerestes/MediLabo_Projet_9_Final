@@ -1,6 +1,7 @@
-import { HttpInterceptorFn } from '@angular/common/http';
+import { HttpInterceptorFn, HttpResponse } from '@angular/common/http';
 import { LoginService } from '../../services/loginService/login.service';
 import { inject } from '@angular/core';
+import { tap } from 'rxjs';
 
 export const authInterceptorInterceptor: HttpInterceptorFn = (req, next) => {
   let loginService: LoginService = inject(LoginService);
@@ -10,7 +11,14 @@ export const authInterceptorInterceptor: HttpInterceptorFn = (req, next) => {
     const authReq = req.clone({
       headers: req.headers.set('Authorization', `Bearer ${token}`)
     })
-   return next(authReq);
+   req = authReq;
   }
-  return next(req);
+  return next(req).pipe(tap(event => {
+    if(event instanceof HttpResponse){
+      let token = event.headers.get("Authorization_update")
+      if(token){
+        localStorage.setItem('token', token);
+      }
+    }
+  }));
 };

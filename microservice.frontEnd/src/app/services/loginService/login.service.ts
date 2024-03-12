@@ -18,7 +18,8 @@ export const jwtHelper = new JwtHelperService();
 })
 export class LoginService {
 
-  role:string = 'none';
+  login:boolean = false;
+  role:string | null = 'none';
   document:Document = inject(DOCUMENT);
   localStorage = this.document.defaultView?.localStorage;
   private dialog:MatDialog=inject(MatDialog);
@@ -26,11 +27,33 @@ export class LoginService {
   constructor(private http:HttpClient) { }
 
   isAuthencitatedAsOrganizateur():boolean{
+    if(this.role == 'none'){
+      if(this.localStorage){
+        this.role = localStorage.getItem("role");
+      }
+    }
     return this.role === 'ORGANISATEUR'
   }
 
   isAuthencitatedAsPraticien():boolean{
+    if(this.role == 'none'){
+      if(this.localStorage){
+        this.role = localStorage.getItem("role");
+      }
+    }
     return this.role === 'PRATICIEN'
+  }
+
+  isAuthenticated():boolean{
+    if(this.isAuthencitatedAsOrganizateur() || this.isAuthencitatedAsPraticien())
+      this.login = true
+    else
+      this.login = false
+    return this.login;
+  }
+
+  witchRole(){
+    return this.role;
   }
 
   submit(loginCredential: UserLogin){

@@ -49,7 +49,6 @@ export class AddPatientComponent {
   ngOnInit(){
     this.patient = this.patientService.patient;
     this.loadForm(this.patient);
-    console.log(typeof(this.patient.id) === 'number')
   }
 
   loadForm(patient:Patient){
@@ -85,7 +84,6 @@ export class AddPatientComponent {
     }
     if(this.addPatient.valid){
       if(typeof(this.patient.id) === "number"){
-        console.log("entrou - ediçao")
         this.patientService.updatePatient(this.patient).subscribe({
           next:(response)=>{
             console.log(response);

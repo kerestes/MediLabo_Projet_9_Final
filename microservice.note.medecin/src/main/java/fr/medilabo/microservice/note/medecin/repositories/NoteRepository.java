@@ -5,6 +5,6 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.List;
 
-public interface NoteRepository extends MongoRepository<Note, Long> {
+public interface NoteRepository extends MongoRepository<Note, String> {
     public List<Note> findByPatId(Long id);
 }

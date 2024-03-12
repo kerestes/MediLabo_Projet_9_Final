@@ -1,8 +1,19 @@
-@if(login == false){
+@if(!login){
   <button mat-button routerLink="/login" routerLinkActive="active">
     <i class="fa-solid fa-right-to-bracket"></i>
     <span style="font-size: 16px; margin-left: 10px; margin-right: 10px;">Login</span>
   </button>
 } @else {
 
+    @if(role == 'ORGANISATEUR') {
+      <span style="font-size: 16px; margin-left: 10px; margin-right: 10px;">Gestion Patient |</span>
+    }
+    @if(role == 'PRATICIEN'){
+      <span style="font-size: 16px; margin-left: 10px; margin-right: 10px;" routerLink="/gestion/notes">Gestion Notes |</span>
+      <span style="font-size: 16px; margin-left: 10px; margin-right: 10px;">Verifier risque | </span>
+    }
+    <button mat-button (click)="logout()" routerLinkActive="active">
+      <i class="fa-solid fa-right-to-bracket"></i>
+      <span style="font-size: 16px; margin-left: 10px; margin-right: 10px;">Logout</span>
+    </button>
 }

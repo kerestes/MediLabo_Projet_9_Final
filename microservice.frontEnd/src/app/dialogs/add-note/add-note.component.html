@@ -1,0 +1,46 @@
+<h1 mat-dialog-title style="background-color: blue; color: white; margin: auto; width: 100%">Ajouter un Patient</h1>
+<div mat-dialog-content style="padding-top: 20px;">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title style="margin: 20px;">Nouveau Patient</mat-card-title>
+      </mat-card-header>
+      <form [formGroup]="addNote">
+      <mat-card-content>
+          <div style="display: flex; justify-content: space-around;">
+            <mat-form-field appearance="outline" style="margin-left: 20px; margin-right: 20px;">
+              <mat-label>Nom</mat-label>
+              <input matInput formControlName="nom" id="nom" placeholder="Nom" readonly="true">
+              @if("nom.invalid && (nom.dirty || nom.touched)"){
+                <mat-error>Rentrez un Nom valid</mat-error>
+              }
+            </mat-form-field>
+            <mat-form-field appearance="outline" style="margin-left: 20px; margin-right: 20px;">
+              <mat-label>Prenom</mat-label>
+              <input matInput formControlName="prenom" id="prenom" placeholder="Prenom" readonly="true">
+              @if("prenom.invalid && (prenom.dirty || prenom.touched)"){
+                <mat-error>Rentrez un prenom valid</mat-error>
+              }
+            </mat-form-field>
+          </div>
+          <div style="display: flex; justify-content: space-around;">
+            <mat-form-field [style.fontSize]="16">
+              <mat-label>Note</mat-label>
+              <textarea matInput
+                        cdkTextareaAutosize
+                        formControlName="note"
+                        #autosize="cdkTextareaAutosize" required></textarea>
+              @if("note.invalid && (note.dirty || note.touched)"){
+                <mat-error>Rentrez une anotation valide</mat-error>
+              }
+            </mat-form-field>
+          </div>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" style="margin: 0 auto 20px auto;"
+                  type="submit" [disabled]="addNote.invalid" (click)="onSubmit()"
+                  mat-dialog-close>Ajouter</button>
+      </mat-card-actions>
+      </form>
+    </mat-card>
+</div>
+

@@ -13,11 +13,19 @@ public class NoteService {
     @Autowired
     private NoteRepository repository;
 
+    public List<Note> findAll(){
+        return repository.findAll();
+    }
+
     public List<Note> findByPatId(Long id){
         return repository.findByPatId(id);
     }
 
     public Note save(Note note){
         return repository.save(note);
+    }
+
+    public void deleteNote(String id){
+        repository.deleteById(id);
     }
 }

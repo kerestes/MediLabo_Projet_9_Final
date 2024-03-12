@@ -55,11 +55,13 @@ export class LoginComponent {
 
       this.loginService.submit(this.userLogin).subscribe({
         next:(response) => {
-          console.log('entrou mesmo assim')
           localStorage.setItem('token', response.token);
-          this.loginService.role = response.role;
-          if(this.loginService.role === 'ORGANISATEUR')
+          localStorage.setItem('role', response.role);
+          if(response.role === 'ORGANISATEUR'){
             window.location.replace("http://localhost:4200/gestion/patients");
+          } else if (response.role === 'PRATICIEN'){
+            window.location.replace("http://localhost:4200/gestion/notes");
+          }
         }
       });
     }
