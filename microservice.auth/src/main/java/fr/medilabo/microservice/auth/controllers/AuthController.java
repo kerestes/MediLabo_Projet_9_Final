@@ -1,9 +1,12 @@
 package fr.medilabo.microservice.auth.controllers;
 
+import com.auth0.jwt.exceptions.JWTVerificationException;
+import fr.medilabo.microservice.auth.enums.RoleEnum;
 import fr.medilabo.microservice.auth.errors.BadCredentialsException;
 import fr.medilabo.microservice.auth.models.LoginResponseDTO;
 import fr.medilabo.microservice.auth.models.User;
 import fr.medilabo.microservice.auth.models.UserDTO;
+import fr.medilabo.microservice.auth.services.JwtTokenService;
 import fr.medilabo.microservice.auth.services.UserService;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletResponse;
@@ -14,6 +17,7 @@ import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Date;
 import java.util.Optional;
 
 @RestController
@@ -22,6 +26,25 @@ public class AuthController {
 
     @Autowired
     private UserService service;
+    @Autowired
+    private JwtTokenService jwtTokenService;
+
+    @PostMapping("/update")
+    public ResponseEntity<String> tokenUpdate(@RequestBody String token){
+        try{
+            Date expiredDate = jwtTokenService.getExpireDateFromToken(token);
+            if (expiredDate.after(new Date())){
+                User user = new User();
+                user.setEmail(jwtTokenService.getSubjectFromToken(token));
+                user.setRole(RoleEnum.valueOf(jwtTokenService.getRoleFromToken(token)));
+                String newToken = jwtTokenService.generateToken(user);
+                return ResponseEntity.ok(newToken);
+            }
+        } catch (JWTVerificationException e){
+
+        }
+        return ResponseEntity.ok().build();
+    }
 
     @PostMapping("/registration")
     public ResponseEntity<?> registration(@RequestBody User user){

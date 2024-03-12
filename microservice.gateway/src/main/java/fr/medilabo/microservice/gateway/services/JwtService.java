@@ -52,6 +52,12 @@ public class JwtService {
         }
     }
 
+    public Date halfTimeExpiredToken(String token){
+        Date tokenExpireDate = getExpireDateFromToken(token);
+        Long differenceDate =  (tokenExpireDate.getTime() - new Date().getTime())/2;
+        return new Date(tokenExpireDate.getTime() - differenceDate);
+    }
+
     public String recoveryToken(HttpServerRequest request) {
         String authorizationHeader = request.requestHeaders().get("Authorization");
         if (authorizationHeader != null) {

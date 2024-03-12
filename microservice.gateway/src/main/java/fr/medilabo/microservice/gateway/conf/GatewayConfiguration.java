@@ -1,7 +1,6 @@
 package fr.medilabo.microservice.gateway.conf;
 
 import fr.medilabo.microservice.gateway.enums.RoleEnum;
-import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.gateway.route.RouteLocator;
 import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
@@ -14,10 +13,7 @@ import org.springframework.web.cors.reactive.UrlBasedCorsConfigurationSource;
 @Configuration
 public class GatewayConfiguration {
 
-    @Autowired
-    private VerifyOrganisateurTokenFilter verifyOrganisateur;
-    @Autowired
-    private VerifyPraticienTokenFilter verifyPraticien;
+    private VerifyTokenFilter verifyOrganisateur = new VerifyTokenFilter();
 
     @Bean
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder){
@@ -25,11 +21,14 @@ public class GatewayConfiguration {
                 .route("User Auth", r -> r.path("/auth/**")
                         .uri("http://localhost:8083"))
                 .route("PatientInfo", r -> r.path("/patient", "/patient/**")
-                        .filters(f -> f.filter(verifyOrganisateur))
+                        .filters(f ->  f.filter(verifyOrganisateur))
                         .uri("http://localhost:8081/"))
                 .route("PatientNote", r -> r.path("/notes", "/notes/**")
-                        .filters(f -> f.filter(verifyPraticien))
+                        .filters(f ->  f.filter(verifyOrganisateur))
                         .uri("http://localhost:8082/"))
+                .route("PatientDanger", r -> r.path("/risques", "/risques/**")
+                        .filters(f ->  f.filter(verifyOrganisateur))
+                        .uri("http://localhost:8084/"))
                 .build();
     }
 

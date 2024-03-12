@@ -32,7 +32,6 @@ public class PatientController {
 
     @GetMapping
     public ResponseEntity<List<Patient>> getAll(){
-        System.out.println("chamou");
         return ResponseEntity.ok(service.findAll());
     }
 

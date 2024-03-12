@@ -24,8 +24,8 @@ public class NoteController {
         return ResponseEntity.ok(noteService.findAll());
     }
 
-    @GetMapping("/patients")
-    public ResponseEntity<List<Object>> getAllPatients(){
+    @GetMapping("/patlist")
+    public ResponseEntity<List<Patient>> getAllPatients(){
         return ResponseEntity.ok(patientService.getAllPatient());
     }
 

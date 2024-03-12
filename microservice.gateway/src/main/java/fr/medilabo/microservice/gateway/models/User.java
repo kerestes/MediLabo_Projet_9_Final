@@ -18,7 +18,6 @@ public class User {
 
     @Id
     private String token;
-    private String username;
+    private String ip;
     private Date expirationDate;
-    private RoleEnum role;
 }

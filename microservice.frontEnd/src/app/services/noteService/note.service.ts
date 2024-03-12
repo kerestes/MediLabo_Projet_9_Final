@@ -22,7 +22,7 @@ export class NoteService {
   }
 
   getPatientList(){
-    return this.http.get<Array<Patient>>(`${NOTE_URL}/patients`);
+    return this.http.get<Array<Patient>>(`${NOTE_URL}/patlist`);
   }
 
   addNote(){

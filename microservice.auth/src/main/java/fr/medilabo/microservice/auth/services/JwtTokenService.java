@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import java.time.Instant;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
+import java.util.Date;
 
 @Service
 public class JwtTokenService {
@@ -46,12 +47,29 @@ public class JwtTokenService {
         }
     }
 
-    public String recoveryToken(HttpServletRequest request) {
-        String authorizationHeader = request.getHeader("Authorization");
-        if (authorizationHeader != null) {
-            return authorizationHeader.replace("Bearer ", "");
+    public String getRoleFromToken(String token) {
+        try {
+            return JWT.require(key)
+                    .withIssuer(ISSUER)
+                    .build()
+                    .verify(token)
+                    .getClaim("Role")
+                    .asString();
+        } catch (JWTVerificationException exception){
+            throw new JWTVerificationException("Invalid or expired token");
         }
-        return null;
+    }
+
+    public Date getExpireDateFromToken(String token){
+        try {
+            return JWT.require(key)
+                    .withIssuer(ISSUER)
+                    .build()
+                    .verify(token)
+                    .getExpiresAt();
+        } catch (JWTVerificationException exception){
+            throw new JWTVerificationException("Invalid or expired token");
+        }
     }
 
     private Instant creationDate() {

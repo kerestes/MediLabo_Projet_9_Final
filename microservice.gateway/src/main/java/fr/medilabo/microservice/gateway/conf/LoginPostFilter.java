@@ -29,13 +29,9 @@ public class LoginPostFilter implements GlobalFilter {
             ServerHttpRequest req = exchange.getRequest();
             if(req.getURI().toString().contains("login") && exchange.getResponse().getStatusCode() != HttpStatus.NOT_FOUND){
                 String token = exchange.getResponse().getHeaders().get("Authorization").get(0).replace("Bearer ", "");
-                System.out.println(token);
-                Date tokenExpireDate = jwtService.getExpireDateFromToken(token);
-                Long differenceDate =  (tokenExpireDate.getTime() - new Date().getTime())/2;
                 User user = new User(token,
-                        jwtService.getSubjectFromToken(token).replace("Bearer ", ""),
-                        new Date(tokenExpireDate.getTime() - differenceDate),
-                        RoleEnum.valueOf(jwtService.getRoleFromToken(token)));
+                        exchange.getRequest().getRemoteAddress().toString(),
+                        new Date());
                 userService.save(user);
                 exchange.getResponse().getHeaders().remove("Authorization");
             }

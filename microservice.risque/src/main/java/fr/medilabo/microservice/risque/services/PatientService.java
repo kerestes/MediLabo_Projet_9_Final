@@ -1,6 +1,6 @@
-package fr.medilabo.microservice.note.medecin.services;
+package fr.medilabo.microservice.risque.services;
 
-import fr.medilabo.microservice.note.medecin.models.Patient;
+import fr.medilabo.microservice.risque.models.Patient;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
