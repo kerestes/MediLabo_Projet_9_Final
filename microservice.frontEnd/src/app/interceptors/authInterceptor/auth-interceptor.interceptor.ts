@@ -15,12 +15,8 @@ export const authInterceptorInterceptor: HttpInterceptorFn = (req, next) => {
   }
   return next(req).pipe(tap(event => {
     if(event instanceof HttpResponse){
-      console.log("entrou na resposta")
       let token = event.headers.get("Authorization_update")
-      console.log(event)
-      console.log(token);
       if(token){
-        console.log('guardando novo token')
         localStorage.setItem('token', token);
       }
     }

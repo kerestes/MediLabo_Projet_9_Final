@@ -19,6 +19,7 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.Optional;
 
+@Component
 public class VerifyTokenFilter implements GatewayFilter {
 
     @Autowired

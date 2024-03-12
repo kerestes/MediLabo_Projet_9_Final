@@ -10,7 +10,7 @@
     }
     @if(role == 'PRATICIEN'){
       <span style="font-size: 16px; margin-left: 10px; margin-right: 10px;" routerLink="/gestion/notes">Gestion Notes |</span>
-      <span style="font-size: 16px; margin-left: 10px; margin-right: 10px;">Verifier risque | </span>
+      <span style="font-size: 16px; margin-left: 10px; margin-right: 10px;" routerLink="/gestion/risque">Verifier risque | </span>
     }
     <button mat-button (click)="logout()" routerLinkActive="active">
       <i class="fa-solid fa-right-to-bracket"></i>

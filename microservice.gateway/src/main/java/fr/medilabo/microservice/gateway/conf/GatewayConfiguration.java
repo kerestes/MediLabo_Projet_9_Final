@@ -13,7 +13,8 @@ import org.springframework.web.cors.reactive.UrlBasedCorsConfigurationSource;
 @Configuration
 public class GatewayConfiguration {
 
-    private VerifyTokenFilter verifyOrganisateur = new VerifyTokenFilter();
+    @Autowired
+    private VerifyTokenFilter verifyOrganisateur;
 
     @Bean
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder){
