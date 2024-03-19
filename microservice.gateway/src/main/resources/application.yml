@@ -1,8 +1,39 @@
 server:
   port:
     9001
+auth:
+  update: ${auth.update}
 
 spring:
+  data:
+    redis:
+      host: ${host}
+      port: ${port}
   main:
     web-application-type:
       reactive
+  cloud:
+    gateway:
+      routes:
+        - id: user_auth
+          uri: http://localhost:8083/
+          predicates:
+            - Path=/auth/**
+        - id: patient_info
+          uri: http://localhost:8081/
+          predicates:
+            - Path=/patient/**
+          filters:
+            - VerifyTokenFilter
+        - id: patient_note
+          uri: http://localhost:8082/
+          predicates:
+            - Path=/notes/**
+          filters:
+            - VerifyTokenFilter
+        - id: patient_risque
+          uri: http://localhost:8084
+          predicates:
+            - Path=/risques/**
+          filters:
+            - VerifyTokenFilter

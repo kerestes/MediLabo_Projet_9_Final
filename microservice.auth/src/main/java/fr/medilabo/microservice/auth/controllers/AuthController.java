@@ -8,17 +8,14 @@ import fr.medilabo.microservice.auth.models.User;
 import fr.medilabo.microservice.auth.models.UserDTO;
 import fr.medilabo.microservice.auth.services.JwtTokenService;
 import fr.medilabo.microservice.auth.services.UserService;
-import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCrypt;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Date;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/auth")
@@ -56,7 +53,6 @@ public class AuthController {
         }
     }
 
-    //Tem que receber so usuario e senha, se nao da ruim
     @PostMapping("/login")
     public ResponseEntity<LoginResponseDTO> login(@RequestBody UserDTO userDTO, HttpServletResponse response){
         try{

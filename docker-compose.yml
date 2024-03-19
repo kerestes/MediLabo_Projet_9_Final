@@ -1,0 +1,153 @@
+version: "3.7"
+
+volumes:
+  db-organisateur:
+    driver: local
+  db-auth:
+    driver: local
+  cache:
+    driver: local
+  mongodb:
+    driver: local
+
+services:
+  nginx-service:
+    image: nginx:latest
+    ports:
+      - 80:80
+    volumes:
+      - ./nginx-conf/nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - front-service
+
+  front-service: 
+    build: ./microservice.frontEnd
+    ports:
+      - 4200:4200
+    depends_on: 
+      - gateway-spring
+
+  gateway-spring:
+    build:
+      context: ./microservice.gateway 
+    ports:
+      - 9001:9001
+    environment:
+      - host=cache
+      - port=6379
+      - auth.update=http://auth-spring:8083/auth/update
+      - SPRING.CLOUD.GATEWAY.ROUTES[0].ID=user_auth
+      - SPRING.CLOUD.GATEWAY.ROUTES[0].URI=http://auth-spring:8083/
+      - SPRING.CLOUD.GATEWAY.ROUTES[0].PREDICATES[0]=Path=/auth/**
+      - SPRING.CLOUD.GATEWAY.ROUTES[1].ID=patient_info
+      - SPRING.CLOUD.GATEWAY.ROUTES[1].URI=http://patient-spring:8081/
+      - SPRING.CLOUD.GATEWAY.ROUTES[1].PREDICATES[0]=Path=/patient/**
+      - SPRING.CLOUD.GATEWAY.ROUTES[1].FILTERS[0]=VerifyTokenFilter
+      - SPRING.CLOUD.GATEWAY.ROUTES[2].ID=patient_note
+      - SPRING.CLOUD.GATEWAY.ROUTES[2].URI=http://note-medecin-spring:8082/
+      - SPRING.CLOUD.GATEWAY.ROUTES[2].PREDICATES[0]=Path=/notes/**
+      - SPRING.CLOUD.GATEWAY.ROUTES[2].FILTERS[0]=VerifyTokenFilter
+      - SPRING.CLOUD.GATEWAY.ROUTES[3].ID=patient_risque
+      - SPRING.CLOUD.GATEWAY.ROUTES[3].URI=http://patient-risque:8084/
+      - SPRING.CLOUD.GATEWAY.ROUTES[3].PREDICATES[0]=Path=/risques/**
+      - SPRING.CLOUD.GATEWAY.ROUTES[3].FILTERS[0]=VerifyTokenFilter
+    depends_on: 
+      - cache
+      - patient-spring
+      - note-medecin-spring
+      - auth-spring
+      - patient-risque
+
+  note-medecin-spring:
+    build:
+      context: ./microservice.note.medecin
+    ports:
+      - 8082:8082
+    environment:
+      - DBCONNECTION=mongodb_container
+      - DBPORT=27017
+      - DBDATABASE=medilabo
+      - DBUSERNAME=medilabo
+      - DBPASSWORD=rootroot
+    depends_on: 
+      - mongodb_container
+
+  patient-spring:
+    build:
+      context: ./microservice.patient 
+    ports:
+      - 8081:8081
+    environment:
+      - DATABASECONNECTION=jdbc:mysql://patient-mysql-db:3307/medilabo
+      - DATABASEUSERNAME=medilabo
+      - DATABASEPASSWORD=rootroot
+    depends_on: 
+      - patient-mysql-db
+  
+  auth-spring:
+    build:
+      context: ./microservice.auth
+    ports:
+      - 8083:8083
+    environment:
+      - DATABASECONNECTION=jdbc:mysql://auth-mysql-db:3308/medilabo_auth
+      - DATABASEUSERNAME=medilabo
+      - DATABASEPASSWORD=rootroot
+    depends_on: 
+      - auth-mysql-db
+
+  patient-risque:
+    build: ./microservice.risque
+    ports:
+      - 8084:8084
+    environment:
+      - notes.url=http://note-medecin-spring:8082/notes
+      - patient.url=http://patient-spring:8081/patient
+
+  patient-mysql-db:
+    image: mysql:8.0.36
+    ports:
+      - 3307:3307
+    environment:
+      MYSQL_DATABASE: medilabo
+      MYSQL_USER: medilabo
+      MYSQL_PASSWORD: rootroot
+      MYSQL_ROOT_PASSWORD: rootroot
+      MYSQL_TCP_PORT: 3307
+    volumes:
+      - ./db-docker/script-mysql.sql:/docker-entrypoint-initdb.d/script-mysql.sql
+      - db-organisateur:/data/db-mysql-patient
+  
+  auth-mysql-db:
+    image: mysql:8.0.36
+    ports:
+      - 3308:3308
+    environment:
+      MYSQL_DATABASE: medilabo_auth
+      MYSQL_USER: medilabo
+      MYSQL_PASSWORD: rootroot
+      MYSQL_ROOT_PASSWORD: rootroot
+      MYSQL_TCP_PORT: 3308
+    volumes:
+      - ./db-docker/script-mysql2.sql:/docker-entrypoint-initdb.d/script-mysql2.sql
+      - db-auth:/data/db-mysql-auth
+  
+  mongodb_container:
+    image: mongo:7.0.3
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: medilabo
+      MONGO_INITDB_ROOT_PASSWORD: rootroot
+      MONGO_INITDB_DATABASE: medilabo
+    volumes:
+      - ./db-docker/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+      - mongodb:/data/db-mongo
+
+  cache:
+    image: redis:6.2-alpine
+    ports:
+      - 6379:6379
+    command: redis-server --save 20 1 --port 6379 --bind 0.0.0.0 --protected-mode no
+    volumes: 
+      - cache:/data/redis

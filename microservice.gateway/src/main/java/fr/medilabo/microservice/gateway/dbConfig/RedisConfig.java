@@ -1,24 +1,31 @@
 package fr.medilabo.microservice.gateway.dbConfig;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
+import org.springframework.data.redis.connection.RedisConnectionFactory;
+import org.springframework.data.redis.connection.RedisStandaloneConfiguration;
 import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 
 public class RedisConfig {
+    @Value("${spring.data.redis.host}")
+    private String host;
+
+    @Value("${spring.data.redis.port}")
+    private int port;
 
     @Bean
-    public JedisConnectionFactory jedisConnectionFactory() {
-        JedisConnectionFactory jedisConFactory
-                = new JedisConnectionFactory();
-        jedisConFactory.setHostName("localhost");
-        jedisConFactory.setPort(6379);
-        return jedisConFactory;
+    public RedisConnectionFactory jedisConnectionFactory() {
+        RedisStandaloneConfiguration redisStandaloneConfiguration = new RedisStandaloneConfiguration();
+        redisStandaloneConfiguration.setHostName(host);
+        redisStandaloneConfiguration.setPort(port);
+
+        return new JedisConnectionFactory(redisStandaloneConfiguration);
     }
-
     @Bean
-    public RedisTemplate<String, Object> redisTemplate() {
+    public RedisTemplate<String, Object> redisTemplate(RedisConnectionFactory redisConnectionFactory) {
         RedisTemplate<String, Object> template = new RedisTemplate<>();
-        template.setConnectionFactory(jedisConnectionFactory());
+        template.setConnectionFactory(redisConnectionFactory);
         return template;
     }
 }

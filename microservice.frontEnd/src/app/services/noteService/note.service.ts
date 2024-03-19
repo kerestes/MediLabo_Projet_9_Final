@@ -2,8 +2,9 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Note } from '../../models/note/note';
 import { Patient } from '../../models/patient/patient';
+import { environment } from '../../../environments/environment';
 
-export const NOTE_URL: string = "http://localhost:9001/notes"
+export const NOTE_URL: string = `http://${environment.NOTES}/notes`
 
 @Injectable({
   providedIn: 'root'

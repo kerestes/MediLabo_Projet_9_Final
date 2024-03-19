@@ -8,8 +8,9 @@ import { Login401Component } from '../../dialogs/login-401/login-401.component';
 import { Login404Component } from '../../dialogs/login-404/login-404.component';
 import { UserLogin } from '../../models/user-login/user-login';
 import { ResponseLogin } from '../../models/response-login/response-login';
+import { environment } from '../../../environments/environment';
 
-export const LOGIN_URL: string = "http://localhost:9001/auth"
+export const LOGIN_URL: string =  `http://${environment.AUTH}/auth`
 
 export const jwtHelper = new JwtHelperService();
 
