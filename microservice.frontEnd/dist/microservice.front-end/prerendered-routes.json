@@ -1,0 +1,8 @@
+{
+  "routes": [
+    "/gestion/notes",
+    "/gestion/patients",
+    "/gestion/risque",
+    "/login"
+  ]
+}

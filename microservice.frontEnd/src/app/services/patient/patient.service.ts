@@ -1,9 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Patient } from '../../models/patient/patient';
-import { environment } from '../../../environments/environment';
 
-export const PATIENT_URL: string = `http://${environment.PATIENT}/patient`
+export const PATIENT_URL: string = "http://localhost:9001/patient"
 
 @Injectable({
   providedIn: 'root'

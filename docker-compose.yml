@@ -22,8 +22,8 @@ services:
 
   front-service: 
     build: ./microservice.frontEnd
-    ports:
-      - 4200:4200
+  #  ports:
+  #    - 4000:4000
     depends_on: 
       - gateway-spring
 
@@ -61,8 +61,8 @@ services:
   note-medecin-spring:
     build:
       context: ./microservice.note.medecin
-    ports:
-      - 8082:8082
+    #ports:
+    #  - 8082:8082
     environment:
       - DBCONNECTION=mongodb_container
       - DBPORT=27017
@@ -75,8 +75,8 @@ services:
   patient-spring:
     build:
       context: ./microservice.patient 
-    ports:
-      - 8081:8081
+    #ports:
+    #  - 8081:8081
     environment:
       - DATABASECONNECTION=jdbc:mysql://patient-mysql-db:3307/medilabo
       - DATABASEUSERNAME=medilabo
@@ -87,8 +87,8 @@ services:
   auth-spring:
     build:
       context: ./microservice.auth
-    ports:
-      - 8083:8083
+    #ports:
+    #  - 8083:8083
     environment:
       - DATABASECONNECTION=jdbc:mysql://auth-mysql-db:3308/medilabo_auth
       - DATABASEUSERNAME=medilabo
@@ -98,16 +98,16 @@ services:
 
   patient-risque:
     build: ./microservice.risque
-    ports:
-      - 8084:8084
+    #ports:
+    #  - 8084:8084
     environment:
       - notes.url=http://note-medecin-spring:8082/notes
       - patient.url=http://patient-spring:8081/patient
 
   patient-mysql-db:
     image: mysql:8.0.36
-    ports:
-      - 3307:3307
+    #ports:
+    #  - 3307:3307
     environment:
       MYSQL_DATABASE: medilabo
       MYSQL_USER: medilabo
@@ -120,8 +120,8 @@ services:
   
   auth-mysql-db:
     image: mysql:8.0.36
-    ports:
-      - 3308:3308
+    #ports:
+    #  - 3308:3308
     environment:
       MYSQL_DATABASE: medilabo_auth
       MYSQL_USER: medilabo
@@ -134,8 +134,8 @@ services:
   
   mongodb_container:
     image: mongo:7.0.3
-    ports:
-      - 27017:27017
+    #ports:
+    #  - 27017:27017
     environment:
       MONGO_INITDB_ROOT_USERNAME: medilabo
       MONGO_INITDB_ROOT_PASSWORD: rootroot
@@ -146,8 +146,8 @@ services:
 
   cache:
     image: redis:6.2-alpine
-    ports:
-      - 6379:6379
+    #ports:
+    #  - 6379:6379
     command: redis-server --save 20 1 --port 6379 --bind 0.0.0.0 --protected-mode no
     volumes: 
       - cache:/data/redis

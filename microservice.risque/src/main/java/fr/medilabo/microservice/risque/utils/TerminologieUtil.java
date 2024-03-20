@@ -19,7 +19,6 @@ public class TerminologieUtil {
             "Hémoglobine A1C",
             "Microalbumine",
             "Taille",
-            "Poids",
             "Poid",
             "Fumeur",
             "Fumeuse",

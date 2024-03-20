@@ -1,3 +1,26 @@
+DROP TABLE IF EXISTS patients;
+DROP TABLE IF EXISTS adresses;
+
+CREATE TABLE adresses(
+    id INT NOT NULL AUTO_INCREMENT,
+    adresse VARCHAR(255) NOT NULL,
+    ville VARCHAR(255) NOT NULL,
+    code_postal VARCHAR(18) NOT NULL,
+    PRIMARY KEY(id)
+);
+
+CREATE TABLE patients(
+    id INT NOT NULL AUTO_INCREMENT,
+    prenom VARCHAR(255) NOT NULL,
+    nom VARCHAR(255) NOT NULL,
+    date_de_naissance DATETIME NOT NULL,
+    genre CHAR(1) NOT NULL,
+    telephone VARCHAR(18),
+    adresse_id INT,
+    PRIMARY KEY(id),
+    FOREIGN KEY (adresse_id) REFERENCES adresses(id)
+);
+
 INSERT INTO adresses (adresse, ville, code_postal) values
     ('1 Brookside St', 'Paris', '75010'),
     ('2 High St', 'Paris', '75001'),

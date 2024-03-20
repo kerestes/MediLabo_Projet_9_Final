@@ -12,6 +12,7 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { Patient } from '../../models/patient/patient';
 import { AddNoteComponent } from '../../dialogs/add-note/add-note.component';
 import { error } from 'console';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-note-table',
@@ -28,6 +29,7 @@ import { error } from 'console';
 })
 export class NoteTableComponent {
 
+  router:Router = inject(Router)
   tablesize:number = 0
   pageIndex:number = 0
   notesList:Array<Note> = []
@@ -103,7 +105,7 @@ export class NoteTableComponent {
       this.noteService.deleteNote(noteId).subscribe({
         next:(response) => {
           console.log('entrou')
-          window.location.replace("/gestion/notes")
+          this.router.navigate(["/gestion/notes"])
         },
         error:(err)=>{
           console.log(err);

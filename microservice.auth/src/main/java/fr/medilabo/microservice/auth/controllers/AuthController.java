@@ -9,6 +9,8 @@ import fr.medilabo.microservice.auth.models.UserDTO;
 import fr.medilabo.microservice.auth.services.JwtTokenService;
 import fr.medilabo.microservice.auth.services.UserService;
 import jakarta.servlet.http.HttpServletResponse;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,6 +23,7 @@ import java.util.Date;
 @RequestMapping("/auth")
 public class AuthController {
 
+    private Logger logger = LoggerFactory.getLogger(AuthController.class);
     @Autowired
     private UserService service;
     @Autowired
@@ -55,11 +58,13 @@ public class AuthController {
 
     @PostMapping("/login")
     public ResponseEntity<LoginResponseDTO> login(@RequestBody UserDTO userDTO, HttpServletResponse response){
+        logger.info("Logging attempt");
         try{
             LoginResponseDTO responseDTO = service.authenticateUser(userDTO);
             response.setHeader("Authorization", responseDTO.token());
             return ResponseEntity.ok(responseDTO);
         }catch (BadCredentialsException e){
+            logger.info("Answer: User not found");
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
     }

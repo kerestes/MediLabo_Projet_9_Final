@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button'
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { MatMenuModule } from '@angular/material/menu';
 import { DOCUMENT } from '@angular/common';
 import { LoginService } from '../../services/loginService/login.service';
@@ -27,7 +27,7 @@ export class LoginMenuComponent {
     if(this.localStorage){
       localStorage.removeItem("token");
       localStorage.removeItem("role");
-      window.location.replace("http://localhost:4200");
+      window.location.replace("/");
     }
   };
 

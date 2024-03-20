@@ -12,6 +12,7 @@ import { LoginService } from '../../services/loginService/login.service';
 import { MatDialog } from '@angular/material/dialog';
 import { Login401Component } from '../../dialogs/login-401/login-401.component';
 import { UserLogin } from '../../models/user-login/user-login';
+import { Login404Component } from '../../dialogs/login-404/login-404.component';
 
 @Component({
   selector: 'app-login',
@@ -58,10 +59,14 @@ export class LoginComponent {
           localStorage.setItem('token', response.token);
           localStorage.setItem('role', response.role);
           if(response.role === 'ORGANISATEUR'){
-            window.location.replace("http://localhost:4200/gestion/patients");
+            window.location.replace("/gestion/patients");
           } else if (response.role === 'PRATICIEN'){
-            window.location.replace("http://localhost:4200/gestion/notes");
+            window.location.replace("/gestion/notes");
           }
+        },
+        error:(err)=>{
+          if(err.status == 404)
+            this.dialog.open(Login404Component)
         }
       });
     }
