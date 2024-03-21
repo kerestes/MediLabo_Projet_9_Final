@@ -25,23 +25,23 @@ public class UserService {
     private JwtTokenService jwtTokenService;
 
     public Optional<User> findOneByEmail(String email){
+        logger.info("Call findOneByEmail - User Service");
         return userRepository.findOneByEmail(email);
     }
 
     public User save(User user){
+        logger.info("Call save - User Service");
         return userRepository.save(user);
     }
 
     public LoginResponseDTO authenticateUser(UserDTO userDTO){
-        logger.info("Start of user authentication");
+        logger.info("Call authenticateUser - User Service");
         Optional<User> userOptional = userRepository.findOneByEmail(userDTO.username());
         if(userOptional.isPresent() && BCrypt.checkpw(userDTO.password(), userOptional.get().getPassword())){
-            logger.info("User found");
             String token = jwtTokenService.generateToken(userOptional.get());
             LoginResponseDTO response = new LoginResponseDTO("Bearer " + token, userOptional.get().getRole().getRole());
             return response;
         }else{
-            logger.info("User not found");
             throw new BadCredentialsException("Incorrect username or Password");
         }
     }

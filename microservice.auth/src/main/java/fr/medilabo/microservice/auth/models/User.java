@@ -2,7 +2,9 @@ package fr.medilabo.microservice.auth.models;
 
 import fr.medilabo.microservice.auth.enums.RoleEnum;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.io.Serializable;
@@ -10,6 +12,8 @@ import java.io.Serializable;
 @Setter
 @Getter
 @Entity
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "users")
 public class User implements Serializable {
 

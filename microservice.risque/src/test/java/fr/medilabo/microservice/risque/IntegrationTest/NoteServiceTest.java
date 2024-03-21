@@ -26,7 +26,7 @@ public class NoteServiceTest {
         Assertions.assertTrue(!notes.isEmpty());
         Assertions.assertTrue(notes.get(0).patient().equals("TestNone"));
         Assertions.assertTrue(notes.get(0).note().contains("Poids"));
-        Assertions.assertTrue(notes.get(1).patient().equals("TestBoderline"));
+        Assertions.assertTrue(notes.get(1).patient().equals("TestBorderline"));
         Assertions.assertTrue(notes.get(1).note().contains("anormale"));
     }
 

@@ -8,6 +8,7 @@ import fr.medilabo.microservice.auth.models.User;
 import fr.medilabo.microservice.auth.models.UserDTO;
 import fr.medilabo.microservice.auth.services.JwtTokenService;
 import fr.medilabo.microservice.auth.services.UserService;
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,6 +18,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Arrays;
 import java.util.Date;
 
 @RestController
@@ -30,20 +32,26 @@ public class AuthController {
     private JwtTokenService jwtTokenService;
 
     @PostMapping("/update")
-    public ResponseEntity<String> tokenUpdate(@RequestBody String token){
+    public ResponseEntity<String> tokenUpdate(@RequestBody String token, HttpServletRequest request){
+        logger.info("Call tokenUpdate - ip (" + request.getRemoteAddr() +") - token (" + request.getHeader("Authorization") +")");
         try{
+            StringBuilder sb = new StringBuilder(token);
+            if(sb.charAt(0) == '"' && sb.charAt(sb.length()-1) == '"'){
+                sb.replace(0,1, "");
+                sb.replace(sb.length()-1, sb.length(), "");
+                token = sb.toString();
+            }
             Date expiredDate = jwtTokenService.getExpireDateFromToken(token);
             if (expiredDate.after(new Date())){
                 User user = new User();
                 user.setEmail(jwtTokenService.getSubjectFromToken(token));
                 user.setRole(RoleEnum.valueOf(jwtTokenService.getRoleFromToken(token)));
-                String newToken = jwtTokenService.generateToken(user);
-                return ResponseEntity.ok(newToken);
+                return ResponseEntity.ok(jwtTokenService.generateToken(user));
             }
         } catch (JWTVerificationException e){
-
+            logger.warn("Token invalid or expired");
         }
-        return ResponseEntity.ok().build();
+        return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
     }
 
     @PostMapping("/registration")
@@ -57,14 +65,14 @@ public class AuthController {
     }
 
     @PostMapping("/login")
-    public ResponseEntity<LoginResponseDTO> login(@RequestBody UserDTO userDTO, HttpServletResponse response){
-        logger.info("Logging attempt");
+    public ResponseEntity<LoginResponseDTO> login(@RequestBody UserDTO userDTO, HttpServletResponse response, HttpServletRequest request){
+        logger.info("Call login - ip (" + request.getRemoteAddr() +") - token (" + request.getHeader("Authorization") +")");
         try{
             LoginResponseDTO responseDTO = service.authenticateUser(userDTO);
             response.setHeader("Authorization", responseDTO.token());
             return ResponseEntity.ok(responseDTO);
         }catch (BadCredentialsException e){
-            logger.info("Answer: User not found");
+            logger.info("User not found");
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
     }

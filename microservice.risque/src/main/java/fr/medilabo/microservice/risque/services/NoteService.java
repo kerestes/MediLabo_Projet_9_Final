@@ -20,6 +20,7 @@ public class NoteService {
     private String URL_NOTES;
 
     public List<Note> getAllNotes(){
+        logger.info("Call getAllNotes - Note Service");
         RestTemplate restTemplate = new RestTemplate();
         try{
             Note[] notes = restTemplate.getForEntity(URL_NOTES, Note[].class).getBody();

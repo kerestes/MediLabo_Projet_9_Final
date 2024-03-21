@@ -1,0 +1,3 @@
+14:02:28.828 447  INFO  f.m.microservice.risque.Application - Starting Application using Java 17.0.9 with PID 51507 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.risque/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.risque)
+14:02:28.830 449  INFO  f.m.microservice.risque.Application - No active profile set, falling back to 1 default profile: "default"
+14:02:29.662 1281 INFO  f.m.microservice.risque.Application - Started Application in 1.061 seconds (process running for 1.37)

@@ -19,6 +19,7 @@ public class PatientService {
     private String URL_PATIENT;
 
     public List<Patient> getAllPatient(){
+        logger.info("Call getAllPatient - Patient Service");
         RestTemplate restTemplate = new RestTemplate();
         try{
             Patient[] patients = restTemplate.getForObject(URL_PATIENT, Patient[].class);

@@ -69,6 +69,7 @@ services:
       - DBDATABASE=medilabo
       - DBUSERNAME=medilabo
       - DBPASSWORD=rootroot
+      - url.patient=http://patient-spring:8081/patient
     depends_on: 
       - mongodb_container
 
