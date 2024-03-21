@@ -15,12 +15,12 @@ public class RedisConfig {
     private int port;
 
     @Bean
-    public RedisConnectionFactory jedisConnectionFactory() {
-        RedisStandaloneConfiguration redisStandaloneConfiguration = new RedisStandaloneConfiguration();
+    public JedisConnectionFactory jedisConnectionFactory() {
+        JedisConnectionFactory redisStandaloneConfiguration = new JedisConnectionFactory();
         redisStandaloneConfiguration.setHostName(host);
         redisStandaloneConfiguration.setPort(port);
 
-        return new JedisConnectionFactory(redisStandaloneConfiguration);
+        return redisStandaloneConfiguration;
     }
     @Bean
     public RedisTemplate<String, Object> redisTemplate(RedisConnectionFactory redisConnectionFactory) {

@@ -1,3 +1,231 @@
 04:29:58.804 1837 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
 04:29:58.807 1840 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
 04:29:59.712 2745 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+07:14:18.952 434  INFO  f.m.m.patient.Application - Starting Application using Java 21.0.1 with PID 243610 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient)
+07:14:18.953 435  INFO  f.m.m.patient.Application - No active profile set, falling back to 1 default profile: "default"
+07:14:20.201 1683 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+07:14:20.202 1684 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+07:14:21.095 2577 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+07:14:21.289 2771 INFO  f.m.m.patient.Application - Started Application in 2.552 seconds (process running for 2.885)
+07:18:50.629 272111 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwMDE5MzAsImV4cCI6MTcxMTAxNjMzMCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.XYxhh0b18HAFHEeRp4pAylni5o9GnIN4K-ovEbwtYNs)
+07:18:50.629 272111 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+07:19:04.221 285703 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwMDE5MzAsImV4cCI6MTcxMTAxNjMzMCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.XYxhh0b18HAFHEeRp4pAylni5o9GnIN4K-ovEbwtYNs)
+07:19:04.222 285704 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+07:19:42.313 323795 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
+07:19:42.313 323795 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+07:19:42.367 323849 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
+07:19:42.367 323849 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+07:20:27.456 368938 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
+07:20:27.456 368938 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+07:20:34.115 375597 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
+07:20:34.115 375597 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+07:20:34.127 375609 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
+07:20:34.128 375610 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+07:22:17.280 519  INFO  f.m.m.patient.Application - Starting Application using Java 21.0.1 with PID 251900 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient)
+07:22:17.282 521  INFO  f.m.m.patient.Application - No active profile set, falling back to 1 default profile: "default"
+07:22:19.161 2400 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+07:22:19.164 2403 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+07:22:20.487 3726 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+07:22:20.709 3948 INFO  f.m.m.patient.Application - Started Application in 3.686 seconds (process running for 4.061)
+07:23:31.285 74524 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
+07:23:31.285 74524 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+07:24:18.136 121375 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
+07:24:18.136 121375 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+07:24:56.512 159751 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
+07:24:56.513 159752 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+07:25:31.727 194966 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
+07:25:31.727 194966 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+07:25:48.413 455  INFO  f.m.m.p.i.AdresseServiceTest - Starting AdresseServiceTest using Java 21.0.1 with PID 257692 (started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient)
+07:25:48.415 457  INFO  f.m.m.p.i.AdresseServiceTest - The following 1 profile is active: "test"
+07:25:49.558 1600 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+07:25:49.559 1601 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+07:25:50.561 2603 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+07:25:51.052 3094 INFO  f.m.m.p.i.AdresseServiceTest - Started AdresseServiceTest in 2.781 seconds (process running for 3.449)
+07:25:51.391 3433 INFO  f.m.m.p.services.AdresseService - Call verifyAdresse - Adresse Service
+07:25:51.469 3511 INFO  f.m.m.p.services.AdresseService - Call save - Adresse Service
+07:25:51.502 3544 INFO  f.m.m.p.services.AdresseService - Call deleteById - Adresse Service
+07:25:51.525 3567 INFO  f.m.m.p.services.AdresseService - Call findById - Adresse Service
+07:25:51.541 3583 INFO  f.m.m.p.services.AdresseService - Call verifyPatient - Patient Service
+07:25:51.551 3593 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+07:25:51.581 3623 INFO  f.m.m.p.services.AdresseService - Call findById - Patient Service
+07:25:51.588 3630 INFO  f.m.m.p.services.AdresseService - Call save - Patient Service
+07:25:51.600 3642 INFO  f.m.m.p.services.AdresseService - Call deleteById - Patient Service
+07:25:51.610 3652 INFO  f.m.m.p.services.AdresseService - Call findById - Patient Service
+07:25:51.616 3658 INFO  f.m.m.p.services.AdresseService - Call verifyPatient - Patient Service
+07:25:51.652 3694 INFO  f.m.m.p.u.PatientControllerTest - Starting PatientControllerTest using Java 21.0.1 with PID 257692 (started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient)
+07:25:51.652 3694 INFO  f.m.m.p.u.PatientControllerTest - The following 1 profile is active: "test"
+07:25:52.128 4170 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+07:25:52.128 4170 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+07:25:52.258 4300 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+07:25:52.623 4665 INFO  f.m.m.p.u.PatientControllerTest - Started PatientControllerTest in 0.985 seconds (process running for 5.019)
+07:25:52.741 4783 INFO  f.m.m.p.c.PatientController - Call createPatient - ip (127.0.0.1) - token (null)
+07:25:52.771 4813 INFO  f.m.m.p.c.PatientController - Call getPatientById - ip (127.0.0.1) - token (null)
+07:25:52.771 4813 INFO  f.m.m.p.c.PatientController - Entity not found - ip (127.0.0.1) - token (null)
+07:25:52.776 4818 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
+07:25:52.811 4853 INFO  f.m.m.p.c.PatientController - Call updatePatient - ip (127.0.0.1) - token (null)
+07:25:52.821 4863 INFO  f.m.m.p.c.PatientController - Call createPatient - ip (127.0.0.1) - token (null)
+07:25:52.822 4864 INFO  f.m.m.p.c.PatientController - Entity already exists - ip (127.0.0.1) - token (null)
+07:25:52.833 4875 INFO  f.m.m.p.c.PatientController - Call updatePatient - ip (127.0.0.1) - token (null)
+07:25:52.842 4884 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
+07:25:52.842 4884 WARN  f.m.m.p.c.PatientController - Empty patient list - communication error ?
+07:25:52.849 4891 INFO  f.m.m.p.c.PatientController - Call deleteById - ip (127.0.0.1) - token (null)
+07:25:52.859 4901 INFO  f.m.m.p.c.PatientController - Call createPatient - ip (127.0.0.1) - token (null)
+07:25:52.868 4910 INFO  f.m.m.p.c.PatientController - Call updatePatient - ip (127.0.0.1) - token (null)
+07:25:52.868 4910 INFO  f.m.m.p.c.PatientController - Entity not found - ip (127.0.0.1) - token (null)
+07:25:52.875 4917 INFO  f.m.m.p.c.PatientController - Call getPatientById - ip (127.0.0.1) - token (null)
+07:25:52.883 4925 INFO  f.m.m.p.c.PatientController - Call updatePatient - ip (127.0.0.1) - token (null)
+07:25:52.912 4954 INFO  f.m.m.patient.ApplicationTests - Starting ApplicationTests using Java 21.0.1 with PID 257692 (started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient)
+07:25:52.913 4955 INFO  f.m.m.patient.ApplicationTests - No active profile set, falling back to 1 default profile: "default"
+07:25:53.107 5149 WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
+java.lang.RuntimeException: Driver com.mysql.cj.jdbc.Driver claims to not accept jdbcUrl, ${DATABASECONNECTION}
+	at com.zaxxer.hikari.util.DriverDataSource.<init>(DriverDataSource.java:110)
+	at com.zaxxer.hikari.pool.PoolBase.initializeDataSource(PoolBase.java:326)
+	at com.zaxxer.hikari.pool.PoolBase.<init>(PoolBase.java:112)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:93)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:428)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:276)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:107)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:223)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:170)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1432)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1503)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:388)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:364)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1231)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:949)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1454)
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:191)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:130)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:163)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:378)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:290)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:279)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:278)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:106)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:105)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+07:25:53.110 5152 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+07:25:53.110 5152 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+07:25:53.205 5247 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+07:25:53.278 5320 INFO  f.m.m.patient.ApplicationTests - Started ApplicationTests in 0.382 seconds (process running for 5.675)
+07:26:06.214 229453 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
+07:26:06.214 229453 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+07:26:18.153 241392 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
+07:26:18.153 241392 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+07:52:37.365 1820604 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwMDM5NTYsImV4cCI6MTcxMTAxODM1Niwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.S7SzbiFBkGGctHbH-feGV-xLOOL4dxZIFzrMrqSEUhM)
+07:52:37.365 1820604 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+07:53:00.999 1844238 INFO  f.m.m.p.c.PatientController - Call createPatient - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwMDM5NTcsImV4cCI6MTcxMTAxODM1Nywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.sBMp1NnwzjJeI0GFClVImp7P7osl7R7R2GSlLfgnlL0)
+07:53:01.000 1844239 INFO  f.m.m.p.services.AdresseService - Call verifyPatient - Patient Service
+07:53:01.012 1844251 INFO  f.m.m.p.services.AdresseService - Call save - Patient Service
+07:53:01.046 1844285 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwMDM5NTcsImV4cCI6MTcxMTAxODM1Nywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.sBMp1NnwzjJeI0GFClVImp7P7osl7R7R2GSlLfgnlL0)
+07:53:01.047 1844286 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+07:53:06.978 1850217 INFO  f.m.m.p.c.PatientController - Call deleteById - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwMDM5NTcsImV4cCI6MTcxMTAxODM1Nywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.sBMp1NnwzjJeI0GFClVImp7P7osl7R7R2GSlLfgnlL0)
+07:53:06.978 1850217 INFO  f.m.m.p.services.AdresseService - Call deleteById - Patient Service
+07:53:07.006 1850245 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwMDM5NTcsImV4cCI6MTcxMTAxODM1Nywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.sBMp1NnwzjJeI0GFClVImp7P7osl7R7R2GSlLfgnlL0)
+07:53:07.007 1850246 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+07:53:17.430 1860669 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
+07:53:17.430 1860669 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+07:53:17.462 1860701 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
+07:53:17.463 1860702 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+07:53:55.775 1899014 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
+07:53:55.775 1899014 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+07:53:55.788 1899027 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
+07:53:55.788 1899027 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+07:53:59.885 1903124 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
+07:53:59.885 1903124 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service

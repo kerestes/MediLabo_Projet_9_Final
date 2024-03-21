@@ -37,3 +37,7 @@ spring:
             - Path=/risques/**
           filters:
             - VerifyTokenFilter
+        - id: front
+          uri: http://localhost:4200/
+          predicates:
+            - Path=/**, /login/**, /gestion/**

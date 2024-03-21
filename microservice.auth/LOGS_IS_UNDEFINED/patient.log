@@ -1,0 +1,7 @@
+07:14:12.179 507  INFO  f.m.microservice.auth.Application - Starting Application using Java 21.0.1 with PID 243424 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth)
+07:14:12.180 508  DEBUG f.m.microservice.auth.Application - Running with Spring Boot v3.2.3, Spring v6.1.4
+07:14:12.180 508  INFO  f.m.microservice.auth.Application - No active profile set, falling back to 1 default profile: "default"
+07:14:13.510 1838 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+07:14:13.511 1839 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+07:14:14.110 2438 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+07:14:14.321 2649 INFO  f.m.microservice.auth.Application - Started Application in 2.379 seconds (process running for 2.753)

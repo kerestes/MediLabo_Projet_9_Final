@@ -11,21 +11,10 @@ volumes:
     driver: local
 
 services:
-  nginx-service:
-    image: nginx:latest
-    ports:
-      - 80:80
-    volumes:
-      - ./nginx-conf/nginx.conf:/etc/nginx/nginx.conf:ro
-    depends_on:
-      - front-service
-
   front-service: 
     build: ./microservice.frontEnd
   #  ports:
   #    - 4000:4000
-    depends_on: 
-      - gateway-spring
 
   gateway-spring:
     build:
@@ -51,12 +40,16 @@ services:
       - SPRING.CLOUD.GATEWAY.ROUTES[3].URI=http://patient-risque:8084/
       - SPRING.CLOUD.GATEWAY.ROUTES[3].PREDICATES[0]=Path=/risques/**
       - SPRING.CLOUD.GATEWAY.ROUTES[3].FILTERS[0]=VerifyTokenFilter
+      - SPRING.CLOUD.GATEWAY.ROUTES[4].ID=front
+      - SPRING.CLOUD.GATEWAY.ROUTES[4].URI=http://front-service:4000/
+      - SPRING.CLOUD.GATEWAY.ROUTES[4].PREDICATES[0]=Path=/**,/gestion/**
     depends_on: 
       - cache
       - patient-spring
       - note-medecin-spring
       - auth-spring
       - patient-risque
+      - front-service
 
   note-medecin-spring:
     build:
