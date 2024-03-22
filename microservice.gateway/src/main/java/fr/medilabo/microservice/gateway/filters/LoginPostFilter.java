@@ -1,9 +1,11 @@
-package fr.medilabo.microservice.gateway.conf;
+package fr.medilabo.microservice.gateway.filters;
 
 import fr.medilabo.microservice.gateway.enums.RoleEnum;
 import fr.medilabo.microservice.gateway.models.User;
 import fr.medilabo.microservice.gateway.services.JwtService;
 import fr.medilabo.microservice.gateway.services.UserService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
@@ -18,7 +20,7 @@ import java.util.Date;
 
 @Configuration
 public class LoginPostFilter implements GlobalFilter {
-
+    private final Logger logger = LoggerFactory.getLogger(LoginPostFilter.class);
     @Autowired
     private JwtService jwtService;
     @Autowired
@@ -30,12 +32,14 @@ public class LoginPostFilter implements GlobalFilter {
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         return chain.filter(exchange).then(Mono.fromRunnable(()->{
             ServerHttpRequest req = exchange.getRequest();
-            if(req.getURI().toString().contains("login") && exchange.getResponse().getStatusCode() != HttpStatus.NOT_FOUND){
+            if(req.getURI().toString().contains("auth/login") && exchange.getResponse().getStatusCode() != HttpStatus.NOT_FOUND){
+                logger.info("Call LoginPostFilter");
                 String token = exchange.getResponse().getHeaders().get("Authorization").get(0).replace("Bearer ", "");
                 User user = new User(token,
                         exchange.getRequest().getRemoteAddress().toString(),
                         new Date());
                 userService.save(user);
+                logger.info("Token: " + token + " - successfully registered");
                 exchange.getResponse().getHeaders().remove("Authorization");
             }
         }));

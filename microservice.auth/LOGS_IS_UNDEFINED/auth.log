@@ -1,345 +1,301 @@
-07:15:36.068 545  INFO  f.m.microservice.auth.Application - Starting Application using Java 21.0.1 with PID 245248 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth)
-07:15:36.069 546  DEBUG f.m.microservice.auth.Application - Running with Spring Boot v3.2.3, Spring v6.1.4
-07:15:36.069 546  INFO  f.m.microservice.auth.Application - No active profile set, falling back to 1 default profile: "default"
-07:15:37.376 1853 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-07:15:37.377 1854 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-07:15:37.978 2455 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-07:15:38.206 2683 INFO  f.m.microservice.auth.Application - Started Application in 2.419 seconds (process running for 2.8)
-07:16:00.086 24563 INFO  f.m.m.a.controllers.AuthController - Call login - ip (127.0.0.1) - token (null)
-07:16:00.086 24563 INFO  f.m.m.auth.services.UserService - Call authenticateUser - User Service
-07:16:00.154 24631 INFO  f.m.m.a.controllers.AuthController - User not found
-07:17:00.305 84782 INFO  f.m.m.a.controllers.AuthController - Call login - ip (127.0.0.1) - token (null)
-07:17:00.305 84782 INFO  f.m.m.auth.services.UserService - Call authenticateUser - User Service
-07:18:50.010 194487 INFO  f.m.m.a.controllers.AuthController - Call login - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwMDE4MjAsImV4cCI6MTcxMTAxNjIyMCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.doY-EmNWuAK6iUVqUC87zafHM_J-8lxVfgMG5dIJNvs)
-07:18:50.010 194487 INFO  f.m.m.auth.services.UserService - Call authenticateUser - User Service
-07:18:50.560 195037 INFO  f.m.m.a.controllers.AuthController - Call tokenUpdate - ip (127.0.0.1) - token (null)
-07:19:41.852 246329 INFO  f.m.m.a.controllers.AuthController - Call login - ip (127.0.0.1) - token (null)
-07:19:41.853 246330 INFO  f.m.m.auth.services.UserService - Call authenticateUser - User Service
-07:19:42.230 246707 INFO  f.m.m.a.controllers.AuthController - Call tokenUpdate - ip (127.0.0.1) - token (null)
-07:19:42.231 246708 INFO  f.m.m.a.controllers.AuthController - Call tokenUpdate - ip (127.0.0.1) - token (null)
-07:21:08.111 471  INFO  f.m.m.auth.ApplicationTests - Starting ApplicationTests using Java 21.0.1 with PID 250267 (started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth)
-07:21:08.112 472  DEBUG f.m.m.auth.ApplicationTests - Running with Spring Boot v3.2.3, Spring v6.1.4
-07:21:08.113 473  INFO  f.m.m.auth.ApplicationTests - No active profile set, falling back to 1 default profile: "default"
-07:21:09.068 1428 WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
-java.lang.RuntimeException: Driver com.mysql.cj.jdbc.Driver claims to not accept jdbcUrl, ${DATABASECONNECTION}
-	at com.zaxxer.hikari.util.DriverDataSource.<init>(DriverDataSource.java:110)
-	at com.zaxxer.hikari.pool.PoolBase.initializeDataSource(PoolBase.java:326)
-	at com.zaxxer.hikari.pool.PoolBase.<init>(PoolBase.java:112)
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:93)
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
-	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:428)
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61)
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:276)
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:107)
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
-	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
-	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:223)
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:170)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1432)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1503)
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:388)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:364)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1231)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:949)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
-	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
-	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
-	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
-	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1454)
-	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553)
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
-	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:191)
-	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:130)
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
-	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:163)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:378)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
-	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
-	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
-	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:290)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:279)
-	at java.base/java.util.Optional.orElseGet(Optional.java:364)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:278)
-	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:106)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:105)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
-	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
-	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-07:21:09.079 1439 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-07:21:09.080 1440 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-07:21:09.768 2128 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-07:21:09.992 2352 INFO  f.m.m.auth.ApplicationTests - Started ApplicationTests in 2.016 seconds (process running for 2.686)
-07:21:10.436 2796 INFO  f.m.m.a.unitaire.AuthControllerTest - Starting AuthControllerTest using Java 21.0.1 with PID 250267 (started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth)
-07:21:10.436 2796 DEBUG f.m.m.a.unitaire.AuthControllerTest - Running with Spring Boot v3.2.3, Spring v6.1.4
-07:21:10.436 2796 INFO  f.m.m.a.unitaire.AuthControllerTest - The following 1 profile is active: "test"
-07:21:11.120 3480 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-07:21:11.120 3480 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-07:21:11.215 3575 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-07:21:11.472 3832 INFO  f.m.m.a.unitaire.AuthControllerTest - Started AuthControllerTest in 1.063 seconds (process running for 4.166)
-07:21:11.564 3924 INFO  f.m.m.a.controllers.AuthController - Call login - ip (127.0.0.1) - token (null)
-07:21:11.605 3965 INFO  f.m.m.a.controllers.AuthController - Call tokenUpdate - ip (127.0.0.1) - token (null)
-07:21:11.615 3975 INFO  f.m.m.a.controllers.AuthController - Call tokenUpdate - ip (127.0.0.1) - token (null)
-07:21:11.624 3984 INFO  f.m.m.a.controllers.AuthController - Call login - ip (127.0.0.1) - token (null)
-07:21:11.624 3984 INFO  f.m.m.a.controllers.AuthController - User not found
-07:21:11.655 4015 INFO  f.m.m.a.integration.UserServiceTest - Starting UserServiceTest using Java 21.0.1 with PID 250267 (started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth)
-07:21:11.655 4015 DEBUG f.m.m.a.integration.UserServiceTest - Running with Spring Boot v3.2.3, Spring v6.1.4
-07:21:11.656 4016 INFO  f.m.m.a.integration.UserServiceTest - The following 1 profile is active: "test"
-07:21:11.844 4204 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-07:21:11.844 4204 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-07:21:11.911 4271 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-07:21:12.064 4424 INFO  f.m.m.a.integration.UserServiceTest - Started UserServiceTest in 0.424 seconds (process running for 4.758)
-07:21:12.069 4429 INFO  f.m.m.auth.services.UserService - Call save - User Service
-07:21:12.118 4478 INFO  f.m.m.auth.services.UserService - Call findOneByEmail - User Service
-07:21:12.205 4565 INFO  f.m.m.auth.services.UserService - Call authenticateUser - User Service
-07:21:12.441 4801 INFO  f.m.m.auth.services.UserService - Call authenticateUser - User Service
-07:21:12.446 4806 INFO  f.m.m.auth.services.UserService - Call findOneByEmail - User Service
-07:21:12.451 4811 INFO  f.m.m.auth.services.UserService - Call findOneByEmail - User Service
-07:23:05.890 461  INFO  f.m.microservice.auth.Application - Starting Application using Java 21.0.1 with PID 253692 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth)
-07:23:05.890 461  DEBUG f.m.microservice.auth.Application - Running with Spring Boot v3.2.3, Spring v6.1.4
-07:23:05.891 462  INFO  f.m.microservice.auth.Application - No active profile set, falling back to 1 default profile: "default"
-07:23:07.166 1737 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-07:23:07.167 1738 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-07:23:07.776 2347 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-07:23:08.005 2576 INFO  f.m.microservice.auth.Application - Started Application in 2.345 seconds (process running for 2.693)
-07:27:04.096 463  INFO  f.m.m.auth.ApplicationTests - Starting ApplicationTests using Java 21.0.1 with PID 260238 (started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth)
-07:27:04.097 464  DEBUG f.m.m.auth.ApplicationTests - Running with Spring Boot v3.2.3, Spring v6.1.4
-07:27:04.097 464  INFO  f.m.m.auth.ApplicationTests - No active profile set, falling back to 1 default profile: "default"
-07:27:05.010 1377 WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
-java.lang.RuntimeException: Driver com.mysql.cj.jdbc.Driver claims to not accept jdbcUrl, ${DATABASECONNECTION}
-	at com.zaxxer.hikari.util.DriverDataSource.<init>(DriverDataSource.java:110)
-	at com.zaxxer.hikari.pool.PoolBase.initializeDataSource(PoolBase.java:326)
-	at com.zaxxer.hikari.pool.PoolBase.<init>(PoolBase.java:112)
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:93)
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
-	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:428)
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61)
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:276)
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:107)
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
-	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
-	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:223)
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:170)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1432)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1503)
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:388)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:364)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1231)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:949)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
-	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
-	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
-	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
-	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1454)
-	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553)
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
-	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:191)
-	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:130)
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
-	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:163)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:378)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
-	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
-	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
-	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:290)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:279)
-	at java.base/java.util.Optional.orElseGet(Optional.java:364)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:278)
-	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:106)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:105)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
-	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
-	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-07:27:05.022 1389 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-07:27:05.023 1390 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-07:27:05.743 2110 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-07:27:05.991 2358 INFO  f.m.m.auth.ApplicationTests - Started ApplicationTests in 2.028 seconds (process running for 2.684)
-07:27:06.403 2770 INFO  f.m.m.a.unitaire.AuthControllerTest - Starting AuthControllerTest using Java 21.0.1 with PID 260238 (started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth)
-07:27:06.403 2770 DEBUG f.m.m.a.unitaire.AuthControllerTest - Running with Spring Boot v3.2.3, Spring v6.1.4
-07:27:06.404 2771 INFO  f.m.m.a.unitaire.AuthControllerTest - The following 1 profile is active: "test"
-07:27:07.089 3456 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-07:27:07.090 3457 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-07:27:07.189 3556 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-07:27:07.438 3805 INFO  f.m.m.a.unitaire.AuthControllerTest - Started AuthControllerTest in 1.059 seconds (process running for 4.131)
-07:27:07.551 3918 INFO  f.m.m.a.controllers.AuthController - Call login - ip (127.0.0.1) - token (null)
-07:27:07.596 3963 INFO  f.m.m.a.controllers.AuthController - Call tokenUpdate - ip (127.0.0.1) - token (null)
-07:27:07.608 3975 INFO  f.m.m.a.controllers.AuthController - Call tokenUpdate - ip (127.0.0.1) - token (null)
-07:27:07.617 3984 INFO  f.m.m.a.controllers.AuthController - Call login - ip (127.0.0.1) - token (null)
-07:27:07.618 3985 INFO  f.m.m.a.controllers.AuthController - User not found
-07:27:07.664 4031 INFO  f.m.m.a.integration.UserServiceTest - Starting UserServiceTest using Java 21.0.1 with PID 260238 (started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth)
-07:27:07.664 4031 DEBUG f.m.m.a.integration.UserServiceTest - Running with Spring Boot v3.2.3, Spring v6.1.4
-07:27:07.664 4031 INFO  f.m.m.a.integration.UserServiceTest - The following 1 profile is active: "test"
-07:27:07.836 4203 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-07:27:07.836 4203 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-07:27:07.908 4275 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-07:27:08.067 4434 INFO  f.m.m.a.integration.UserServiceTest - Started UserServiceTest in 0.421 seconds (process running for 4.76)
-07:27:08.071 4438 INFO  f.m.m.auth.services.UserService - Call save - User Service
-07:27:08.119 4486 INFO  f.m.m.auth.services.UserService - Call findOneByEmail - User Service
-07:27:08.209 4576 INFO  f.m.m.auth.services.UserService - Call authenticateUser - User Service
-07:27:08.440 4807 INFO  f.m.m.auth.services.UserService - Call authenticateUser - User Service
-07:27:08.445 4812 INFO  f.m.m.auth.services.UserService - Call findOneByEmail - User Service
-07:27:08.450 4817 INFO  f.m.m.auth.services.UserService - Call findOneByEmail - User Service
-07:52:36.663 1771234 INFO  f.m.m.a.controllers.AuthController - Call login - ip (127.0.0.1) - token (null)
-07:52:36.664 1771235 INFO  f.m.m.auth.services.UserService - Call authenticateUser - User Service
-07:52:37.344 1771915 INFO  f.m.m.a.controllers.AuthController - Call tokenUpdate - ip (127.0.0.1) - token (null)
-07:53:17.037 1811608 INFO  f.m.m.a.controllers.AuthController - Call login - ip (127.0.0.1) - token (null)
-07:53:17.037 1811608 INFO  f.m.m.auth.services.UserService - Call authenticateUser - User Service
-07:53:17.397 1811968 INFO  f.m.m.a.controllers.AuthController - Call tokenUpdate - ip (127.0.0.1) - token (null)
-07:53:17.397 1811968 INFO  f.m.m.a.controllers.AuthController - Call tokenUpdate - ip (127.0.0.1) - token (null)
+04:24:24.973 662  INFO  f.m.microservice.auth.Application - Starting Application using Java 21.0.1 with PID 11085 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth)
+04:24:24.975 664  DEBUG f.m.microservice.auth.Application - Running with Spring Boot v3.2.3, Spring v6.1.4
+04:24:24.975 664  INFO  f.m.microservice.auth.Application - No active profile set, falling back to 1 default profile: "default"
+04:24:26.570 2259 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+04:24:26.571 2260 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+04:24:27.238 2927 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04:24:27.473 3162 INFO  f.m.microservice.auth.Application - Started Application in 2.796 seconds (process running for 3.293)
+04:30:25.110 483  INFO  f.m.microservice.auth.Application - Starting Application using Java 21.0.1 with PID 16748 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth)
+04:30:25.110 483  DEBUG f.m.microservice.auth.Application - Running with Spring Boot v3.2.3, Spring v6.1.4
+04:30:25.111 484  INFO  f.m.microservice.auth.Application - No active profile set, falling back to 1 default profile: "default"
+04:30:26.447 1820 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+04:30:26.449 1822 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+04:30:27.126 2499 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04:30:27.354 2727 INFO  f.m.microservice.auth.Application - Started Application in 2.463 seconds (process running for 2.836)
+04:34:07.985 223358 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:52962) - Name (Note)
+04:34:07.985 223358 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service
+04:34:08.054 223427 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service
+04:34:33.170 808  INFO  f.m.microservice.auth.Application - Starting Application using Java 21.0.1 with PID 20639 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth)
+04:34:33.171 809  DEBUG f.m.microservice.auth.Application - Running with Spring Boot v3.2.3, Spring v6.1.4
+04:34:33.172 810  INFO  f.m.microservice.auth.Application - No active profile set, falling back to 1 default profile: "default"
+04:34:34.552 2190 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+04:34:34.553 2191 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+04:34:35.215 2853 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04:34:35.441 3079 INFO  f.m.microservice.auth.Application - Started Application in 2.583 seconds (process running for 3.228)
+04:34:41.957 9595 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:51600) - Name (Patient)
+04:34:41.957 9595 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service
+04:34:42.025 9663 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service
+04:36:06.480 495  INFO  f.m.microservice.auth.Application - Starting Application using Java 21.0.1 with PID 22678 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth)
+04:36:06.481 496  DEBUG f.m.microservice.auth.Application - Running with Spring Boot v3.2.3, Spring v6.1.4
+04:36:06.482 497  INFO  f.m.microservice.auth.Application - No active profile set, falling back to 1 default profile: "default"
+04:36:07.839 1854 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+04:36:07.841 1856 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+04:36:08.563 2578 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04:36:08.815 2830 INFO  f.m.microservice.auth.Application - Started Application in 2.577 seconds (process running for 2.935)
+04:36:13.530 7545 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:52618) - Name (Patient)
+04:36:13.530 7545 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Patient
+04:36:13.594 7609 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service
+04:36:53.903 496  INFO  f.m.microservice.auth.Application - Starting Application using Java 21.0.1 with PID 23759 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth)
+04:36:53.904 497  DEBUG f.m.microservice.auth.Application - Running with Spring Boot v3.2.3, Spring v6.1.4
+04:36:53.905 498  INFO  f.m.microservice.auth.Application - No active profile set, falling back to 1 default profile: "default"
+04:36:55.223 1816 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+04:36:55.224 1817 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+04:36:55.926 2519 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04:36:56.174 2767 INFO  f.m.microservice.auth.Application - Started Application in 2.525 seconds (process running for 2.883)
+04:37:00.719 7312 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:36128) - Name (Patient)
+04:37:00.720 7313 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Patient
+04:37:00.789 7382 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Patient
+04:38:32.131 98724 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:49078) - Name (Patient)
+04:38:32.131 98724 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Patient
+04:38:32.134 98727 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Patient
+04:39:33.332 159925 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:51674) - Name (Patient)
+04:39:33.332 159925 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Patient
+04:39:33.334 159927 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Patient
+04:43:17.106 383699 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:46760) - Name (Patient)
+04:43:17.106 383699 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Patient
+04:43:17.109 383702 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Patient
+04:44:29.429 456022 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:33878) - Name (Note)
+04:44:29.430 456023 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Note
+04:44:29.432 456025 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Note
+04:46:02.571 549164 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:45034) - Name (Note)
+04:46:02.571 549164 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Note
+04:46:02.573 549166 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Note
+04:47:32.375 638968 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:43522) - Name (Note)
+04:47:32.376 638969 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Note
+04:47:32.378 638971 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Note
+04:50:34.017 820610 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:40392) - Name (Risque)
+04:50:34.017 820610 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Risque
+04:50:34.020 820613 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Risque
+04:54:00.043 1026636 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:36552) - Name (Gateway)
+04:54:00.044 1026637 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+04:54:00.046 1026639 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Gateway
+04:55:04.167 1090760 INFO  f.m.m.a.c.AuthUserController - Call login - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwNTEwNTksImV4cCI6MTcxMTA2NTQ1OSwic3ViIjoib3JnYW5pc2F0ZXVyQG1haWwuY29tIiwiUm9sZSI6Ik9SR0FOSVNBVEVVUiJ9.ua0f79AU0qcTsAnolUih5zoh6Coqb-yhgT-DdiNPhLU)
+04:55:04.167 1090760 INFO  f.m.m.auth.services.UserService - Call authenticateUser - User Service
+04:55:04.772 1091365 INFO  f.m.m.a.c.AuthUserController - Call tokenUpdate - ip (127.0.0.1) - token (null)
+04:55:04.826 1091419 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:38936) - Name to find (Gateway)
+04:55:04.826 1091419 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+05:00:29.723 478  INFO  f.m.microservice.auth.Application - Starting Application using Java 21.0.1 with PID 45964 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth)
+05:00:29.724 479  DEBUG f.m.microservice.auth.Application - Running with Spring Boot v3.2.3, Spring v6.1.4
+05:00:29.724 479  INFO  f.m.microservice.auth.Application - No active profile set, falling back to 1 default profile: "default"
+05:00:31.100 1855 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+05:00:31.101 1856 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+05:00:31.802 2557 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+05:00:32.032 2787 INFO  f.m.microservice.auth.Application - Started Application in 2.54 seconds (process running for 2.891)
+09:07:44.146 461  INFO  f.m.microservice.auth.Application - Starting Application using Java 21.0.1 with PID 140373 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth)
+09:07:44.147 462  DEBUG f.m.microservice.auth.Application - Running with Spring Boot v3.2.3, Spring v6.1.4
+09:07:44.148 463  INFO  f.m.microservice.auth.Application - No active profile set, falling back to 1 default profile: "default"
+09:07:45.479 1794 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+09:07:45.480 1795 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+09:07:46.139 2454 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:07:46.376 2691 INFO  f.m.microservice.auth.Application - Started Application in 2.454 seconds (process running for 2.804)
+09:07:54.511 10826 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:36910) - Name (Gateway)
+09:07:54.512 10827 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:07:54.582 10897 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Gateway
+09:08:08.017 24332 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:55004) - Name (Risque)
+09:08:08.017 24332 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Risque
+09:08:08.019 24334 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Risque
+09:08:13.981 30296 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:55012) - Name (Note)
+09:08:13.981 30296 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Note
+09:08:13.983 30298 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Note
+09:08:18.984 35299 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:51540) - Name (Patient)
+09:08:18.984 35299 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Patient
+09:08:18.986 35301 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Patient
+09:08:43.376 59691 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:34748) - Name (Gateway)
+09:08:43.376 59691 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:08:43.379 59694 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Gateway
+09:09:10.443 86758 INFO  f.m.m.a.c.AuthUserController - Call login - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwODIyNjEsImV4cCI6MTcxMTA5NjY2MSwic3ViIjoib3JnYW5pc2F0ZXVyQG1haWwuY29tIiwiUm9sZSI6Ik9SR0FOSVNBVEVVUiJ9.wLqE13E9z2UxlmgV8PU3mV8ytoCr7aNRv-F-R28qt_c)
+09:09:10.443 86758 INFO  f.m.m.auth.services.UserService - Call authenticateUser - User Service
+09:09:10.990 87305 INFO  f.m.m.a.c.AuthUserController - Call tokenUpdate - ip (127.0.0.1) - token (null)
+09:09:11.044 87359 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:51540) - Name to find (Gateway)
+09:09:11.044 87359 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:09:12.417 88732 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:51540) - Name to find (Gateway)
+09:09:12.418 88733 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:09:30.808 460  INFO  f.m.microservice.auth.Application - Starting Application using Java 21.0.1 with PID 142891 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth)
+09:09:30.809 461  DEBUG f.m.microservice.auth.Application - Running with Spring Boot v3.2.3, Spring v6.1.4
+09:09:30.810 462  INFO  f.m.microservice.auth.Application - No active profile set, falling back to 1 default profile: "default"
+09:09:32.113 1765 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+09:09:32.115 1767 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+09:09:32.805 2457 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:09:33.026 2678 INFO  f.m.microservice.auth.Application - Started Application in 2.444 seconds (process running for 2.793)
+09:09:36.259 5911 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:36132) - Name to find (Gateway)
+09:09:36.259 5911 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:09:37.109 6761 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:36132) - Name to find (Gateway)
+09:09:37.109 6761 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:10:55.225 453  INFO  f.m.microservice.auth.Application - Starting Application using Java 21.0.1 with PID 144158 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth)
+09:10:55.227 455  DEBUG f.m.microservice.auth.Application - Running with Spring Boot v3.2.3, Spring v6.1.4
+09:10:55.227 455  INFO  f.m.microservice.auth.Application - No active profile set, falling back to 1 default profile: "default"
+09:10:56.591 1819 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+09:10:56.593 1821 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+09:10:57.269 2497 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:10:57.491 2719 INFO  f.m.microservice.auth.Application - Started Application in 2.493 seconds (process running for 2.83)
+09:11:00.340 5568 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:58238) - Name to find (Gateway)
+09:11:00.340 5568 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:11:15.059 20287 INFO  f.m.m.a.c.AuthUserController - Call login - ip (127.0.0.1) - token (null)
+09:11:15.059 20287 INFO  f.m.m.auth.services.UserService - Call authenticateUser - User Service
+09:11:15.425 20653 INFO  f.m.m.a.c.AuthUserController - Call tokenUpdate - ip (127.0.0.1) - token (null)
+09:11:15.425 20653 INFO  f.m.m.a.c.AuthUserController - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTUwNzUsImV4cCI6MTcxMTEwOTQ3NSwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.T7iHb52zXAEKDtGqGl0bGqEKva1SpHeaAmMPbQwu2m8
+09:11:15.453 20681 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:58238) - Name to find (Gateway)
+09:11:15.453 20681 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:12:44.313 109541 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:40876) - Name (Gateway)
+09:12:44.313 109541 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:12:44.316 109544 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Gateway
+09:12:46.387 111615 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:40882) - Name to find (Gateway)
+09:12:46.387 111615 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:12:59.918 125146 INFO  f.m.m.a.c.AuthUserController - Call login - ip (127.0.0.1) - token (null)
+09:12:59.919 125147 INFO  f.m.m.auth.services.UserService - Call authenticateUser - User Service
+09:13:00.285 125513 INFO  f.m.m.a.c.AuthUserController - Call tokenUpdate - ip (127.0.0.1) - token (null)
+09:13:00.285 125513 INFO  f.m.m.a.c.AuthUserController - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTUxODAsImV4cCI6MTcxMTEwOTU4MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Xm5CqjkT49hNXbZmIgPX2SGB-Fdj0ZtOMMJt0Jl_qEg
+09:13:00.305 125533 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:40882) - Name to find (Gateway)
+09:13:00.305 125533 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:13:02.483 127711 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:40882) - Name to find (Gateway)
+09:13:02.483 127711 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:13:03.677 128905 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:40882) - Name to find (Gateway)
+09:13:03.677 128905 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:15:59.740 304968 INFO  f.m.m.a.c.AuthUserController - Call login - ip (127.0.0.1) - token (null)
+09:15:59.741 304969 INFO  f.m.m.auth.services.UserService - Call authenticateUser - User Service
+09:16:00.312 305540 INFO  f.m.m.a.c.AuthUserController - Call tokenUpdate - ip (127.0.0.1) - token (null)
+09:16:00.313 305541 INFO  f.m.m.a.c.AuthUserController - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTUzNTksImV4cCI6MTcxMTEwOTc1OSwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.6lMmsHKVbr42isogh06DPWr_0YvULNm1UkxNUROp-ig
+09:16:00.338 305566 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:37768) - Name to find (Gateway)
+09:16:00.338 305566 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:16:31.129 336357 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:51478) - Name (Patient)
+09:16:31.129 336357 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Patient
+09:16:31.131 336359 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Patient
+09:16:43.744 348972 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:59032) - Name (Gateway)
+09:16:43.744 348972 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:16:43.746 348974 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Gateway
+09:16:47.060 522  INFO  f.m.microservice.auth.Application - Starting Application using Java 21.0.1 with PID 148976 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth)
+09:16:47.061 523  DEBUG f.m.microservice.auth.Application - Running with Spring Boot v3.2.3, Spring v6.1.4
+09:16:47.062 524  INFO  f.m.microservice.auth.Application - No active profile set, falling back to 1 default profile: "default"
+09:16:48.455 1917 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+09:16:48.456 1918 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+09:16:49.128 2590 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:16:49.352 2814 INFO  f.m.microservice.auth.Application - Started Application in 2.539 seconds (process running for 2.923)
+09:17:15.967 29429 INFO  f.m.m.a.c.AuthUserController - Call login - ip (127.0.0.1) - token (null)
+09:17:15.967 29429 INFO  f.m.m.auth.services.UserService - Call authenticateUser - User Service
+09:17:16.606 30068 INFO  f.m.m.a.c.AuthUserController - Call tokenUpdate - ip (127.0.0.1) - token (null)
+09:17:16.606 30068 INFO  f.m.m.a.c.AuthUserController - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU0MzYsImV4cCI6MTcxMTEwOTgzNiwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.dS8Kx_g7337q0MvYPXkhwhJoPEwivzdemWGRN71Yj0Q
+09:17:16.663 30125 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:46108) - Name to find (Gateway)
+09:17:16.663 30125 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:18:18.602 487  INFO  f.m.microservice.auth.Application - Starting Application using Java 21.0.1 with PID 150371 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth)
+09:18:18.603 488  DEBUG f.m.microservice.auth.Application - Running with Spring Boot v3.2.3, Spring v6.1.4
+09:18:18.603 488  INFO  f.m.microservice.auth.Application - No active profile set, falling back to 1 default profile: "default"
+09:18:19.979 1864 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+09:18:19.981 1866 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+09:18:20.663 2548 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:18:20.893 2778 INFO  f.m.microservice.auth.Application - Started Application in 2.511 seconds (process running for 2.886)
+09:18:35.570 17455 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:46646) - Name (Patient)
+09:18:35.570 17455 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Patient
+09:18:35.633 17518 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Patient
+09:18:44.262 26147 INFO  f.m.m.a.c.AuthUserController - Call login - ip (127.0.0.1) - token (null)
+09:18:44.262 26147 INFO  f.m.m.auth.services.UserService - Call authenticateUser - User Service
+09:18:44.660 26545 INFO  f.m.m.a.c.AuthUserController - Call tokenUpdate - ip (127.0.0.1) - token (null)
+09:18:44.661 26546 INFO  f.m.m.a.c.AuthUserController - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU1MjQsImV4cCI6MTcxMTEwOTkyNCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Jt02UFwP3N3FqTC51MLWIPU62e5pa0sFJNI12GM52DE
+09:18:44.717 26602 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:46646) - Name to find (Gateway)
+09:18:44.717 26602 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:19:14.085 55970 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:46646) - Name to find (Gateway)
+09:19:14.086 55971 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:24:27.460 369345 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:39568) - Name (Gateway)
+09:24:27.460 369345 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:24:27.462 369347 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Gateway
+09:24:28.758 370643 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:39580) - Name to find (Gateway)
+09:24:28.758 370643 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:24:36.501 378386 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:39580) - Name to find (Gateway)
+09:24:36.502 378387 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:24:37.979 379864 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:39580) - Name to find (Gateway)
+09:24:37.979 379864 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:25:42.878 444763 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:55228) - Name to find (Gateway)
+09:25:42.878 444763 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:26:00.120 462005 INFO  f.m.m.a.c.AuthUserController - Call login - ip (127.0.0.1) - token (null)
+09:26:00.121 462006 INFO  f.m.m.auth.services.UserService - Call authenticateUser - User Service
+09:26:00.468 462353 INFO  f.m.m.a.c.AuthUserController - Call tokenUpdate - ip (127.0.0.1) - token (null)
+09:26:00.468 462353 INFO  f.m.m.a.c.AuthUserController - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU5NjAsImV4cCI6MTcxMTExMDM2MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.1NiX2PJcejCIyZNmDeO4EPfp4Gv2-Q32qG23EYtVQ7U
+09:26:00.488 462373 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:55228) - Name to find (Gateway)
+09:26:00.489 462374 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:26:57.981 519866 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:55228) - Name to find (Gateway)
+09:26:57.981 519866 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:27:09.359 531244 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:55228) - Name to find (Gateway)
+09:27:09.359 531244 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:28:19.367 601252 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:47426) - Name to find (Gateway)
+09:28:19.367 601252 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:32:17.749 839634 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:45200) - Name (Patient)
+09:32:17.750 839635 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Patient
+09:32:17.752 839637 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Patient
+09:32:26.625 848510 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:45200) - Name to find (Gateway)
+09:32:26.625 848510 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:32:29.030 850915 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:45200) - Name to find (Gateway)
+09:32:29.031 850916 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:33:39.832 921717 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:45972) - Name to find (Gateway)
+09:33:39.832 921717 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:34:53.695 995580 INFO  f.m.m.a.c.AuthUserController - Call login - ip (127.0.0.1) - token (null)
+09:34:53.695 995580 INFO  f.m.m.auth.services.UserService - Call authenticateUser - User Service
+09:34:54.253 996138 INFO  f.m.m.a.c.AuthUserController - Call tokenUpdate - ip (127.0.0.1) - token (null)
+09:34:54.254 996139 INFO  f.m.m.a.c.AuthUserController - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY0OTMsImV4cCI6MTcxMTExMDg5Mywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.ZAPQs-4xKo01LRn2BV10AXKO36zirpCDBuEetsAujbE
+09:34:54.282 996167 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:56358) - Name to find (Gateway)
+09:34:54.282 996167 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:35:03.864 1005749 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:42836) - Name (Patient)
+09:35:03.864 1005749 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Patient
+09:35:03.867 1005752 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Patient
+09:35:07.188 1009073 INFO  f.m.m.a.c.AuthUserController - Call tokenUpdate - ip (127.0.0.1) - token (null)
+09:35:07.188 1009073 INFO  f.m.m.a.c.AuthUserController - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY0OTMsImV4cCI6MTcxMTExMDg5Mywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.ZAPQs-4xKo01LRn2BV10AXKO36zirpCDBuEetsAujbE
+09:35:07.242 1009127 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:42836) - Name to find (Gateway)
+09:35:07.243 1009128 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:36:04.499 1066384 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:42836) - Name to find (Gateway)
+09:36:04.499 1066384 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:36:18.518 1080403 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:42836) - Name to find (Gateway)
+09:36:18.518 1080403 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:36:25.956 1087841 INFO  f.m.m.a.c.AuthUserController - Call login - ip (127.0.0.1) - token (null)
+09:36:25.957 1087842 INFO  f.m.m.auth.services.UserService - Call authenticateUser - User Service
+09:36:31.541 1093426 INFO  f.m.m.a.c.AuthUserController - Call tokenUpdate - ip (127.0.0.1) - token (null)
+09:36:31.541 1093426 INFO  f.m.m.a.c.AuthUserController - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY1ODYsImV4cCI6MTcxMTExMDk4Niwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Rc9QgYcyVcNfzU4_SRE17YAWrPxS_fwjOIQTj5bmJls
+09:36:31.557 1093442 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:42836) - Name to find (Gateway)
+09:36:31.557 1093442 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:41:51.974 1413859 INFO  f.m.m.a.c.AuthUserController - Call tokenUpdate - ip (127.0.0.1) - token (null)
+09:41:51.974 1413859 INFO  f.m.m.a.c.AuthUserController - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY1ODYsImV4cCI6MTcxMTExMDk4Niwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Rc9QgYcyVcNfzU4_SRE17YAWrPxS_fwjOIQTj5bmJls
+09:41:52.006 1413891 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:59820) - Name to find (Gateway)
+09:41:52.006 1413891 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:41:55.507 1417392 INFO  f.m.m.a.c.AuthUserController - Call tokenUpdate - ip (127.0.0.1) - token (null)
+09:41:55.507 1417392 INFO  f.m.m.a.c.AuthUserController - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY1ODYsImV4cCI6MTcxMTExMDk4Niwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Rc9QgYcyVcNfzU4_SRE17YAWrPxS_fwjOIQTj5bmJls
+09:41:55.532 1417417 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:59820) - Name to find (Gateway)
+09:41:55.532 1417417 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:43:41.151 1523036 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:44800) - Name (Gateway)
+09:43:41.151 1523036 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:43:41.154 1523039 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Gateway
+09:43:43.328 1525213 INFO  f.m.m.a.c.AuthUserController - Call tokenUpdate - ip (127.0.0.1) - token (null)
+09:43:43.328 1525213 INFO  f.m.m.a.c.AuthUserController - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY1ODYsImV4cCI6MTcxMTExMDk4Niwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Rc9QgYcyVcNfzU4_SRE17YAWrPxS_fwjOIQTj5bmJls
+09:43:43.341 1525226 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:44816) - Name to find (Gateway)
+09:43:43.341 1525226 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:43:51.144 1533029 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:44816) - Name to find (Gateway)
+09:43:51.144 1533029 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:46:18.124 1680009 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:59270) - Name (Gateway)
+09:46:18.124 1680009 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:46:18.127 1680012 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Gateway
+09:46:21.229 1683114 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:59278) - Name to find (Gateway)
+09:46:21.229 1683114 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:46:23.530 1685415 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:59278) - Name to find (Gateway)
+09:46:23.530 1685415 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:48:03.489 1785374 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:42224) - Name (Gateway)
+09:48:03.490 1785375 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:48:03.492 1785377 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Gateway
+09:48:10.230 1792115 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:57334) - Name to find (Gateway)
+09:48:10.230 1792115 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:48:29.117 1811002 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:37164) - Name (Patient)
+09:48:29.117 1811002 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Patient
+09:48:29.119 1811004 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Patient
+09:49:14.199 1856084 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:37164) - Name to find (Gateway)
+09:49:14.199 1856084 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:49:26.882 1868767 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:37164) - Name to find (Gateway)
+09:49:26.882 1868767 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:50:18.391 1920276 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:37164) - Name to find (Gateway)
+09:50:18.391 1920276 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:52:04.253 2026138 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:58030) - Name (Patient)
+09:52:04.254 2026139 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Patient
+09:52:04.256 2026141 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Patient
+09:52:08.933 2030818 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:58030) - Name to find (Gateway)
+09:52:08.933 2030818 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:52:56.511 2078396 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:58030) - Name to find (Gateway)
+09:52:56.512 2078397 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+09:54:33.477 2175362 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:44818) - Name (Patient)
+09:54:33.478 2175363 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Patient
+09:54:33.480 2175365 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Patient
+09:54:38.704 2180589 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:44818) - Name to find (Gateway)
+09:54:38.706 2180591 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway

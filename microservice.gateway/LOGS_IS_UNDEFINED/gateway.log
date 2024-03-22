@@ -1,0 +1,319 @@
+04:53:58.951 534  INFO  f.m.m.gateway.Application - Starting Application using Java 21.0.1 with PID 39972 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.gateway/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.gateway)
+04:53:58.953 536  INFO  f.m.m.gateway.Application - No active profile set, falling back to 1 default profile: "default"
+04:53:59.740 1323 INFO  f.m.m.g.c.BackendServiceContext - Backend Service authentication initialization
+04:53:59.974 1557 INFO  f.m.m.g.s.BackendServiceService - Backend Service Gateway initialization - with UUID: 9a829541-abc4-4bba-b0cf-955dc557f9ea
+04:54:00.066 1649 INFO  f.m.m.g.s.BackendServiceService - Backend Service successfully initialized
+04:54:00.538 2121 INFO  f.m.m.gateway.Application - Started Application in 1.874 seconds (process running for 2.242)
+04:55:04.155 65738 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+04:55:04.156 65739 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: 9a829541-abc4-4bba-b0cf-955dc557f9ea
+04:55:04.785 66368 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+04:55:04.785 66368 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: 9a829541-abc4-4bba-b0cf-955dc557f9ea
+09:07:53.266 555  INFO  f.m.m.gateway.Application - Starting Application using Java 21.0.1 with PID 140566 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.gateway/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.gateway)
+09:07:53.267 556  INFO  f.m.m.gateway.Application - No active profile set, falling back to 1 default profile: "default"
+09:07:54.122 1411 INFO  f.m.m.g.c.BackendServiceContext - Backend Service authentication initialization
+09:07:54.364 1653 INFO  f.m.m.g.s.BackendServiceService - Backend Service Gateway initialization - with UUID: 6889b140-28dd-405f-925e-68af616c4aae
+09:07:54.648 1937 INFO  f.m.m.g.s.BackendServiceService - Backend Service successfully initialized
+09:07:55.112 2401 INFO  f.m.m.g.filters.VerifyTokenFilter - Call VerifyTokenFilter
+09:07:55.113 2402 INFO  f.m.m.g.filters.VerifyTokenFilter - Call VerifyTokenFilter
+09:07:55.114 2403 INFO  f.m.m.g.filters.VerifyTokenFilter - Call VerifyTokenFilter
+09:07:55.122 2411 INFO  f.m.m.gateway.Application - Started Application in 2.161 seconds (process running for 2.518)
+09:08:01.494 8783 ERROR o.s.b.a.w.r.e.AbstractErrorWebExceptionHandler - [b69ee314-1]  500 Server Error for HTTP GET "/"
+io.netty.channel.AbstractChannel$AnnotatedConnectException: finishConnect(..) failed: Connexion refusée: localhost/[0:0:0:0:0:0:0:1]:4200
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.web.cors.reactive.CorsWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP GET "/" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+Caused by: java.net.ConnectException: finishConnect(..) failed: Connexion refusée
+	at io.netty.channel.unix.Errors.newConnectException0(Errors.java:166)
+	at io.netty.channel.unix.Errors.handleConnectErrno(Errors.java:131)
+	at io.netty.channel.unix.Socket.finishConnect(Socket.java:359)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.doFinishConnect(AbstractEpollChannel.java:711)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.finishConnect(AbstractEpollChannel.java:688)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.epollOutReady(AbstractEpollChannel.java:567)
+	at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:499)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:407)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+09:08:42.232 588  INFO  f.m.m.gateway.Application - Starting Application using Java 21.0.1 with PID 141741 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.gateway/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.gateway)
+09:08:42.233 589  INFO  f.m.m.gateway.Application - No active profile set, falling back to 1 default profile: "default"
+09:08:43.046 1402 INFO  f.m.m.g.c.BackendServiceContext - Backend Service authentication initialization
+09:08:43.305 1661 INFO  f.m.m.g.s.BackendServiceService - Backend Service Gateway initialization - with UUID: b05fd1ab-9be2-4620-aa0b-d66d467d7949
+09:08:43.399 1755 INFO  f.m.m.g.s.BackendServiceService - Backend Service successfully initialized
+09:08:43.904 2260 INFO  f.m.m.g.filters.VerifyTokenFilter - Call VerifyTokenFilter
+09:08:43.906 2262 INFO  f.m.m.g.filters.VerifyTokenFilter - Call VerifyTokenFilter
+09:08:43.907 2263 INFO  f.m.m.g.filters.VerifyTokenFilter - Call VerifyTokenFilter
+09:08:43.916 2272 INFO  f.m.m.gateway.Application - Started Application in 2.013 seconds (process running for 2.394)
+09:09:10.431 28787 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:09:10.431 28787 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: b05fd1ab-9be2-4620-aa0b-d66d467d7949
+09:09:10.671 29027 INFO  f.m.m.g.filters.LoginPostFilter - Call LoginPostFilter
+09:09:10.815 29171 INFO  f.m.m.g.filters.LoginPostFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTQ5NTAsImV4cCI6MTcxMTEwOTM1MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.YraphcpVSewobMJ88K8MS2WsaGcrFF5iuuJcLkVzuz4 - successfully registered
+09:09:10.955 29311 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTQ5NTAsImV4cCI6MTcxMTEwOTM1MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.YraphcpVSewobMJ88K8MS2WsaGcrFF5iuuJcLkVzuz4
+09:09:11.003 29359 INFO  f.m.m.g.filters.VerifyTokenFilter - Token expired - call Auth update token - New Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTQ5NTEsImV4cCI6MTcxMTEwOTM1MSwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.n8rPKUMKZAN6mRLxgdHaaMvMmJ_rjN-KvbBF1ZM97oE
+09:09:11.004 29360 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:09:11.004 29360 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: b05fd1ab-9be2-4620-aa0b-d66d467d7949
+09:09:12.400 30756 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTQ5NTEsImV4cCI6MTcxMTEwOTM1MSwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.n8rPKUMKZAN6mRLxgdHaaMvMmJ_rjN-KvbBF1ZM97oE
+09:09:12.401 30757 INFO  f.m.m.g.filters.VerifyTokenFilter - Token Valid
+09:09:12.401 30757 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:09:12.402 30758 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: b05fd1ab-9be2-4620-aa0b-d66d467d7949
+09:09:36.187 54543 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTQ5NTEsImV4cCI6MTcxMTEwOTM1MSwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.n8rPKUMKZAN6mRLxgdHaaMvMmJ_rjN-KvbBF1ZM97oE
+09:09:36.189 54545 INFO  f.m.m.g.filters.VerifyTokenFilter - Token Valid
+09:09:36.189 54545 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:09:36.190 54546 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: b05fd1ab-9be2-4620-aa0b-d66d467d7949
+09:09:37.090 55446 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTQ5NTEsImV4cCI6MTcxMTEwOTM1MSwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.n8rPKUMKZAN6mRLxgdHaaMvMmJ_rjN-KvbBF1ZM97oE
+09:09:37.092 55448 INFO  f.m.m.g.filters.VerifyTokenFilter - Token Valid
+09:09:37.092 55448 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:09:37.092 55448 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: b05fd1ab-9be2-4620-aa0b-d66d467d7949
+09:11:00.271 138627 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTQ5NTEsImV4cCI6MTcxMTEwOTM1MSwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.n8rPKUMKZAN6mRLxgdHaaMvMmJ_rjN-KvbBF1ZM97oE
+09:11:00.273 138629 INFO  f.m.m.g.filters.VerifyTokenFilter - Token Valid
+09:11:00.273 138629 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:11:00.273 138629 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: b05fd1ab-9be2-4620-aa0b-d66d467d7949
+09:11:15.027 153383 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:11:15.028 153384 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: b05fd1ab-9be2-4620-aa0b-d66d467d7949
+09:11:15.289 153645 INFO  f.m.m.g.filters.LoginPostFilter - Call LoginPostFilter
+09:11:15.291 153647 INFO  f.m.m.g.filters.LoginPostFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTUwNzUsImV4cCI6MTcxMTEwOTQ3NSwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.T7iHb52zXAEKDtGqGl0bGqEKva1SpHeaAmMPbQwu2m8 - successfully registered
+09:11:15.418 153774 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTUwNzUsImV4cCI6MTcxMTEwOTQ3NSwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.T7iHb52zXAEKDtGqGl0bGqEKva1SpHeaAmMPbQwu2m8
+09:11:15.439 153795 INFO  f.m.m.g.filters.VerifyTokenFilter - Token expired - call Auth update token - New Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTUwNzUsImV4cCI6MTcxMTEwOTQ3NSwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.T7iHb52zXAEKDtGqGl0bGqEKva1SpHeaAmMPbQwu2m8
+09:11:15.439 153795 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:11:15.439 153795 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: b05fd1ab-9be2-4620-aa0b-d66d467d7949
+09:12:43.026 578  INFO  f.m.m.gateway.Application - Starting Application using Java 21.0.1 with PID 145663 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.gateway/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.gateway)
+09:12:43.027 579  INFO  f.m.m.gateway.Application - No active profile set, falling back to 1 default profile: "default"
+09:12:43.919 1471 INFO  f.m.m.g.c.BackendServiceContext - Backend Service authentication initialization
+09:12:44.232 1784 INFO  f.m.m.g.s.BackendServiceService - Backend Service Gateway initialization - with UUID: ed33f82a-8ab5-4ba8-847c-3ebfac8172b2
+09:12:44.367 1919 INFO  f.m.m.g.s.BackendServiceService - Backend Service successfully initialized
+09:12:44.852 2404 INFO  f.m.m.g.filters.VerifyTokenFilter - Call VerifyTokenFilter
+09:12:44.853 2405 INFO  f.m.m.g.filters.VerifyTokenFilter - Call VerifyTokenFilter
+09:12:44.855 2407 INFO  f.m.m.g.filters.VerifyTokenFilter - Call VerifyTokenFilter
+09:12:44.863 2415 INFO  f.m.m.gateway.Application - Started Application in 2.145 seconds (process running for 2.544)
+09:12:46.124 3676 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTUwNzUsImV4cCI6MTcxMTEwOTQ3NSwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.T7iHb52zXAEKDtGqGl0bGqEKva1SpHeaAmMPbQwu2m8
+09:12:46.377 3929 INFO  f.m.m.g.filters.VerifyTokenFilter - Token Valid
+09:12:46.377 3929 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:12:46.378 3930 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: ed33f82a-8ab5-4ba8-847c-3ebfac8172b2
+09:12:59.914 17466 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:12:59.915 17467 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: ed33f82a-8ab5-4ba8-847c-3ebfac8172b2
+09:13:00.135 17687 INFO  f.m.m.g.filters.LoginPostFilter - Call LoginPostFilter
+09:13:00.148 17700 INFO  f.m.m.g.filters.LoginPostFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTUxODAsImV4cCI6MTcxMTEwOTU4MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Xm5CqjkT49hNXbZmIgPX2SGB-Fdj0ZtOMMJt0Jl_qEg - successfully registered
+09:13:00.279 17831 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTUxODAsImV4cCI6MTcxMTEwOTU4MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Xm5CqjkT49hNXbZmIgPX2SGB-Fdj0ZtOMMJt0Jl_qEg
+09:13:00.289 17841 INFO  f.m.m.g.filters.VerifyTokenFilter - Token expired - call Auth update token - New Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTUxODAsImV4cCI6MTcxMTEwOTU4MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Xm5CqjkT49hNXbZmIgPX2SGB-Fdj0ZtOMMJt0Jl_qEg
+09:13:00.290 17842 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:13:00.290 17842 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: ed33f82a-8ab5-4ba8-847c-3ebfac8172b2
+09:13:02.465 20017 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTUxODAsImV4cCI6MTcxMTEwOTU4MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Xm5CqjkT49hNXbZmIgPX2SGB-Fdj0ZtOMMJt0Jl_qEg
+09:13:02.466 20018 INFO  f.m.m.g.filters.VerifyTokenFilter - Token Valid
+09:13:02.467 20019 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:13:02.467 20019 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: ed33f82a-8ab5-4ba8-847c-3ebfac8172b2
+09:13:03.662 21214 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTUxODAsImV4cCI6MTcxMTEwOTU4MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Xm5CqjkT49hNXbZmIgPX2SGB-Fdj0ZtOMMJt0Jl_qEg
+09:13:03.664 21216 INFO  f.m.m.g.filters.VerifyTokenFilter - Token Valid
+09:13:03.664 21216 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:13:03.664 21216 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: ed33f82a-8ab5-4ba8-847c-3ebfac8172b2
+09:15:59.736 197288 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:15:59.737 197289 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: ed33f82a-8ab5-4ba8-847c-3ebfac8172b2
+09:15:59.957 197509 INFO  f.m.m.g.filters.LoginPostFilter - Call LoginPostFilter
+09:15:59.959 197511 INFO  f.m.m.g.filters.LoginPostFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTUzNTksImV4cCI6MTcxMTEwOTc1OSwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.6lMmsHKVbr42isogh06DPWr_0YvULNm1UkxNUROp-ig - successfully registered
+09:16:00.306 197858 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTUzNTksImV4cCI6MTcxMTEwOTc1OSwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.6lMmsHKVbr42isogh06DPWr_0YvULNm1UkxNUROp-ig
+09:16:00.316 197868 INFO  f.m.m.g.filters.VerifyTokenFilter - Token expired - call Auth update token - New Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTUzNjAsImV4cCI6MTcxMTEwOTc2MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.U65Ik85oYfYVUtrPwNJHZaRd424x9F9gl4BHr-iG-7c
+09:16:00.316 197868 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:16:00.316 197868 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: ed33f82a-8ab5-4ba8-847c-3ebfac8172b2
+09:16:42.593 539  INFO  f.m.m.gateway.Application - Starting Application using Java 21.0.1 with PID 148836 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.gateway/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.gateway)
+09:16:42.594 540  INFO  f.m.m.gateway.Application - No active profile set, falling back to 1 default profile: "default"
+09:16:43.425 1371 INFO  f.m.m.g.c.BackendServiceContext - Backend Service authentication initialization
+09:16:43.672 1618 INFO  f.m.m.g.s.BackendServiceService - Backend Service Gateway initialization - with UUID: 55db7044-10af-4b38-bc82-b41d70fe0f23
+09:16:43.772 1718 INFO  f.m.m.g.s.BackendServiceService - Backend Service successfully initialized
+09:16:44.260 2206 INFO  f.m.m.g.filters.VerifyTokenFilter - Call VerifyTokenFilter
+09:16:44.262 2208 INFO  f.m.m.g.filters.VerifyTokenFilter - Call VerifyTokenFilter
+09:16:44.263 2209 INFO  f.m.m.g.filters.VerifyTokenFilter - Call VerifyTokenFilter
+09:16:44.271 2217 INFO  f.m.m.gateway.Application - Started Application in 1.964 seconds (process running for 2.336)
+09:17:15.876 33822 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:17:15.877 33823 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: 55db7044-10af-4b38-bc82-b41d70fe0f23
+09:17:16.278 34224 INFO  f.m.m.g.filters.LoginPostFilter - Call LoginPostFilter
+09:17:16.427 34373 INFO  f.m.m.g.filters.LoginPostFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU0MzYsImV4cCI6MTcxMTEwOTgzNiwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.dS8Kx_g7337q0MvYPXkhwhJoPEwivzdemWGRN71Yj0Q - successfully registered
+09:17:16.566 34512 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU0MzYsImV4cCI6MTcxMTEwOTgzNiwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.dS8Kx_g7337q0MvYPXkhwhJoPEwivzdemWGRN71Yj0Q
+09:17:16.620 34566 INFO  f.m.m.g.filters.VerifyTokenFilter - Token expired - call Auth update token - New Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU0MzYsImV4cCI6MTcxMTEwOTgzNiwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.dS8Kx_g7337q0MvYPXkhwhJoPEwivzdemWGRN71Yj0Q
+09:17:16.621 34567 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:17:16.621 34567 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: 55db7044-10af-4b38-bc82-b41d70fe0f23
+09:18:44.252 122198 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:18:44.253 122199 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: 55db7044-10af-4b38-bc82-b41d70fe0f23
+09:18:44.488 122434 INFO  f.m.m.g.filters.LoginPostFilter - Call LoginPostFilter
+09:18:44.490 122436 INFO  f.m.m.g.filters.LoginPostFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU1MjQsImV4cCI6MTcxMTEwOTkyNCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Jt02UFwP3N3FqTC51MLWIPU62e5pa0sFJNI12GM52DE - successfully registered
+09:18:44.656 122602 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU1MjQsImV4cCI6MTcxMTEwOTkyNCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Jt02UFwP3N3FqTC51MLWIPU62e5pa0sFJNI12GM52DE
+09:18:44.674 122620 INFO  f.m.m.g.filters.VerifyTokenFilter - Token expired - call Auth update token - New Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU1MjQsImV4cCI6MTcxMTEwOTkyNCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Jt02UFwP3N3FqTC51MLWIPU62e5pa0sFJNI12GM52DE
+09:18:44.674 122620 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:18:44.674 122620 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: 55db7044-10af-4b38-bc82-b41d70fe0f23
+09:19:14.065 152011 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU1MjQsImV4cCI6MTcxMTEwOTkyNCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Jt02UFwP3N3FqTC51MLWIPU62e5pa0sFJNI12GM52DE
+09:19:14.067 152013 INFO  f.m.m.g.filters.VerifyTokenFilter - Token Valid
+09:19:14.067 152013 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:19:14.067 152013 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: 55db7044-10af-4b38-bc82-b41d70fe0f23
+09:24:26.366 544  INFO  f.m.m.gateway.Application - Starting Application using Java 21.0.1 with PID 154796 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.gateway/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.gateway)
+09:24:26.368 546  INFO  f.m.m.gateway.Application - No active profile set, falling back to 1 default profile: "default"
+09:24:27.155 1333 INFO  f.m.m.g.c.BackendServiceContext - Backend Service authentication initialization
+09:24:27.394 1572 INFO  f.m.m.g.s.BackendServiceService - Backend Service Gateway initialization - with UUID: b52ab82e-b393-43b2-91b0-daa761104def
+09:24:27.485 1663 INFO  f.m.m.g.s.BackendServiceService - Backend Service successfully initialized
+09:24:27.940 2118 INFO  f.m.m.g.filters.VerifyTokenFilter - Call VerifyTokenFilter
+09:24:27.941 2119 INFO  f.m.m.g.filters.VerifyTokenFilter - Call VerifyTokenFilter
+09:24:27.942 2120 INFO  f.m.m.g.filters.VerifyTokenFilter - Call VerifyTokenFilter
+09:24:27.950 2128 INFO  f.m.m.gateway.Application - Started Application in 1.89 seconds (process running for 2.233)
+09:24:28.526 2704 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:24:28.527 2705 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:24:28.527 2705 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU1MjQsImV4cCI6MTcxMTEwOTkyNCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Jt02UFwP3N3FqTC51MLWIPU62e5pa0sFJNI12GM52DE
+09:24:28.750 2928 INFO  f.m.m.g.filters.VerifyTokenFilter - Token Valid
+09:24:36.484 10662 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:24:36.485 10663 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:24:36.485 10663 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU1MjQsImV4cCI6MTcxMTEwOTkyNCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Jt02UFwP3N3FqTC51MLWIPU62e5pa0sFJNI12GM52DE
+09:24:36.486 10664 INFO  f.m.m.g.filters.VerifyTokenFilter - Token Valid
+09:24:37.962 12140 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:24:37.963 12141 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:24:37.963 12141 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU1MjQsImV4cCI6MTcxMTEwOTkyNCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Jt02UFwP3N3FqTC51MLWIPU62e5pa0sFJNI12GM52DE
+09:24:37.965 12143 INFO  f.m.m.g.filters.VerifyTokenFilter - Token Valid
+09:25:42.862 77040 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:25:42.862 77040 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:25:42.862 77040 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU1MjQsImV4cCI6MTcxMTEwOTkyNCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Jt02UFwP3N3FqTC51MLWIPU62e5pa0sFJNI12GM52DE
+09:25:42.864 77042 INFO  f.m.m.g.filters.VerifyTokenFilter - Token Valid
+09:26:00.116 94294 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:26:00.116 94294 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:26:00.339 94517 INFO  f.m.m.g.filters.LoginPostFilter - Call LoginPostFilter
+09:26:00.355 94533 INFO  f.m.m.g.filters.LoginPostFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU5NjAsImV4cCI6MTcxMTExMDM2MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.1NiX2PJcejCIyZNmDeO4EPfp4Gv2-Q32qG23EYtVQ7U - successfully registered
+09:26:00.462 94640 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:26:00.462 94640 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:26:00.462 94640 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU5NjAsImV4cCI6MTcxMTExMDM2MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.1NiX2PJcejCIyZNmDeO4EPfp4Gv2-Q32qG23EYtVQ7U
+09:26:00.471 94649 INFO  f.m.m.g.filters.VerifyTokenFilter - Token expired - call Auth update token - New Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU5NjAsImV4cCI6MTcxMTExMDM2MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.1NiX2PJcejCIyZNmDeO4EPfp4Gv2-Q32qG23EYtVQ7U
+09:26:57.964 152142 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:26:57.964 152142 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:26:57.964 152142 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU5NjAsImV4cCI6MTcxMTExMDM2MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.1NiX2PJcejCIyZNmDeO4EPfp4Gv2-Q32qG23EYtVQ7U
+09:26:57.965 152143 INFO  f.m.m.g.filters.VerifyTokenFilter - Token Valid
+09:27:09.341 163519 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:27:09.342 163520 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:27:09.342 163520 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU5NjAsImV4cCI6MTcxMTExMDM2MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.1NiX2PJcejCIyZNmDeO4EPfp4Gv2-Q32qG23EYtVQ7U
+09:27:09.343 163521 INFO  f.m.m.g.filters.VerifyTokenFilter - Token Valid
+09:28:19.350 233528 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:28:19.351 233529 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:28:19.351 233529 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU5NjAsImV4cCI6MTcxMTExMDM2MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.1NiX2PJcejCIyZNmDeO4EPfp4Gv2-Q32qG23EYtVQ7U
+09:28:19.352 233530 INFO  f.m.m.g.filters.VerifyTokenFilter - Token Valid
+09:32:26.564 480742 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:32:26.565 480743 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:32:26.565 480743 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU5NjAsImV4cCI6MTcxMTExMDM2MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.1NiX2PJcejCIyZNmDeO4EPfp4Gv2-Q32qG23EYtVQ7U
+09:32:26.567 480745 INFO  f.m.m.g.filters.VerifyTokenFilter - Token Valid
+09:32:28.999 483177 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:32:29.000 483178 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:32:29.000 483178 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU5NjAsImV4cCI6MTcxMTExMDM2MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.1NiX2PJcejCIyZNmDeO4EPfp4Gv2-Q32qG23EYtVQ7U
+09:32:29.003 483181 INFO  f.m.m.g.filters.VerifyTokenFilter - Token Valid
+09:33:39.787 553965 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:33:39.787 553965 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:33:39.790 553968 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU5NjAsImV4cCI6MTcxMTExMDM2MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.1NiX2PJcejCIyZNmDeO4EPfp4Gv2-Q32qG23EYtVQ7U
+09:33:39.792 553970 INFO  f.m.m.g.filters.VerifyTokenFilter - Token Valid
+09:34:53.691 627869 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:34:53.692 627870 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:34:53.911 628089 INFO  f.m.m.g.filters.LoginPostFilter - Call LoginPostFilter
+09:34:53.912 628090 INFO  f.m.m.g.filters.LoginPostFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY0OTMsImV4cCI6MTcxMTExMDg5Mywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.ZAPQs-4xKo01LRn2BV10AXKO36zirpCDBuEetsAujbE - successfully registered
+09:34:54.247 628425 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:34:54.247 628425 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:34:54.247 628425 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY0OTMsImV4cCI6MTcxMTExMDg5Mywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.ZAPQs-4xKo01LRn2BV10AXKO36zirpCDBuEetsAujbE
+09:34:54.257 628435 INFO  f.m.m.g.filters.VerifyTokenFilter - Token expired - call Auth update token - New Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY0OTQsImV4cCI6MTcxMTExMDg5NCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.6FFUGMnbsapZFaJOMUSLEaHGgPeyHG_iWJwsAEfeeNE
+09:35:07.182 641360 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:35:07.182 641360 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:35:07.182 641360 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY0OTMsImV4cCI6MTcxMTExMDg5Mywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.ZAPQs-4xKo01LRn2BV10AXKO36zirpCDBuEetsAujbE
+09:35:07.190 641368 INFO  f.m.m.g.filters.VerifyTokenFilter - Token expired - call Auth update token - New Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY1MDcsImV4cCI6MTcxMTExMDkwNywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.b6TgmZHke65TDkR_GtJsJTdE1ALBEhPW9EzFZZTnWRM
+09:36:04.461 698639 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:36:04.461 698639 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:36:04.461 698639 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY1MDcsImV4cCI6MTcxMTExMDkwNywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.b6TgmZHke65TDkR_GtJsJTdE1ALBEhPW9EzFZZTnWRM
+09:36:04.464 698642 INFO  f.m.m.g.filters.VerifyTokenFilter - Token Valid
+09:36:18.499 712677 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:36:18.500 712678 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:36:18.500 712678 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY1MDcsImV4cCI6MTcxMTExMDkwNywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.b6TgmZHke65TDkR_GtJsJTdE1ALBEhPW9EzFZZTnWRM
+09:36:18.501 712679 INFO  f.m.m.g.filters.VerifyTokenFilter - Token Valid
+09:36:25.953 720131 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:36:25.953 720131 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:36:26.174 720352 INFO  f.m.m.g.filters.LoginPostFilter - Call LoginPostFilter
+09:36:26.175 720353 INFO  f.m.m.g.filters.LoginPostFilter - Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY1ODYsImV4cCI6MTcxMTExMDk4Niwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Rc9QgYcyVcNfzU4_SRE17YAWrPxS_fwjOIQTj5bmJls - successfully registered
+09:36:31.536 725714 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:36:31.537 725715 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:36:31.537 725715 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY1ODYsImV4cCI6MTcxMTExMDk4Niwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Rc9QgYcyVcNfzU4_SRE17YAWrPxS_fwjOIQTj5bmJls
+09:36:31.543 725721 INFO  f.m.m.g.filters.VerifyTokenFilter - Token expired - call Auth update token - New Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY1OTEsImV4cCI6MTcxMTExMDk5MSwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.9XbRX059iyD4Vq18TRlj2x1XCqQ8FQz_RQyV8jD3iZI
+09:41:51.968 1046146 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:41:51.968 1046146 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:41:51.968 1046146 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY1ODYsImV4cCI6MTcxMTExMDk4Niwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Rc9QgYcyVcNfzU4_SRE17YAWrPxS_fwjOIQTj5bmJls
+09:41:51.977 1046155 INFO  f.m.m.g.filters.VerifyTokenFilter - Token expired - call Auth update token - New Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY5MTEsImV4cCI6MTcxMTExMTMxMSwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.ckU55DPKQ4kZqtv5nuxirKw76NvvKISFPEGBc5Xdtmw
+09:41:55.500 1049678 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:41:55.500 1049678 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:41:55.500 1049678 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY1ODYsImV4cCI6MTcxMTExMDk4Niwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Rc9QgYcyVcNfzU4_SRE17YAWrPxS_fwjOIQTj5bmJls
+09:41:55.511 1049689 INFO  f.m.m.g.filters.VerifyTokenFilter - Token expired - call Auth update token - New Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY5MTUsImV4cCI6MTcxMTExMTMxNSwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.8EojCVPS5syKftnAp1gPaX6WT6AJSYMqE5IFxmNfp9w
+09:43:40.049 560  INFO  f.m.m.gateway.Application - Starting Application using Java 21.0.1 with PID 169702 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.gateway/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.gateway)
+09:43:40.050 561  INFO  f.m.m.gateway.Application - No active profile set, falling back to 1 default profile: "default"
+09:43:40.842 1353 INFO  f.m.m.g.c.BackendServiceContext - Backend Service authentication initialization
+09:43:41.082 1593 INFO  f.m.m.g.s.BackendServiceService - Backend Service Gateway initialization - with UUID: 3d05d491-336a-4065-ae80-55b371c030b0
+09:43:41.189 1700 INFO  f.m.m.g.s.BackendServiceService - Backend Service successfully initialized
+09:43:41.659 2170 INFO  f.m.m.g.filters.VerifyTokenFilter - Call VerifyTokenFilter
+09:43:41.660 2171 INFO  f.m.m.g.filters.VerifyTokenFilter - Call VerifyTokenFilter
+09:43:41.662 2173 INFO  f.m.m.g.filters.VerifyTokenFilter - Call VerifyTokenFilter
+09:43:41.670 2181 INFO  f.m.m.gateway.Application - Started Application in 1.924 seconds (process running for 2.29)
+09:43:43.075 3586 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:43:43.076 3587 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: 3d05d491-336a-4065-ae80-55b371c030b0
+09:43:43.076 3587 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY1ODYsImV4cCI6MTcxMTExMDk4Niwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Rc9QgYcyVcNfzU4_SRE17YAWrPxS_fwjOIQTj5bmJls
+09:43:43.332 3843 INFO  f.m.m.g.filters.VerifyTokenFilter - Token expired - call Auth update token - New Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTcwMjMsImV4cCI6MTcxMTExMTQyMywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.etP86wys7Iczrhyy7r6V-MCeMppU-FFzXwhx8mFljXc
+09:43:51.117 11628 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:43:51.118 11629 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: 3d05d491-336a-4065-ae80-55b371c030b0
+09:43:51.118 11629 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTcwMjMsImV4cCI6MTcxMTExMTQyMywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.etP86wys7Iczrhyy7r6V-MCeMppU-FFzXwhx8mFljXc
+09:43:51.121 11632 INFO  f.m.m.g.filters.VerifyTokenFilter - Token Valid
+09:46:16.963 551  INFO  f.m.m.gateway.Application - Starting Application using Java 21.0.1 with PID 171615 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.gateway/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.gateway)
+09:46:16.964 552  INFO  f.m.m.gateway.Application - No active profile set, falling back to 1 default profile: "default"
+09:46:17.770 1358 INFO  f.m.m.g.c.BackendServiceContext - Backend Service authentication initialization
+09:46:18.057 1645 INFO  f.m.m.g.s.BackendServiceService - Backend Service Gateway initialization - with UUID: ccd80958-7d21-4019-90c8-939175e682fc
+09:46:18.148 1736 INFO  f.m.m.g.s.BackendServiceService - Backend Service successfully initialized
+09:46:18.602 2190 INFO  f.m.m.g.filters.VerifyTokenFilter - Call VerifyTokenFilter
+09:46:18.604 2192 INFO  f.m.m.g.filters.VerifyTokenFilter - Call VerifyTokenFilter
+09:46:18.605 2193 INFO  f.m.m.g.filters.VerifyTokenFilter - Call VerifyTokenFilter
+09:46:18.613 2201 INFO  f.m.m.gateway.Application - Started Application in 1.947 seconds (process running for 2.316)
+09:46:20.980 4568 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:46:20.981 4569 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: ccd80958-7d21-4019-90c8-939175e682fc
+09:46:20.982 4570 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTcwMjMsImV4cCI6MTcxMTExMTQyMywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.etP86wys7Iczrhyy7r6V-MCeMppU-FFzXwhx8mFljXc
+09:46:21.217 4805 INFO  f.m.m.g.filters.VerifyTokenFilter - Token Valid
+09:46:23.504 7092 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:46:23.504 7092 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: ccd80958-7d21-4019-90c8-939175e682fc
+09:46:23.504 7092 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTcwMjMsImV4cCI6MTcxMTExMTQyMywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.etP86wys7Iczrhyy7r6V-MCeMppU-FFzXwhx8mFljXc
+09:46:23.507 7095 INFO  f.m.m.g.filters.VerifyTokenFilter - Token Valid
+09:48:02.404 500  INFO  f.m.m.gateway.Application - Starting Application using Java 21.0.1 with PID 173004 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.gateway/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.gateway)
+09:48:02.405 501  INFO  f.m.m.gateway.Application - No active profile set, falling back to 1 default profile: "default"
+09:48:03.175 1271 INFO  f.m.m.g.c.BackendServiceContext - Backend Service authentication initialization
+09:48:03.420 1516 INFO  f.m.m.g.s.BackendServiceService - Backend Service Gateway initialization - with UUID: 518dbe83-c13f-4835-854c-44b200827217
+09:48:03.512 1608 INFO  f.m.m.g.s.BackendServiceService - Backend Service successfully initialized
+09:48:03.988 2084 INFO  f.m.m.g.filters.VerifyTokenFilter - Call VerifyTokenFilter
+09:48:03.990 2086 INFO  f.m.m.g.filters.VerifyTokenFilter - Call VerifyTokenFilter
+09:48:03.991 2087 INFO  f.m.m.g.filters.VerifyTokenFilter - Call VerifyTokenFilter
+09:48:04.000 2096 INFO  f.m.m.gateway.Application - Started Application in 1.87 seconds (process running for 2.199)
+09:48:09.982 8078 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:48:09.983 8079 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: 518dbe83-c13f-4835-854c-44b200827217
+09:48:09.984 8080 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTcwMjMsImV4cCI6MTcxMTExMTQyMywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.etP86wys7Iczrhyy7r6V-MCeMppU-FFzXwhx8mFljXc
+09:48:10.221 8317 INFO  f.m.m.g.filters.VerifyTokenFilter - Token Valid
+09:49:14.123 72219 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:49:14.123 72219 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: 518dbe83-c13f-4835-854c-44b200827217
+09:49:14.124 72220 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTcwMjMsImV4cCI6MTcxMTExMTQyMywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.etP86wys7Iczrhyy7r6V-MCeMppU-FFzXwhx8mFljXc
+09:49:14.130 72226 INFO  f.m.m.g.filters.VerifyTokenFilter - Token Valid
+09:49:26.851 84947 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:49:26.851 84947 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: 518dbe83-c13f-4835-854c-44b200827217
+09:49:26.851 84947 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTcwMjMsImV4cCI6MTcxMTExMTQyMywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.etP86wys7Iczrhyy7r6V-MCeMppU-FFzXwhx8mFljXc
+09:49:26.854 84950 INFO  f.m.m.g.filters.VerifyTokenFilter - Token Valid
+09:50:18.355 136451 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:50:18.356 136452 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: 518dbe83-c13f-4835-854c-44b200827217
+09:50:18.356 136452 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTcwMjMsImV4cCI6MTcxMTExMTQyMywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.etP86wys7Iczrhyy7r6V-MCeMppU-FFzXwhx8mFljXc
+09:50:18.361 136457 INFO  f.m.m.g.filters.VerifyTokenFilter - Token Valid
+09:52:08.859 246955 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:52:08.860 246956 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: 518dbe83-c13f-4835-854c-44b200827217
+09:52:08.860 246956 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTcwMjMsImV4cCI6MTcxMTExMTQyMywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.etP86wys7Iczrhyy7r6V-MCeMppU-FFzXwhx8mFljXc
+09:52:08.865 246961 INFO  f.m.m.g.filters.VerifyTokenFilter - Token Valid
+09:52:56.485 294581 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:52:56.486 294582 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: 518dbe83-c13f-4835-854c-44b200827217
+09:52:56.488 294584 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTcwMjMsImV4cCI6MTcxMTExMTQyMywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.etP86wys7Iczrhyy7r6V-MCeMppU-FFzXwhx8mFljXc
+09:52:56.492 294588 INFO  f.m.m.g.filters.VerifyTokenFilter - Token Valid
+09:54:38.636 396732 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:54:38.637 396733 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: 518dbe83-c13f-4835-854c-44b200827217
+09:54:38.637 396733 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTcwMjMsImV4cCI6MTcxMTExMTQyMywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.etP86wys7Iczrhyy7r6V-MCeMppU-FFzXwhx8mFljXc
+09:54:38.639 396735 INFO  f.m.m.g.filters.VerifyTokenFilter - Token Valid
+09:54:40.628 398724 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:54:40.629 398725 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: 518dbe83-c13f-4835-854c-44b200827217
+09:54:40.629 398725 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTcwMjMsImV4cCI6MTcxMTExMTQyMywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.etP86wys7Iczrhyy7r6V-MCeMppU-FFzXwhx8mFljXc
+09:54:40.631 398727 INFO  f.m.m.g.filters.VerifyTokenFilter - Token Valid
+09:54:42.224 400320 INFO  f.m.m.g.filters.AuthBackendFilter - Call AuthBackendFiltre
+09:54:42.225 400321 INFO  f.m.m.g.filters.AuthBackendFilter - Service: Gateway - Reg Number: 518dbe83-c13f-4835-854c-44b200827217
+09:54:42.225 400321 INFO  f.m.m.g.filters.VerifyTokenFilter - Request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTcwMjMsImV4cCI6MTcxMTExMTQyMywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.etP86wys7Iczrhyy7r6V-MCeMppU-FFzXwhx8mFljXc
+09:54:42.227 400323 INFO  f.m.m.g.filters.VerifyTokenFilter - Token Valid

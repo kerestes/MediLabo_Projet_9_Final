@@ -83,7 +83,6 @@ export class NoteTableComponent {
   getNoteList(){
     this.noteService.getNoteList().subscribe({
       next:reponse => {
-        console.log("entrou de novo")
         this.dataSource = new MatTableDataSource(reponse);
         this.dataSource.paginator = this.paginator;
         this.tablesize = reponse.length

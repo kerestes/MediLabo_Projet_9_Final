@@ -55,7 +55,7 @@ public class NoteController {
 
     @PostMapping
     public ResponseEntity<Note> saveNote(@RequestBody Note note, HttpServletRequest request){
-        logger.info("Call saveNote - ip (" + request.getRemoteAddr() +") - token (" + request.getHeader("Authorization") +")");
+        logger.info("Call saveNote - id " + note.get_id() + " - ip (" + request.getRemoteAddr() +") - token (" + request.getHeader("Authorization") +")");
         return ResponseEntity.ok(noteService.save(note));
     }
 

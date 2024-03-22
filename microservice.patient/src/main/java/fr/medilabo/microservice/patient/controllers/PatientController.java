@@ -39,8 +39,9 @@ public class PatientController {
     public ResponseEntity<List<Patient>> getAll(HttpServletRequest request){
         logger.info("Call getAll - ip (" + request.getRemoteAddr() +") - token (" + request.getHeader("Authorization") +")");
         List<Patient> patients = service.findAll();
-        if (!patients.isEmpty())
+        if (!patients.isEmpty()){
             return ResponseEntity.ok(patients);
+        }
         logger.warn("Empty patient list - communication error ?");
         return ResponseEntity.internalServerError().build();
     }

@@ -10,93 +10,53 @@ volumes:
   mongodb:
     driver: local
 
+networks:
+  main-network:
+    name: main-network
+    driver: bridge
+  db-patient:
+    name: db-patient
+    driver: bridge
+  db-auth:
+    name: db-auth
+    driver: bridge
+  db-notes:
+    name: db-notes
+    driver: bridge
+  db-redis:
+    name: db-redis
+    driver: bridge
+
 services:
+
   front-service: 
     build: ./microservice.frontEnd
   #  ports:
   #    - 4000:4000
+    networks:
+      - main-network
 
-  gateway-spring:
-    build:
-      context: ./microservice.gateway 
-    ports:
-      - 9001:9001
-    environment:
-      - host=cache
-      - port=6379
-      - auth.update=http://auth-spring:8083/auth/update
-      - SPRING.CLOUD.GATEWAY.ROUTES[0].ID=user_auth
-      - SPRING.CLOUD.GATEWAY.ROUTES[0].URI=http://auth-spring:8083/
-      - SPRING.CLOUD.GATEWAY.ROUTES[0].PREDICATES[0]=Path=/auth/**
-      - SPRING.CLOUD.GATEWAY.ROUTES[1].ID=patient_info
-      - SPRING.CLOUD.GATEWAY.ROUTES[1].URI=http://patient-spring:8081/
-      - SPRING.CLOUD.GATEWAY.ROUTES[1].PREDICATES[0]=Path=/patient/**
-      - SPRING.CLOUD.GATEWAY.ROUTES[1].FILTERS[0]=VerifyTokenFilter
-      - SPRING.CLOUD.GATEWAY.ROUTES[2].ID=patient_note
-      - SPRING.CLOUD.GATEWAY.ROUTES[2].URI=http://note-medecin-spring:8082/
-      - SPRING.CLOUD.GATEWAY.ROUTES[2].PREDICATES[0]=Path=/notes/**
-      - SPRING.CLOUD.GATEWAY.ROUTES[2].FILTERS[0]=VerifyTokenFilter
-      - SPRING.CLOUD.GATEWAY.ROUTES[3].ID=patient_risque
-      - SPRING.CLOUD.GATEWAY.ROUTES[3].URI=http://patient-risque:8084/
-      - SPRING.CLOUD.GATEWAY.ROUTES[3].PREDICATES[0]=Path=/risques/**
-      - SPRING.CLOUD.GATEWAY.ROUTES[3].FILTERS[0]=VerifyTokenFilter
-      - SPRING.CLOUD.GATEWAY.ROUTES[4].ID=front
-      - SPRING.CLOUD.GATEWAY.ROUTES[4].URI=http://front-service:4000/
-      - SPRING.CLOUD.GATEWAY.ROUTES[4].PREDICATES[0]=Path=/**,/gestion/**
-    depends_on: 
-      - cache
-      - patient-spring
-      - note-medecin-spring
-      - auth-spring
-      - patient-risque
-      - front-service
-
-  note-medecin-spring:
-    build:
-      context: ./microservice.note.medecin
+  auth-mysql-db:
+    image: mysql:8.0.36
     #ports:
-    #  - 8082:8082
+    #  - 3308:3308
     environment:
-      - DBCONNECTION=mongodb_container
-      - DBPORT=27017
-      - DBDATABASE=medilabo
-      - DBUSERNAME=medilabo
-      - DBPASSWORD=rootroot
-      - url.patient=http://patient-spring:8081/patient
-    depends_on: 
-      - mongodb_container
-
-  patient-spring:
-    build:
-      context: ./microservice.patient 
-    #ports:
-    #  - 8081:8081
-    environment:
-      - DATABASECONNECTION=jdbc:mysql://patient-mysql-db:3307/medilabo
-      - DATABASEUSERNAME=medilabo
-      - DATABASEPASSWORD=rootroot
-    depends_on: 
-      - patient-mysql-db
-  
-  auth-spring:
-    build:
-      context: ./microservice.auth
-    #ports:
-    #  - 8083:8083
-    environment:
-      - DATABASECONNECTION=jdbc:mysql://auth-mysql-db:3308/medilabo_auth
-      - DATABASEUSERNAME=medilabo
-      - DATABASEPASSWORD=rootroot
-    depends_on: 
-      - auth-mysql-db
-
-  patient-risque:
-    build: ./microservice.risque
-    #ports:
-    #  - 8084:8084
-    environment:
-      - notes.url=http://note-medecin-spring:8082/notes
-      - patient.url=http://patient-spring:8081/patient
+      MYSQL_DATABASE: medilabo_auth
+      MYSQL_USER: medilabo
+      MYSQL_PASSWORD: rootroot
+      MYSQL_ROOT_PASSWORD: rootroot
+      MYSQL_TCP_PORT: 3308
+    healthcheck:
+      test: mysqladmin ping -h localhost -u medilabo --password=rootroot
+      start_period: 5s
+      interval: 5s
+      timeout: 5s
+      retries: 55
+    volumes:
+      - ./db-docker/script-mysql2.sql:/docker-entrypoint-initdb.d/script-mysql2.sql
+      - db-auth:/data/db-mysql-auth
+    networks:
+      - db-auth
 
   patient-mysql-db:
     image: mysql:8.0.36
@@ -108,24 +68,34 @@ services:
       MYSQL_PASSWORD: rootroot
       MYSQL_ROOT_PASSWORD: rootroot
       MYSQL_TCP_PORT: 3307
+    healthcheck:
+      test: mysqladmin ping -h localhost -u medilabo --password=rootroot
+      start_period: 5s
+      interval: 5s
+      timeout: 5s
+      retries: 55
     volumes:
       - ./db-docker/script-mysql.sql:/docker-entrypoint-initdb.d/script-mysql.sql
       - db-organisateur:/data/db-mysql-patient
-  
-  auth-mysql-db:
-    image: mysql:8.0.36
+    networks:
+      - db-patient
+
+  cache:
+    image: redis:6.2-alpine
     #ports:
-    #  - 3308:3308
-    environment:
-      MYSQL_DATABASE: medilabo_auth
-      MYSQL_USER: medilabo
-      MYSQL_PASSWORD: rootroot
-      MYSQL_ROOT_PASSWORD: rootroot
-      MYSQL_TCP_PORT: 3308
-    volumes:
-      - ./db-docker/script-mysql2.sql:/docker-entrypoint-initdb.d/script-mysql2.sql
-      - db-auth:/data/db-mysql-auth
-  
+    #  - 6379:6379
+    command: redis-server --save 20 1 --port 6379 --bind 0.0.0.0 --protected-mode no
+    healthcheck:
+      test: redis-cli ping
+      start_period: 5s
+      interval: 5s
+      timeout: 5s
+      retries: 55
+    volumes: 
+      - cache:/data/redis
+    networks:
+      - db-redis
+
   mongodb_container:
     image: mongo:7.0.3
     #ports:
@@ -137,11 +107,122 @@ services:
     volumes:
       - ./db-docker/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
       - mongodb:/data/db-mongo
+    networks:
+      - db-notes
 
-  cache:
-    image: redis:6.2-alpine
+  auth-spring:
+    build:
+      context: ./microservice.auth
     #ports:
-    #  - 6379:6379
-    command: redis-server --save 20 1 --port 6379 --bind 0.0.0.0 --protected-mode no
-    volumes: 
-      - cache:/data/redis
+    #  - 8083:8083
+    environment:
+      - DATABASECONNECTION=jdbc:mysql://auth-mysql-db:3308/medilabo_auth
+      - DATABASEUSERNAME=medilabo
+      - DATABASEPASSWORD=rootroot
+    healthcheck:
+      test: curl http://localhost:8083/auth
+      start_period: 5s
+      interval: 5s
+      timeout: 5s
+      retries: 55
+    depends_on: 
+      auth-mysql-db:
+        condition: service_healthy
+    networks:
+      - main-network
+      - db-auth
+  
+  patient-spring:
+    build:
+      context: ./microservice.patient 
+    #ports:
+    #  - 8081:8081
+    environment:
+      - AUTHPATH=http://auth-spring:8083/auth/back
+      - DATABASECONNECTION=jdbc:mysql://patient-mysql-db:3307/medilabo
+      - DATABASEUSERNAME=medilabo
+      - DATABASEPASSWORD=rootroot
+    depends_on: 
+      patient-mysql-db:
+        condition: service_healthy
+      auth-spring:
+        condition: service_healthy
+    networks:
+      - main-network
+      - db-patient
+  
+  note-medecin-spring:
+    build:
+      context: ./microservice.note.medecin
+    command: sh -c "./wait-for mongodb_container:27017"
+    #ports:
+    #  - 8082:8082
+    environment:
+      - AUTHPATH=http://auth-spring:8083/auth/back
+      - DBCONNECTION=mongodb_container
+      - DBPORT=27017
+      - DBDATABASE=medilabo
+      - DBUSERNAME=medilabo
+      - DBPASSWORD=rootroot
+      - url.patient=http://patient-spring:8081/patient
+    depends_on: 
+      auth-spring:
+        condition: service_healthy
+    networks:
+      - main-network
+      - db-notes
+  
+  patient-risque:
+    build: ./microservice.risque
+    #ports:
+    #  - 8084:8084
+    environment:
+      - AUTHPATH=http://auth-spring:8083/auth/back
+      - notes.url=http://note-medecin-spring:8082/notes
+      - patient.url=http://patient-spring:8081/patient
+    depends_on:
+      auth-spring:
+        condition: service_healthy
+    networks:
+      - main-network
+
+  gateway-spring:
+    build:
+      context: ./microservice.gateway 
+    ports:
+      - 9001:9001
+    environment:
+      - AUTHPATH=http://auth-spring:8083/auth/back
+      - host=cache
+      - port=6379
+      - auth.update=http://auth-spring:8083/auth/update
+      - SPRING.CLOUD.GATEWAY.ROUTES[0].ID=user_auth
+      - SPRING.CLOUD.GATEWAY.ROUTES[0].URI=http://auth-spring:8083/
+      - SPRING.CLOUD.GATEWAY.ROUTES[0].PREDICATES[0]=Path=/auth/**
+      - SPRING.CLOUD.GATEWAY.ROUTES[0].FILTERS[0]=AuthBackendFilter
+      - SPRING.CLOUD.GATEWAY.ROUTES[1].ID=patient_info
+      - SPRING.CLOUD.GATEWAY.ROUTES[1].URI=http://patient-spring:8081/
+      - SPRING.CLOUD.GATEWAY.ROUTES[1].PREDICATES[0]=Path=/patient/**
+      - SPRING.CLOUD.GATEWAY.ROUTES[1].FILTERS[0]=VerifyTokenFilter
+      - SPRING.CLOUD.GATEWAY.ROUTES[1].FILTERS[1]=AuthBackendFilter
+      - SPRING.CLOUD.GATEWAY.ROUTES[2].ID=patient_note
+      - SPRING.CLOUD.GATEWAY.ROUTES[2].URI=http://note-medecin-spring:8082/
+      - SPRING.CLOUD.GATEWAY.ROUTES[2].PREDICATES[0]=Path=/notes/**
+      - SPRING.CLOUD.GATEWAY.ROUTES[2].FILTERS[0]=VerifyTokenFilter
+      - SPRING.CLOUD.GATEWAY.ROUTES[2].FILTERS[1]=AuthBackendFilter
+      - SPRING.CLOUD.GATEWAY.ROUTES[3].ID=patient_risque
+      - SPRING.CLOUD.GATEWAY.ROUTES[3].URI=http://patient-risque:8084/
+      - SPRING.CLOUD.GATEWAY.ROUTES[3].PREDICATES[0]=Path=/risques/**
+      - SPRING.CLOUD.GATEWAY.ROUTES[3].FILTERS[0]=VerifyTokenFilter
+      - SPRING.CLOUD.GATEWAY.ROUTES[3].FILTERS[1]=AuthBackendFilter
+      - SPRING.CLOUD.GATEWAY.ROUTES[4].ID=front
+      - SPRING.CLOUD.GATEWAY.ROUTES[4].URI=http://front-service:4000/
+      - SPRING.CLOUD.GATEWAY.ROUTES[4].PREDICATES[0]=Path=/**,/gestion/**
+    depends_on: 
+      cache:
+        condition: service_healthy
+      auth-spring:
+        condition: service_healthy
+    networks:
+      - main-network
+      - db-redis

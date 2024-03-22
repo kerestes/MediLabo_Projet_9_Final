@@ -9,7 +9,7 @@ export const authInterceptorInterceptor: HttpInterceptorFn = (req, next) => {
 
   if(typeof token === "string"){
     const authReq = req.clone({
-      headers: req.headers.set('Authorization', `Bearer ${token}`)
+      headers: req.headers.set('Authorization', `${token}`)
     })
    req = authReq;
   }

@@ -22,18 +22,23 @@ import java.util.Date;
 
 @RestController
 @RequestMapping("/auth")
-public class AuthController {
+public class AuthUserController {
 
-    private Logger logger = LoggerFactory.getLogger(AuthController.class);
+    private Logger logger = LoggerFactory.getLogger(AuthUserController.class);
     @Autowired
     private UserService service;
     @Autowired
     private JwtTokenService jwtTokenService;
 
+    @GetMapping
+    public String testHealthy(){
+        return "ok";
+    }
     @PostMapping("/update")
     public ResponseEntity<String> tokenUpdate(@RequestBody String token, HttpServletRequest request){
         logger.info("Call tokenUpdate - ip (" + request.getRemoteAddr() +") - token (" + request.getHeader("Authorization") +")");
         try{
+            logger.info("token: " + token);
             StringBuilder sb = new StringBuilder(token);
             if(sb.charAt(0) == '"' && sb.charAt(sb.length()-1) == '"'){
                 sb.replace(0,1, "");

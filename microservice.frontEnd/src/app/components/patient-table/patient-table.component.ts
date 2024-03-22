@@ -48,6 +48,9 @@ export class PatientTableComponent {
     this.patientService.getPatientList().subscribe({
       next:(response) => {
         this.dataSource = response;
+      },
+      error:(err)=>{
+        console.log(err)
       }
     });
   }

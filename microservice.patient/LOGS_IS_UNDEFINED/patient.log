@@ -1,231 +1,502 @@
-04:29:58.804 1837 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-04:29:58.807 1840 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-04:29:59.712 2745 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-07:14:18.952 434  INFO  f.m.m.patient.Application - Starting Application using Java 21.0.1 with PID 243610 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient)
-07:14:18.953 435  INFO  f.m.m.patient.Application - No active profile set, falling back to 1 default profile: "default"
-07:14:20.201 1683 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-07:14:20.202 1684 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-07:14:21.095 2577 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-07:14:21.289 2771 INFO  f.m.m.patient.Application - Started Application in 2.552 seconds (process running for 2.885)
-07:18:50.629 272111 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwMDE5MzAsImV4cCI6MTcxMTAxNjMzMCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.XYxhh0b18HAFHEeRp4pAylni5o9GnIN4K-ovEbwtYNs)
-07:18:50.629 272111 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
-07:19:04.221 285703 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwMDE5MzAsImV4cCI6MTcxMTAxNjMzMCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.XYxhh0b18HAFHEeRp4pAylni5o9GnIN4K-ovEbwtYNs)
-07:19:04.222 285704 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
-07:19:42.313 323795 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
-07:19:42.313 323795 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
-07:19:42.367 323849 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
-07:19:42.367 323849 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
-07:20:27.456 368938 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
-07:20:27.456 368938 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
-07:20:34.115 375597 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
-07:20:34.115 375597 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
-07:20:34.127 375609 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
-07:20:34.128 375610 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
-07:22:17.280 519  INFO  f.m.m.patient.Application - Starting Application using Java 21.0.1 with PID 251900 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient)
-07:22:17.282 521  INFO  f.m.m.patient.Application - No active profile set, falling back to 1 default profile: "default"
-07:22:19.161 2400 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-07:22:19.164 2403 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-07:22:20.487 3726 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-07:22:20.709 3948 INFO  f.m.m.patient.Application - Started Application in 3.686 seconds (process running for 4.061)
-07:23:31.285 74524 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
-07:23:31.285 74524 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
-07:24:18.136 121375 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
-07:24:18.136 121375 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
-07:24:56.512 159751 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
-07:24:56.513 159752 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
-07:25:31.727 194966 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
-07:25:31.727 194966 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
-07:25:48.413 455  INFO  f.m.m.p.i.AdresseServiceTest - Starting AdresseServiceTest using Java 21.0.1 with PID 257692 (started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient)
-07:25:48.415 457  INFO  f.m.m.p.i.AdresseServiceTest - The following 1 profile is active: "test"
-07:25:49.558 1600 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-07:25:49.559 1601 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-07:25:50.561 2603 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-07:25:51.052 3094 INFO  f.m.m.p.i.AdresseServiceTest - Started AdresseServiceTest in 2.781 seconds (process running for 3.449)
-07:25:51.391 3433 INFO  f.m.m.p.services.AdresseService - Call verifyAdresse - Adresse Service
-07:25:51.469 3511 INFO  f.m.m.p.services.AdresseService - Call save - Adresse Service
-07:25:51.502 3544 INFO  f.m.m.p.services.AdresseService - Call deleteById - Adresse Service
-07:25:51.525 3567 INFO  f.m.m.p.services.AdresseService - Call findById - Adresse Service
-07:25:51.541 3583 INFO  f.m.m.p.services.AdresseService - Call verifyPatient - Patient Service
-07:25:51.551 3593 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
-07:25:51.581 3623 INFO  f.m.m.p.services.AdresseService - Call findById - Patient Service
-07:25:51.588 3630 INFO  f.m.m.p.services.AdresseService - Call save - Patient Service
-07:25:51.600 3642 INFO  f.m.m.p.services.AdresseService - Call deleteById - Patient Service
-07:25:51.610 3652 INFO  f.m.m.p.services.AdresseService - Call findById - Patient Service
-07:25:51.616 3658 INFO  f.m.m.p.services.AdresseService - Call verifyPatient - Patient Service
-07:25:51.652 3694 INFO  f.m.m.p.u.PatientControllerTest - Starting PatientControllerTest using Java 21.0.1 with PID 257692 (started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient)
-07:25:51.652 3694 INFO  f.m.m.p.u.PatientControllerTest - The following 1 profile is active: "test"
-07:25:52.128 4170 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-07:25:52.128 4170 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-07:25:52.258 4300 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-07:25:52.623 4665 INFO  f.m.m.p.u.PatientControllerTest - Started PatientControllerTest in 0.985 seconds (process running for 5.019)
-07:25:52.741 4783 INFO  f.m.m.p.c.PatientController - Call createPatient - ip (127.0.0.1) - token (null)
-07:25:52.771 4813 INFO  f.m.m.p.c.PatientController - Call getPatientById - ip (127.0.0.1) - token (null)
-07:25:52.771 4813 INFO  f.m.m.p.c.PatientController - Entity not found - ip (127.0.0.1) - token (null)
-07:25:52.776 4818 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
-07:25:52.811 4853 INFO  f.m.m.p.c.PatientController - Call updatePatient - ip (127.0.0.1) - token (null)
-07:25:52.821 4863 INFO  f.m.m.p.c.PatientController - Call createPatient - ip (127.0.0.1) - token (null)
-07:25:52.822 4864 INFO  f.m.m.p.c.PatientController - Entity already exists - ip (127.0.0.1) - token (null)
-07:25:52.833 4875 INFO  f.m.m.p.c.PatientController - Call updatePatient - ip (127.0.0.1) - token (null)
-07:25:52.842 4884 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
-07:25:52.842 4884 WARN  f.m.m.p.c.PatientController - Empty patient list - communication error ?
-07:25:52.849 4891 INFO  f.m.m.p.c.PatientController - Call deleteById - ip (127.0.0.1) - token (null)
-07:25:52.859 4901 INFO  f.m.m.p.c.PatientController - Call createPatient - ip (127.0.0.1) - token (null)
-07:25:52.868 4910 INFO  f.m.m.p.c.PatientController - Call updatePatient - ip (127.0.0.1) - token (null)
-07:25:52.868 4910 INFO  f.m.m.p.c.PatientController - Entity not found - ip (127.0.0.1) - token (null)
-07:25:52.875 4917 INFO  f.m.m.p.c.PatientController - Call getPatientById - ip (127.0.0.1) - token (null)
-07:25:52.883 4925 INFO  f.m.m.p.c.PatientController - Call updatePatient - ip (127.0.0.1) - token (null)
-07:25:52.912 4954 INFO  f.m.m.patient.ApplicationTests - Starting ApplicationTests using Java 21.0.1 with PID 257692 (started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient)
-07:25:52.913 4955 INFO  f.m.m.patient.ApplicationTests - No active profile set, falling back to 1 default profile: "default"
-07:25:53.107 5149 WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
-java.lang.RuntimeException: Driver com.mysql.cj.jdbc.Driver claims to not accept jdbcUrl, ${DATABASECONNECTION}
-	at com.zaxxer.hikari.util.DriverDataSource.<init>(DriverDataSource.java:110)
-	at com.zaxxer.hikari.pool.PoolBase.initializeDataSource(PoolBase.java:326)
-	at com.zaxxer.hikari.pool.PoolBase.<init>(PoolBase.java:112)
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:93)
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
-	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:428)
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61)
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:276)
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:107)
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
-	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
-	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:223)
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:170)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1432)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1503)
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:388)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:364)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1231)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:949)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
-	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
-	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
-	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
-	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1454)
-	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553)
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
-	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:191)
-	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:130)
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
-	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:163)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:378)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
-	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
-	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
-	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:290)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:279)
-	at java.base/java.util.Optional.orElseGet(Optional.java:364)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:278)
-	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:106)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:105)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
-	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
-	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-07:25:53.110 5152 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-07:25:53.110 5152 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-07:25:53.205 5247 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-07:25:53.278 5320 INFO  f.m.m.patient.ApplicationTests - Started ApplicationTests in 0.382 seconds (process running for 5.675)
-07:26:06.214 229453 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
-07:26:06.214 229453 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
-07:26:18.153 241392 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
-07:26:18.153 241392 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
-07:52:37.365 1820604 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwMDM5NTYsImV4cCI6MTcxMTAxODM1Niwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.S7SzbiFBkGGctHbH-feGV-xLOOL4dxZIFzrMrqSEUhM)
-07:52:37.365 1820604 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
-07:53:00.999 1844238 INFO  f.m.m.p.c.PatientController - Call createPatient - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwMDM5NTcsImV4cCI6MTcxMTAxODM1Nywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.sBMp1NnwzjJeI0GFClVImp7P7osl7R7R2GSlLfgnlL0)
-07:53:01.000 1844239 INFO  f.m.m.p.services.AdresseService - Call verifyPatient - Patient Service
-07:53:01.012 1844251 INFO  f.m.m.p.services.AdresseService - Call save - Patient Service
-07:53:01.046 1844285 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwMDM5NTcsImV4cCI6MTcxMTAxODM1Nywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.sBMp1NnwzjJeI0GFClVImp7P7osl7R7R2GSlLfgnlL0)
-07:53:01.047 1844286 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
-07:53:06.978 1850217 INFO  f.m.m.p.c.PatientController - Call deleteById - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwMDM5NTcsImV4cCI6MTcxMTAxODM1Nywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.sBMp1NnwzjJeI0GFClVImp7P7osl7R7R2GSlLfgnlL0)
-07:53:06.978 1850217 INFO  f.m.m.p.services.AdresseService - Call deleteById - Patient Service
-07:53:07.006 1850245 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwMDM5NTcsImV4cCI6MTcxMTAxODM1Nywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.sBMp1NnwzjJeI0GFClVImp7P7osl7R7R2GSlLfgnlL0)
-07:53:07.007 1850246 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
-07:53:17.430 1860669 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
-07:53:17.430 1860669 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
-07:53:17.462 1860701 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
-07:53:17.463 1860702 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
-07:53:55.775 1899014 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
-07:53:55.775 1899014 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
-07:53:55.788 1899027 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
-07:53:55.788 1899027 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
-07:53:59.885 1903124 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (null)
-07:53:59.885 1903124 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+04:34:06.992 469  INFO  f.m.m.patient.Application - Starting Application using Java 21.0.1 with PID 20102 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient)
+04:34:06.995 472  INFO  f.m.m.patient.Application - No active profile set, falling back to 1 default profile: "default"
+04:34:07.838 1315 INFO  f.m.m.p.c.BackendServiceContext - Backend Service authentication initialization
+04:34:07.842 1319 INFO  f.m.m.p.s.BackendServiceService - BackendService Note initialization
+04:34:08.112 1589 INFO  f.m.m.p.s.BackendServiceService - Backend Service successfully initialized
+04:34:08.636 2113 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+04:34:08.638 2115 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+04:34:09.495 2972 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04:34:09.690 3167 INFO  f.m.m.patient.Application - Started Application in 2.922 seconds (process running for 3.281)
+04:34:40.965 469  INFO  f.m.m.patient.Application - Starting Application using Java 21.0.1 with PID 21298 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient)
+04:34:40.966 470  INFO  f.m.m.patient.Application - No active profile set, falling back to 1 default profile: "default"
+04:34:41.807 1311 INFO  f.m.m.p.c.BackendServiceContext - Backend Service authentication initialization
+04:34:41.811 1315 INFO  f.m.m.p.s.BackendServiceService - BackendService Patient initialization
+04:34:42.088 1592 INFO  f.m.m.p.s.BackendServiceService - Backend Service successfully initialized
+04:34:42.625 2129 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+04:34:42.626 2130 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+04:34:43.538 3042 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04:34:43.747 3251 INFO  f.m.m.patient.Application - Started Application in 3.012 seconds (process running for 3.368)
+04:36:12.535 527  INFO  f.m.m.patient.Application - Starting Application using Java 21.0.1 with PID 22844 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient)
+04:36:12.536 528  INFO  f.m.m.patient.Application - No active profile set, falling back to 1 default profile: "default"
+04:36:13.395 1387 INFO  f.m.m.p.c.BackendServiceContext - Backend Service authentication initialization
+04:36:13.399 1391 INFO  f.m.m.p.s.BackendServiceService - BackendService Patient initialization
+04:36:13.653 1645 INFO  f.m.m.p.s.BackendServiceService - Backend Service successfully initialized
+04:36:14.172 2164 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+04:36:14.174 2166 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+04:36:15.089 3081 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04:36:15.277 3269 INFO  f.m.m.patient.Application - Started Application in 2.972 seconds (process running for 3.386)
+04:36:59.719 498  INFO  f.m.m.patient.Application - Starting Application using Java 21.0.1 with PID 23907 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient)
+04:36:59.721 500  INFO  f.m.m.patient.Application - No active profile set, falling back to 1 default profile: "default"
+04:37:00.572 1351 INFO  f.m.m.p.c.BackendServiceContext - Backend Service authentication initialization
+04:37:00.577 1356 INFO  f.m.m.p.s.BackendServiceService - BackendService Patient initialization
+04:37:00.851 1630 INFO  f.m.m.p.s.BackendServiceService - Backend Service successfully initialized
+04:37:01.376 2155 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+04:37:01.377 2156 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+04:37:02.273 3052 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04:37:02.463 3242 INFO  f.m.m.patient.Application - Started Application in 2.965 seconds (process running for 3.35)
+04:38:31.245 462  INFO  f.m.m.patient.Application - Starting Application using Java 21.0.1 with PID 25573 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient)
+04:38:31.247 464  INFO  f.m.m.patient.Application - No active profile set, falling back to 1 default profile: "default"
+04:38:32.064 1281 INFO  f.m.m.p.c.BackendServiceContext - Backend Service authentication initialization
+04:38:32.069 1286 INFO  f.m.m.p.s.BackendServiceService - Backend Service Patient initialization - with UUID: 755ae0e7-b35f-4f6a-915b-266d8c919cc0
+04:38:32.153 1370 INFO  f.m.m.p.s.BackendServiceService - Backend Service successfully initialized
+04:38:32.706 1923 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+04:38:32.708 1925 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+04:38:33.651 2868 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04:38:33.844 3061 INFO  f.m.m.patient.Application - Started Application in 2.813 seconds (process running for 3.176)
+04:39:32.426 466  INFO  f.m.m.patient.Application - Starting Application using Java 21.0.1 with PID 26821 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient)
+04:39:32.428 468  INFO  f.m.m.patient.Application - No active profile set, falling back to 1 default profile: "default"
+04:39:33.262 1302 INFO  f.m.m.p.c.BackendServiceContext - Backend Service authentication initialization
+04:39:33.266 1306 INFO  f.m.m.p.s.BackendServiceService - Backend Service Patient initialization - with UUID: 4a16746c-9a19-46f3-b7d1-7b9ea6ebc13e
+04:39:33.357 1397 INFO  f.m.m.p.s.BackendServiceService - Backend Service successfully initialized
+04:39:33.882 1922 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+04:39:33.883 1923 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+04:39:34.754 2794 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04:39:34.970 3010 INFO  f.m.m.patient.Application - Started Application in 2.766 seconds (process running for 3.121)
+04:43:16.160 490  INFO  f.m.m.patient.Application - Starting Application using Java 21.0.1 with PID 29877 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient)
+04:43:16.162 492  INFO  f.m.m.patient.Application - No active profile set, falling back to 1 default profile: "default"
+04:43:17.040 1370 INFO  f.m.m.p.c.BackendServiceContext - Backend Service authentication initialization
+04:43:17.044 1374 INFO  f.m.m.p.s.BackendServiceService - Backend Service Patient initialization - with UUID: ce48f549-b9c2-404e-aeaf-0f093255e839
+04:43:17.129 1459 INFO  f.m.m.p.s.BackendServiceService - Backend Service successfully initialized
+04:43:17.688 2018 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+04:43:17.689 2019 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+04:43:18.602 2932 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04:43:18.803 3133 INFO  f.m.m.patient.Application - Started Application in 2.886 seconds (process running for 3.248)
+04:55:04.818 709148 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+04:55:04.818 709148 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: 9a829541-abc4-4bba-b0cf-955dc557f9ea
+04:55:04.818 709148 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+04:55:04.830 709160 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+04:55:04.844 709174 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwNzk3MDQsImV4cCI6MTcxMTA5NDEwNCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.QK0zgjiuNF9Epgp5e1tHiIUEvVvmAdlswM2tmTt9li8)
+04:55:04.844 709174 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:08:18.056 492  INFO  f.m.m.patient.Application - Starting Application using Java 21.0.1 with PID 141237 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient)
+09:08:18.059 495  INFO  f.m.m.patient.Application - No active profile set, falling back to 1 default profile: "default"
+09:08:18.914 1350 INFO  f.m.m.p.c.BackendServiceContext - Backend Service authentication initialization
+09:08:18.919 1355 INFO  f.m.m.p.s.BackendServiceService - Backend Service Patient initialization - with UUID: bd5a3e31-5282-4a85-967f-6f87d0db4af0
+09:08:19.009 1445 INFO  f.m.m.p.s.BackendServiceService - Backend Service successfully initialized
+09:08:19.578 2014 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+09:08:19.579 2015 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+09:08:20.470 2906 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:08:20.667 3103 INFO  f.m.m.patient.Application - Started Application in 2.847 seconds (process running for 3.212)
+09:09:11.037 53473 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:09:11.038 53474 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: b05fd1ab-9be2-4620-aa0b-d66d467d7949
+09:09:11.038 53474 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:09:11.048 53484 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:09:11.062 53498 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTQ5NTAsImV4cCI6MTcxMTEwOTM1MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.YraphcpVSewobMJ88K8MS2WsaGcrFF5iuuJcLkVzuz4)
+09:09:11.062 53498 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:09:12.404 54840 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:09:12.404 54840 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: b05fd1ab-9be2-4620-aa0b-d66d467d7949
+09:09:12.404 54840 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber registered and check
+09:09:12.405 54841 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTQ5NTEsImV4cCI6MTcxMTEwOTM1MSwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.n8rPKUMKZAN6mRLxgdHaaMvMmJ_rjN-KvbBF1ZM97oE)
+09:09:12.405 54841 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:09:12.414 54850 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:09:12.422 54858 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:09:12.423 54859 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTQ5NTEsImV4cCI6MTcxMTEwOTM1MSwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.n8rPKUMKZAN6mRLxgdHaaMvMmJ_rjN-KvbBF1ZM97oE)
+09:09:12.423 54859 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:09:36.192 78628 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:09:36.193 78629 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: b05fd1ab-9be2-4620-aa0b-d66d467d7949
+09:09:36.193 78629 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber registered and check
+09:09:36.193 78629 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTQ5NTEsImV4cCI6MTcxMTEwOTM1MSwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.n8rPKUMKZAN6mRLxgdHaaMvMmJ_rjN-KvbBF1ZM97oE)
+09:09:36.193 78629 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:09:36.202 78638 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:09:36.360 78796 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:09:36.361 78797 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTQ5NTEsImV4cCI6MTcxMTEwOTM1MSwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.n8rPKUMKZAN6mRLxgdHaaMvMmJ_rjN-KvbBF1ZM97oE)
+09:09:36.361 78797 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:09:37.094 79530 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:09:37.095 79531 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: b05fd1ab-9be2-4620-aa0b-d66d467d7949
+09:09:37.095 79531 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber registered and check
+09:09:37.095 79531 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTQ5NTEsImV4cCI6MTcxMTEwOTM1MSwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.n8rPKUMKZAN6mRLxgdHaaMvMmJ_rjN-KvbBF1ZM97oE)
+09:09:37.095 79531 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:09:37.105 79541 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:09:37.114 79550 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:09:37.114 79550 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTQ5NTEsImV4cCI6MTcxMTEwOTM1MSwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.n8rPKUMKZAN6mRLxgdHaaMvMmJ_rjN-KvbBF1ZM97oE)
+09:09:37.114 79550 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:11:00.276 162712 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:11:00.276 162712 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: b05fd1ab-9be2-4620-aa0b-d66d467d7949
+09:11:00.276 162712 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber registered and check
+09:11:00.277 162713 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTQ5NTEsImV4cCI6MTcxMTEwOTM1MSwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.n8rPKUMKZAN6mRLxgdHaaMvMmJ_rjN-KvbBF1ZM97oE)
+09:11:00.277 162713 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:11:00.286 162722 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:11:00.434 162870 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:11:00.435 162871 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTQ5NTEsImV4cCI6MTcxMTEwOTM1MSwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.n8rPKUMKZAN6mRLxgdHaaMvMmJ_rjN-KvbBF1ZM97oE)
+09:11:00.435 162871 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:11:15.441 177877 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:11:15.441 177877 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: b05fd1ab-9be2-4620-aa0b-d66d467d7949
+09:11:15.441 177877 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber registered and check
+09:11:15.442 177878 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTUwNzUsImV4cCI6MTcxMTEwOTQ3NSwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.T7iHb52zXAEKDtGqGl0bGqEKva1SpHeaAmMPbQwu2m8)
+09:11:15.442 177878 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:11:15.449 177885 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:11:15.457 177893 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:11:15.458 177894 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTUwNzUsImV4cCI6MTcxMTEwOTQ3NSwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.T7iHb52zXAEKDtGqGl0bGqEKva1SpHeaAmMPbQwu2m8)
+09:11:15.458 177894 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:12:46.382 268818 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:12:46.382 268818 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: ed33f82a-8ab5-4ba8-847c-3ebfac8172b2
+09:12:46.382 268818 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:12:46.391 268827 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:12:46.392 268828 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTUwNzUsImV4cCI6MTcxMTEwOTQ3NSwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.T7iHb52zXAEKDtGqGl0bGqEKva1SpHeaAmMPbQwu2m8)
+09:12:46.392 268828 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:13:00.292 282728 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:13:00.292 282728 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: ed33f82a-8ab5-4ba8-847c-3ebfac8172b2
+09:13:00.292 282728 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber registered and check
+09:13:00.293 282729 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTUxODAsImV4cCI6MTcxMTEwOTU4MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Xm5CqjkT49hNXbZmIgPX2SGB-Fdj0ZtOMMJt0Jl_qEg)
+09:13:00.293 282729 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:13:00.301 282737 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:13:00.308 282744 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:13:00.309 282745 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTUxODAsImV4cCI6MTcxMTEwOTU4MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Xm5CqjkT49hNXbZmIgPX2SGB-Fdj0ZtOMMJt0Jl_qEg)
+09:13:00.309 282745 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:13:02.468 284904 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:13:02.468 284904 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: ed33f82a-8ab5-4ba8-847c-3ebfac8172b2
+09:13:02.468 284904 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber registered and check
+09:13:02.469 284905 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTUxODAsImV4cCI6MTcxMTEwOTU4MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Xm5CqjkT49hNXbZmIgPX2SGB-Fdj0ZtOMMJt0Jl_qEg)
+09:13:02.469 284905 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:13:02.479 284915 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:13:02.487 284923 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:13:02.488 284924 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTUxODAsImV4cCI6MTcxMTEwOTU4MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Xm5CqjkT49hNXbZmIgPX2SGB-Fdj0ZtOMMJt0Jl_qEg)
+09:13:02.489 284925 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:13:03.666 286102 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:13:03.666 286102 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: ed33f82a-8ab5-4ba8-847c-3ebfac8172b2
+09:13:03.666 286102 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber registered and check
+09:13:03.666 286102 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTUxODAsImV4cCI6MTcxMTEwOTU4MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Xm5CqjkT49hNXbZmIgPX2SGB-Fdj0ZtOMMJt0Jl_qEg)
+09:13:03.666 286102 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:13:03.673 286109 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:13:03.681 286117 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:13:03.682 286118 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTUxODAsImV4cCI6MTcxMTEwOTU4MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Xm5CqjkT49hNXbZmIgPX2SGB-Fdj0ZtOMMJt0Jl_qEg)
+09:13:03.682 286118 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:16:00.318 462754 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:16:00.319 462755 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: ed33f82a-8ab5-4ba8-847c-3ebfac8172b2
+09:16:00.319 462755 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber registered and check
+09:16:00.319 462755 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTUzNTksImV4cCI6MTcxMTEwOTc1OSwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.6lMmsHKVbr42isogh06DPWr_0YvULNm1UkxNUROp-ig)
+09:16:00.320 462756 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:16:00.332 462768 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:16:00.345 462781 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:16:00.346 462782 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTUzNTksImV4cCI6MTcxMTEwOTc1OSwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.6lMmsHKVbr42isogh06DPWr_0YvULNm1UkxNUROp-ig)
+09:16:00.347 462783 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:16:30.249 493  INFO  f.m.m.patient.Application - Starting Application using Java 21.0.1 with PID 148498 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient)
+09:16:30.251 495  INFO  f.m.m.patient.Application - No active profile set, falling back to 1 default profile: "default"
+09:16:31.064 1308 INFO  f.m.m.p.c.BackendServiceContext - Backend Service authentication initialization
+09:16:31.068 1312 INFO  f.m.m.p.s.BackendServiceService - Backend Service Patient initialization - with UUID: 6ca4b92d-ef36-47e0-b256-ddd2cdc04589
+09:16:31.152 1396 INFO  f.m.m.p.s.BackendServiceService - Backend Service successfully initialized
+09:16:31.697 1941 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+09:16:31.698 1942 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+09:16:32.625 2869 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:16:32.813 3057 INFO  f.m.m.patient.Application - Started Application in 2.821 seconds (process running for 3.163)
+09:17:16.654 46898 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:17:16.654 46898 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: 55db7044-10af-4b38-bc82-b41d70fe0f23
+09:17:16.654 46898 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:17:16.673 46917 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:17:16.686 46930 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU0MzYsImV4cCI6MTcxMTEwOTgzNiwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.dS8Kx_g7337q0MvYPXkhwhJoPEwivzdemWGRN71Yj0Q)
+09:17:16.686 46930 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:18:34.619 437  INFO  f.m.m.patient.Application - Starting Application using Java 21.0.1 with PID 150760 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient)
+09:18:34.621 439  INFO  f.m.m.patient.Application - No active profile set, falling back to 1 default profile: "default"
+09:18:35.436 1254 INFO  f.m.m.p.c.BackendServiceContext - Backend Service authentication initialization
+09:18:35.441 1259 INFO  f.m.m.p.s.BackendServiceService - Backend Service Patient initialization - with UUID: d4de634f-bb94-485e-afb3-9e9e8bf0b017
+09:18:35.700 1518 INFO  f.m.m.p.s.BackendServiceService - Backend Service successfully initialized
+09:18:36.227 2045 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+09:18:36.228 2046 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+09:18:37.182 3000 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:18:37.381 3199 INFO  f.m.m.patient.Application - Started Application in 2.979 seconds (process running for 3.322)
+09:18:44.710 10528 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:18:44.710 10528 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: 55db7044-10af-4b38-bc82-b41d70fe0f23
+09:18:44.710 10528 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:18:44.721 10539 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:18:44.734 10552 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU1MjQsImV4cCI6MTcxMTEwOTkyNCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Jt02UFwP3N3FqTC51MLWIPU62e5pa0sFJNI12GM52DE)
+09:18:44.735 10553 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:19:14.069 39887 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:19:14.070 39888 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: 55db7044-10af-4b38-bc82-b41d70fe0f23
+09:19:14.070 39888 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber registered and check
+09:19:14.070 39888 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU1MjQsImV4cCI6MTcxMTEwOTkyNCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Jt02UFwP3N3FqTC51MLWIPU62e5pa0sFJNI12GM52DE)
+09:19:14.071 39889 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:19:14.081 39899 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:19:14.090 39908 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:19:14.091 39909 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU1MjQsImV4cCI6MTcxMTEwOTkyNCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Jt02UFwP3N3FqTC51MLWIPU62e5pa0sFJNI12GM52DE)
+09:19:14.091 39909 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:24:28.753 354571 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:24:28.754 354572 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:24:28.754 354572 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:24:28.762 354580 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:24:28.763 354581 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU1MjQsImV4cCI6MTcxMTEwOTkyNCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Jt02UFwP3N3FqTC51MLWIPU62e5pa0sFJNI12GM52DE)
+09:24:28.763 354581 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:24:36.488 362306 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:24:36.489 362307 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:24:36.489 362307 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber registered and check
+09:24:36.489 362307 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU1MjQsImV4cCI6MTcxMTEwOTkyNCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Jt02UFwP3N3FqTC51MLWIPU62e5pa0sFJNI12GM52DE)
+09:24:36.489 362307 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:24:36.498 362316 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:24:36.506 362324 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:24:36.506 362324 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU1MjQsImV4cCI6MTcxMTEwOTkyNCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Jt02UFwP3N3FqTC51MLWIPU62e5pa0sFJNI12GM52DE)
+09:24:36.506 362324 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:24:37.967 363785 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:24:37.968 363786 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:24:37.968 363786 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber registered and check
+09:24:37.968 363786 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU1MjQsImV4cCI6MTcxMTEwOTkyNCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Jt02UFwP3N3FqTC51MLWIPU62e5pa0sFJNI12GM52DE)
+09:24:37.969 363787 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:24:37.976 363794 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:24:37.984 363802 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:24:37.985 363803 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU1MjQsImV4cCI6MTcxMTEwOTkyNCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Jt02UFwP3N3FqTC51MLWIPU62e5pa0sFJNI12GM52DE)
+09:24:37.985 363803 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:25:42.866 428684 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:25:42.866 428684 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:25:42.866 428684 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber registered and check
+09:25:42.867 428685 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU1MjQsImV4cCI6MTcxMTEwOTkyNCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Jt02UFwP3N3FqTC51MLWIPU62e5pa0sFJNI12GM52DE)
+09:25:42.867 428685 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:25:42.874 428692 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:25:42.881 428699 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:25:42.882 428700 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU1MjQsImV4cCI6MTcxMTEwOTkyNCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Jt02UFwP3N3FqTC51MLWIPU62e5pa0sFJNI12GM52DE)
+09:25:42.882 428700 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:26:00.473 446291 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:26:00.474 446292 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:26:00.474 446292 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber registered and check
+09:26:00.474 446292 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU5NjAsImV4cCI6MTcxMTExMDM2MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.1NiX2PJcejCIyZNmDeO4EPfp4Gv2-Q32qG23EYtVQ7U)
+09:26:00.474 446292 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:26:00.483 446301 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:26:00.494 446312 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:26:00.495 446313 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU5NjAsImV4cCI6MTcxMTExMDM2MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.1NiX2PJcejCIyZNmDeO4EPfp4Gv2-Q32qG23EYtVQ7U)
+09:26:00.495 446313 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:26:57.967 503785 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:26:57.968 503786 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:26:57.968 503786 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber registered and check
+09:26:57.969 503787 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU5NjAsImV4cCI6MTcxMTExMDM2MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.1NiX2PJcejCIyZNmDeO4EPfp4Gv2-Q32qG23EYtVQ7U)
+09:26:57.969 503787 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:26:57.978 503796 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:26:57.985 503803 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:26:57.986 503804 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU5NjAsImV4cCI6MTcxMTExMDM2MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.1NiX2PJcejCIyZNmDeO4EPfp4Gv2-Q32qG23EYtVQ7U)
+09:26:57.986 503804 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:27:09.345 515163 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:27:09.345 515163 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:27:09.346 515164 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber registered and check
+09:27:09.346 515164 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU5NjAsImV4cCI6MTcxMTExMDM2MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.1NiX2PJcejCIyZNmDeO4EPfp4Gv2-Q32qG23EYtVQ7U)
+09:27:09.346 515164 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:27:09.355 515173 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:27:09.363 515181 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:27:09.364 515182 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU5NjAsImV4cCI6MTcxMTExMDM2MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.1NiX2PJcejCIyZNmDeO4EPfp4Gv2-Q32qG23EYtVQ7U)
+09:27:09.364 515182 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:28:19.355 585173 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:28:19.355 585173 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:28:19.355 585173 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber registered and check
+09:28:19.355 585173 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU5NjAsImV4cCI6MTcxMTExMDM2MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.1NiX2PJcejCIyZNmDeO4EPfp4Gv2-Q32qG23EYtVQ7U)
+09:28:19.355 585173 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:28:19.363 585181 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:28:19.371 585189 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:28:19.371 585189 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU5NjAsImV4cCI6MTcxMTExMDM2MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.1NiX2PJcejCIyZNmDeO4EPfp4Gv2-Q32qG23EYtVQ7U)
+09:28:19.371 585189 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:32:16.864 462  INFO  f.m.m.patient.Application - Starting Application using Java 21.0.1 with PID 161013 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient)
+09:32:16.865 463  INFO  f.m.m.patient.Application - No active profile set, falling back to 1 default profile: "default"
+09:32:17.684 1282 INFO  f.m.m.p.c.BackendServiceContext - Backend Service authentication initialization
+09:32:17.688 1286 INFO  f.m.m.p.s.BackendServiceService - Backend Service Patient initialization - with UUID: 12595dd0-99b1-43ec-ba98-ec2e5903e3c6
+09:32:17.774 1372 INFO  f.m.m.p.s.BackendServiceService - Backend Service successfully initialized
+09:32:18.323 1921 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+09:32:18.325 1923 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+09:32:19.246 2844 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:32:19.428 3026 INFO  f.m.m.patient.Application - Started Application in 2.782 seconds (process running for 3.128)
+09:32:26.619 10217 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:32:26.620 10218 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:32:26.620 10218 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:32:26.633 10231 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:32:26.658 10256 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU5NjAsImV4cCI6MTcxMTExMDM2MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.1NiX2PJcejCIyZNmDeO4EPfp4Gv2-Q32qG23EYtVQ7U)
+09:32:26.658 10256 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:32:29.006 12604 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:32:29.006 12604 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:32:29.006 12604 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber registered and check
+09:32:29.007 12605 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU5NjAsImV4cCI6MTcxMTExMDM2MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.1NiX2PJcejCIyZNmDeO4EPfp4Gv2-Q32qG23EYtVQ7U)
+09:32:29.007 12605 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:32:29.024 12622 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:32:29.037 12635 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:32:29.038 12636 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU5NjAsImV4cCI6MTcxMTExMDM2MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.1NiX2PJcejCIyZNmDeO4EPfp4Gv2-Q32qG23EYtVQ7U)
+09:32:29.038 12636 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:33:39.796 83394 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:33:39.797 83395 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:33:39.797 83395 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber registered and check
+09:33:39.798 83396 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU5NjAsImV4cCI6MTcxMTExMDM2MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.1NiX2PJcejCIyZNmDeO4EPfp4Gv2-Q32qG23EYtVQ7U)
+09:33:39.799 83397 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:33:39.824 83422 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:33:39.843 83441 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:33:39.844 83442 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU5NjAsImV4cCI6MTcxMTExMDM2MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.1NiX2PJcejCIyZNmDeO4EPfp4Gv2-Q32qG23EYtVQ7U)
+09:33:39.844 83442 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:34:54.260 157858 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:34:54.260 157858 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:34:54.260 157858 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber registered and check
+09:34:54.261 157859 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY0OTMsImV4cCI6MTcxMTExMDg5Mywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.ZAPQs-4xKo01LRn2BV10AXKO36zirpCDBuEetsAujbE)
+09:34:54.261 157859 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:34:54.276 157874 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:34:54.288 157886 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:34:54.288 157886 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY0OTMsImV4cCI6MTcxMTExMDg5Mywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.ZAPQs-4xKo01LRn2BV10AXKO36zirpCDBuEetsAujbE)
+09:34:54.289 157887 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:35:02.875 465  INFO  f.m.m.patient.Application - Starting Application using Java 21.0.1 with PID 163384 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient)
+09:35:02.878 468  INFO  f.m.m.patient.Application - No active profile set, falling back to 1 default profile: "default"
+09:35:03.788 1378 INFO  f.m.m.p.c.BackendServiceContext - Backend Service authentication initialization
+09:35:03.792 1382 INFO  f.m.m.p.s.BackendServiceService - Backend Service Patient initialization - with UUID: d44efbb2-6b66-43e7-98a2-5b84a0a8e14f
+09:35:03.895 1485 INFO  f.m.m.p.s.BackendServiceService - Backend Service successfully initialized
+09:35:04.516 2106 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+09:35:04.517 2107 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+09:35:05.447 3037 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:35:05.655 3245 INFO  f.m.m.patient.Application - Started Application in 3.016 seconds (process running for 3.362)
+09:35:07.236 4826 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:35:07.237 4827 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:35:07.237 4827 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:35:07.248 4838 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:35:07.268 4858 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY0OTMsImV4cCI6MTcxMTExMDg5Mywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.ZAPQs-4xKo01LRn2BV10AXKO36zirpCDBuEetsAujbE)
+09:35:07.269 4859 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:36:04.466 62056 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:36:04.467 62057 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:36:04.467 62057 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber registered and check
+09:36:04.468 62058 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY1MDcsImV4cCI6MTcxMTExMDkwNywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.b6TgmZHke65TDkR_GtJsJTdE1ALBEhPW9EzFZZTnWRM)
+09:36:04.468 62058 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:36:04.492 62082 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:36:04.506 62096 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:36:04.507 62097 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY1MDcsImV4cCI6MTcxMTExMDkwNywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.b6TgmZHke65TDkR_GtJsJTdE1ALBEhPW9EzFZZTnWRM)
+09:36:04.508 62098 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:36:18.503 76093 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:36:18.503 76093 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:36:18.503 76093 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber registered and check
+09:36:18.504 76094 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY1MDcsImV4cCI6MTcxMTExMDkwNywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.b6TgmZHke65TDkR_GtJsJTdE1ALBEhPW9EzFZZTnWRM)
+09:36:18.504 76094 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:36:18.515 76105 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:36:18.522 76112 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:36:18.522 76112 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY1MDcsImV4cCI6MTcxMTExMDkwNywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.b6TgmZHke65TDkR_GtJsJTdE1ALBEhPW9EzFZZTnWRM)
+09:36:18.522 76112 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:36:31.545 89135 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:36:31.545 89135 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:36:31.545 89135 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber registered and check
+09:36:31.545 89135 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY1ODYsImV4cCI6MTcxMTExMDk4Niwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Rc9QgYcyVcNfzU4_SRE17YAWrPxS_fwjOIQTj5bmJls)
+09:36:31.545 89135 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:36:31.554 89144 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:36:31.561 89151 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:36:31.561 89151 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY1ODYsImV4cCI6MTcxMTExMDk4Niwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Rc9QgYcyVcNfzU4_SRE17YAWrPxS_fwjOIQTj5bmJls)
+09:36:31.561 89151 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:41:51.981 409571 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:41:51.981 409571 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:41:51.981 409571 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber registered and check
+09:41:51.982 409572 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY1ODYsImV4cCI6MTcxMTExMDk4Niwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Rc9QgYcyVcNfzU4_SRE17YAWrPxS_fwjOIQTj5bmJls)
+09:41:51.983 409573 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:41:51.999 409589 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:41:52.013 409603 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:41:52.015 409605 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY1ODYsImV4cCI6MTcxMTExMDk4Niwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Rc9QgYcyVcNfzU4_SRE17YAWrPxS_fwjOIQTj5bmJls)
+09:41:52.015 409605 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:41:55.513 413103 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:41:55.513 413103 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: b52ab82e-b393-43b2-91b0-daa761104def
+09:41:55.513 413103 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber registered and check
+09:41:55.514 413104 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY1ODYsImV4cCI6MTcxMTExMDk4Niwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Rc9QgYcyVcNfzU4_SRE17YAWrPxS_fwjOIQTj5bmJls)
+09:41:55.514 413104 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:41:55.525 413115 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:41:55.537 413127 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:41:55.538 413128 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY1ODYsImV4cCI6MTcxMTExMDk4Niwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Rc9QgYcyVcNfzU4_SRE17YAWrPxS_fwjOIQTj5bmJls)
+09:41:55.538 413128 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:43:43.337 520927 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:43:43.337 520927 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: 3d05d491-336a-4065-ae80-55b371c030b0
+09:43:43.337 520927 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:43:43.345 520935 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:43:43.346 520936 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY1ODYsImV4cCI6MTcxMTExMDk4Niwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Rc9QgYcyVcNfzU4_SRE17YAWrPxS_fwjOIQTj5bmJls)
+09:43:43.346 520936 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:43:51.124 528714 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:43:51.124 528714 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: 3d05d491-336a-4065-ae80-55b371c030b0
+09:43:51.125 528715 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber registered and check
+09:43:51.126 528716 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTcwMjMsImV4cCI6MTcxMTExMTQyMywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.etP86wys7Iczrhyy7r6V-MCeMppU-FFzXwhx8mFljXc)
+09:43:51.126 528716 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:43:51.139 528729 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:43:51.149 528739 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:43:51.150 528740 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTcwMjMsImV4cCI6MTcxMTExMTQyMywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.etP86wys7Iczrhyy7r6V-MCeMppU-FFzXwhx8mFljXc)
+09:43:51.150 528740 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:46:21.221 678811 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:46:21.222 678812 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: ccd80958-7d21-4019-90c8-939175e682fc
+09:46:21.222 678812 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:46:21.234 678824 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:46:21.235 678825 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTcwMjMsImV4cCI6MTcxMTExMTQyMywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.etP86wys7Iczrhyy7r6V-MCeMppU-FFzXwhx8mFljXc)
+09:46:21.235 678825 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:46:23.510 681100 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:46:23.510 681100 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: ccd80958-7d21-4019-90c8-939175e682fc
+09:46:23.510 681100 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber registered and check
+09:46:23.511 681101 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTcwMjMsImV4cCI6MTcxMTExMTQyMywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.etP86wys7Iczrhyy7r6V-MCeMppU-FFzXwhx8mFljXc)
+09:46:23.511 681101 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:46:23.525 681115 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:46:23.536 681126 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:46:23.537 681127 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTcwMjMsImV4cCI6MTcxMTExMTQyMywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.etP86wys7Iczrhyy7r6V-MCeMppU-FFzXwhx8mFljXc)
+09:46:23.537 681127 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:48:10.225 787815 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:48:10.226 787816 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: 518dbe83-c13f-4835-854c-44b200827217
+09:48:10.226 787816 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:48:10.234 787824 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:48:10.235 787825 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTcwMjMsImV4cCI6MTcxMTExMTQyMywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.etP86wys7Iczrhyy7r6V-MCeMppU-FFzXwhx8mFljXc)
+09:48:10.235 787825 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:48:28.248 493  INFO  f.m.m.patient.Application - Starting Application using Java 21.0.1 with PID 173484 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient)
+09:48:28.249 494  INFO  f.m.m.patient.Application - No active profile set, falling back to 1 default profile: "default"
+09:48:29.054 1299 INFO  f.m.m.p.c.BackendServiceContext - Backend Service authentication initialization
+09:48:29.058 1303 INFO  f.m.m.p.s.BackendServiceService - Backend Service Patient initialization - with UUID: d24f2d66-1a86-40f3-a181-f3f62dea9ba0
+09:48:29.142 1387 INFO  f.m.m.p.s.BackendServiceService - Backend Service successfully initialized
+09:48:29.684 1929 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+09:48:29.686 1931 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+09:48:30.590 2835 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:48:30.774 3019 INFO  f.m.m.patient.Application - Started Application in 2.786 seconds (process running for 3.117)
+09:49:14.193 46438 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:49:14.193 46438 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: 518dbe83-c13f-4835-854c-44b200827217
+09:49:14.193 46438 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:49:14.205 46450 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:49:14.235 46480 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTcwMjMsImV4cCI6MTcxMTExMTQyMywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.etP86wys7Iczrhyy7r6V-MCeMppU-FFzXwhx8mFljXc)
+09:49:14.235 46480 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:49:26.857 59102 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:49:26.857 59102 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: 518dbe83-c13f-4835-854c-44b200827217
+09:49:26.857 59102 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber registered and check
+09:49:26.858 59103 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTcwMjMsImV4cCI6MTcxMTExMTQyMywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.etP86wys7Iczrhyy7r6V-MCeMppU-FFzXwhx8mFljXc)
+09:49:26.858 59103 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:49:26.877 59122 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:49:26.888 59133 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:49:26.889 59134 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTcwMjMsImV4cCI6MTcxMTExMTQyMywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.etP86wys7Iczrhyy7r6V-MCeMppU-FFzXwhx8mFljXc)
+09:49:26.889 59134 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:50:18.367 110612 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:50:18.368 110613 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: 518dbe83-c13f-4835-854c-44b200827217
+09:50:18.368 110613 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber registered and check
+09:50:18.369 110614 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTcwMjMsImV4cCI6MTcxMTExMTQyMywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.etP86wys7Iczrhyy7r6V-MCeMppU-FFzXwhx8mFljXc)
+09:50:18.369 110614 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:50:18.385 110630 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:50:18.398 110643 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:50:18.399 110644 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTcwMjMsImV4cCI6MTcxMTExMTQyMywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.etP86wys7Iczrhyy7r6V-MCeMppU-FFzXwhx8mFljXc)
+09:50:18.399 110644 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:52:03.342 429  INFO  f.m.m.patient.Application - Starting Application using Java 21.0.1 with PID 176306 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient)
+09:52:03.343 430  INFO  f.m.m.patient.Application - No active profile set, falling back to 1 default profile: "default"
+09:52:04.175 1262 INFO  f.m.m.p.c.BackendServiceContext - Backend Service authentication initialization
+09:52:04.180 1267 INFO  f.m.m.p.s.BackendServiceService - Backend Service Patient initialization - with UUID: c92504ee-ab04-4374-a139-020bdbbef983
+09:52:04.278 1365 INFO  f.m.m.p.s.BackendServiceService - Backend Service successfully initialized
+09:52:04.811 1898 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+09:52:04.812 1899 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+09:52:05.691 2778 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:52:05.884 2971 INFO  f.m.m.patient.Application - Started Application in 2.743 seconds (process running for 3.073)
+09:52:08.920 6007 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:52:08.920 6007 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: 518dbe83-c13f-4835-854c-44b200827217
+09:52:08.920 6007 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:52:08.941 6028 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:52:08.962 6049 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTcwMjMsImV4cCI6MTcxMTExMTQyMywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.etP86wys7Iczrhyy7r6V-MCeMppU-FFzXwhx8mFljXc)
+09:52:08.963 6050 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:52:56.494 53581 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:52:56.495 53582 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: 518dbe83-c13f-4835-854c-44b200827217
+09:52:56.495 53582 INFO  f.m.m.p.filtres.AuthBackendFiltre - Backend filter name registred
+09:52:56.495 53582 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber registered and check
+09:52:56.496 53583 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTcwMjMsImV4cCI6MTcxMTExMTQyMywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.etP86wys7Iczrhyy7r6V-MCeMppU-FFzXwhx8mFljXc)
+09:52:56.496 53583 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:52:56.507 53594 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:52:56.517 53604 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:52:56.518 53605 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTcwMjMsImV4cCI6MTcxMTExMTQyMywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.etP86wys7Iczrhyy7r6V-MCeMppU-FFzXwhx8mFljXc)
+09:52:56.518 53605 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:54:32.601 465  INFO  f.m.m.patient.Application - Starting Application using Java 21.0.1 with PID 178278 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.patient)
+09:54:32.603 467  INFO  f.m.m.patient.Application - No active profile set, falling back to 1 default profile: "default"
+09:54:33.415 1279 INFO  f.m.m.p.c.BackendServiceContext - Backend Service authentication initialization
+09:54:33.419 1283 INFO  f.m.m.p.s.BackendServiceService - Backend Service Patient initialization - with UUID: 3c7a08e1-08e0-4d72-96b0-78dbbe760704
+09:54:33.501 1365 INFO  f.m.m.p.s.BackendServiceService - Backend Service successfully initialized
+09:54:34.032 1896 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+09:54:34.034 1898 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+09:54:34.929 2793 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:54:35.131 2995 INFO  f.m.m.patient.Application - Started Application in 2.769 seconds (process running for 3.102)
+09:54:38.694 6558 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:54:38.694 6558 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: 518dbe83-c13f-4835-854c-44b200827217
+09:54:38.694 6558 INFO  f.m.m.p.s.BackendServiceService - Call findBackendServiceByName - BackendService Service - service searched: Gateway
+09:54:38.714 6578 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber not registered but check
+09:54:38.738 6602 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTcwMjMsImV4cCI6MTcxMTExMTQyMywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.etP86wys7Iczrhyy7r6V-MCeMppU-FFzXwhx8mFljXc)
+09:54:38.739 6603 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:54:40.633 8497 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:54:40.634 8498 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: 518dbe83-c13f-4835-854c-44b200827217
+09:54:40.634 8498 INFO  f.m.m.p.filtres.AuthBackendFiltre - Backend filter name registred
+09:54:40.634 8498 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber registered and check
+09:54:40.635 8499 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTcwMjMsImV4cCI6MTcxMTExMTQyMywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.etP86wys7Iczrhyy7r6V-MCeMppU-FFzXwhx8mFljXc)
+09:54:40.635 8499 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service
+09:54:42.229 10093 INFO  f.m.m.p.filtres.AuthBackendFiltre - Call AuthBackendFiltre
+09:54:42.229 10093 INFO  f.m.m.p.filtres.AuthBackendFiltre - Service: Gateway - Reg Number: 518dbe83-c13f-4835-854c-44b200827217
+09:54:42.229 10093 INFO  f.m.m.p.filtres.AuthBackendFiltre - Backend filter name registred
+09:54:42.229 10093 INFO  f.m.m.p.filtres.AuthBackendFiltre - Name and RegNumber registered and check
+09:54:42.230 10094 INFO  f.m.m.p.c.PatientController - Call getAll - ip (127.0.0.1) - token (Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTcwMjMsImV4cCI6MTcxMTExMTQyMywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.etP86wys7Iczrhyy7r6V-MCeMppU-FFzXwhx8mFljXc)
+09:54:42.230 10094 INFO  f.m.m.p.services.AdresseService - Call findAll - Patient Service

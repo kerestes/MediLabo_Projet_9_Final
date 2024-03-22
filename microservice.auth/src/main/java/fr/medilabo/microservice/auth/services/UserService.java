@@ -1,6 +1,5 @@
 package fr.medilabo.microservice.auth.services;
 
-import fr.medilabo.microservice.auth.controllers.AuthController;
 import fr.medilabo.microservice.auth.errors.BadCredentialsException;
 import fr.medilabo.microservice.auth.models.LoginResponseDTO;
 import fr.medilabo.microservice.auth.models.User;
@@ -10,7 +9,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCrypt;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -39,7 +37,7 @@ public class UserService {
         Optional<User> userOptional = userRepository.findOneByEmail(userDTO.username());
         if(userOptional.isPresent() && BCrypt.checkpw(userDTO.password(), userOptional.get().getPassword())){
             String token = jwtTokenService.generateToken(userOptional.get());
-            LoginResponseDTO response = new LoginResponseDTO("Bearer " + token, userOptional.get().getRole().getRole());
+            LoginResponseDTO response = new LoginResponseDTO(token, userOptional.get().getRole().getRole());
             return response;
         }else{
             throw new BadCredentialsException("Incorrect username or Password");

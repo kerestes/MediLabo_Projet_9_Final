@@ -1,4 +1,5 @@
 DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS services;
 
 CREATE TABLE users(
     id INT NOT NULL AUTO_INCREMENT,
@@ -7,6 +8,15 @@ CREATE TABLE users(
     email VARCHAR(255) NOT NULL,
     password VARCHAR(255) NOT NULL,
     role TINYINT NOT NULL,
+    PRIMARY KEY(id)
+);
+
+CREATE TABLE backend_services(
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL UNIQUE,
+    ip VARCHAR(255) NOT NULL,
+    port INT NOT NULL,
+    reg_number binary(16) NOT NULL,
     PRIMARY KEY(id)
 );
 
