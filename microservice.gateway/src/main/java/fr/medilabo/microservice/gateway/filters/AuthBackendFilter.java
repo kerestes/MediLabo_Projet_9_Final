@@ -23,6 +23,6 @@ public class AuthBackendFilter extends AbstractGatewayFilterFactory<Object> {
             exchange.getRequest().mutate().header("Backend-reg-number", backendService.getRegNumber().toString());
             logger.info("Service: " + backendService.getName() + " - Reg Number: " + backendService.getRegNumber());
             return chain.filter(exchange);
-        }, 0);
+        }, 1);
     }
 }

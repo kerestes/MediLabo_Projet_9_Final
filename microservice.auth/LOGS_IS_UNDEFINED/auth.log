@@ -1,301 +1,558 @@
-04:24:24.973 662  INFO  f.m.microservice.auth.Application - Starting Application using Java 21.0.1 with PID 11085 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth)
-04:24:24.975 664  DEBUG f.m.microservice.auth.Application - Running with Spring Boot v3.2.3, Spring v6.1.4
-04:24:24.975 664  INFO  f.m.microservice.auth.Application - No active profile set, falling back to 1 default profile: "default"
-04:24:26.570 2259 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-04:24:26.571 2260 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-04:24:27.238 2927 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-04:24:27.473 3162 INFO  f.m.microservice.auth.Application - Started Application in 2.796 seconds (process running for 3.293)
-04:30:25.110 483  INFO  f.m.microservice.auth.Application - Starting Application using Java 21.0.1 with PID 16748 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth)
-04:30:25.110 483  DEBUG f.m.microservice.auth.Application - Running with Spring Boot v3.2.3, Spring v6.1.4
-04:30:25.111 484  INFO  f.m.microservice.auth.Application - No active profile set, falling back to 1 default profile: "default"
-04:30:26.447 1820 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-04:30:26.449 1822 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-04:30:27.126 2499 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-04:30:27.354 2727 INFO  f.m.microservice.auth.Application - Started Application in 2.463 seconds (process running for 2.836)
-04:34:07.985 223358 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:52962) - Name (Note)
-04:34:07.985 223358 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service
-04:34:08.054 223427 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service
-04:34:33.170 808  INFO  f.m.microservice.auth.Application - Starting Application using Java 21.0.1 with PID 20639 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth)
-04:34:33.171 809  DEBUG f.m.microservice.auth.Application - Running with Spring Boot v3.2.3, Spring v6.1.4
-04:34:33.172 810  INFO  f.m.microservice.auth.Application - No active profile set, falling back to 1 default profile: "default"
-04:34:34.552 2190 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-04:34:34.553 2191 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-04:34:35.215 2853 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-04:34:35.441 3079 INFO  f.m.microservice.auth.Application - Started Application in 2.583 seconds (process running for 3.228)
-04:34:41.957 9595 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:51600) - Name (Patient)
-04:34:41.957 9595 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service
-04:34:42.025 9663 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service
-04:36:06.480 495  INFO  f.m.microservice.auth.Application - Starting Application using Java 21.0.1 with PID 22678 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth)
-04:36:06.481 496  DEBUG f.m.microservice.auth.Application - Running with Spring Boot v3.2.3, Spring v6.1.4
-04:36:06.482 497  INFO  f.m.microservice.auth.Application - No active profile set, falling back to 1 default profile: "default"
-04:36:07.839 1854 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-04:36:07.841 1856 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-04:36:08.563 2578 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-04:36:08.815 2830 INFO  f.m.microservice.auth.Application - Started Application in 2.577 seconds (process running for 2.935)
-04:36:13.530 7545 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:52618) - Name (Patient)
-04:36:13.530 7545 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Patient
-04:36:13.594 7609 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service
-04:36:53.903 496  INFO  f.m.microservice.auth.Application - Starting Application using Java 21.0.1 with PID 23759 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth)
-04:36:53.904 497  DEBUG f.m.microservice.auth.Application - Running with Spring Boot v3.2.3, Spring v6.1.4
-04:36:53.905 498  INFO  f.m.microservice.auth.Application - No active profile set, falling back to 1 default profile: "default"
-04:36:55.223 1816 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-04:36:55.224 1817 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-04:36:55.926 2519 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-04:36:56.174 2767 INFO  f.m.microservice.auth.Application - Started Application in 2.525 seconds (process running for 2.883)
-04:37:00.719 7312 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:36128) - Name (Patient)
-04:37:00.720 7313 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Patient
-04:37:00.789 7382 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Patient
-04:38:32.131 98724 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:49078) - Name (Patient)
-04:38:32.131 98724 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Patient
-04:38:32.134 98727 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Patient
-04:39:33.332 159925 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:51674) - Name (Patient)
-04:39:33.332 159925 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Patient
-04:39:33.334 159927 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Patient
-04:43:17.106 383699 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:46760) - Name (Patient)
-04:43:17.106 383699 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Patient
-04:43:17.109 383702 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Patient
-04:44:29.429 456022 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:33878) - Name (Note)
-04:44:29.430 456023 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Note
-04:44:29.432 456025 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Note
-04:46:02.571 549164 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:45034) - Name (Note)
-04:46:02.571 549164 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Note
-04:46:02.573 549166 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Note
-04:47:32.375 638968 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:43522) - Name (Note)
-04:47:32.376 638969 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Note
-04:47:32.378 638971 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Note
-04:50:34.017 820610 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:40392) - Name (Risque)
-04:50:34.017 820610 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Risque
-04:50:34.020 820613 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Risque
-04:54:00.043 1026636 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:36552) - Name (Gateway)
-04:54:00.044 1026637 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-04:54:00.046 1026639 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Gateway
-04:55:04.167 1090760 INFO  f.m.m.a.c.AuthUserController - Call login - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwNTEwNTksImV4cCI6MTcxMTA2NTQ1OSwic3ViIjoib3JnYW5pc2F0ZXVyQG1haWwuY29tIiwiUm9sZSI6Ik9SR0FOSVNBVEVVUiJ9.ua0f79AU0qcTsAnolUih5zoh6Coqb-yhgT-DdiNPhLU)
-04:55:04.167 1090760 INFO  f.m.m.auth.services.UserService - Call authenticateUser - User Service
-04:55:04.772 1091365 INFO  f.m.m.a.c.AuthUserController - Call tokenUpdate - ip (127.0.0.1) - token (null)
-04:55:04.826 1091419 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:38936) - Name to find (Gateway)
-04:55:04.826 1091419 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-05:00:29.723 478  INFO  f.m.microservice.auth.Application - Starting Application using Java 21.0.1 with PID 45964 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth)
-05:00:29.724 479  DEBUG f.m.microservice.auth.Application - Running with Spring Boot v3.2.3, Spring v6.1.4
-05:00:29.724 479  INFO  f.m.microservice.auth.Application - No active profile set, falling back to 1 default profile: "default"
-05:00:31.100 1855 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-05:00:31.101 1856 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-05:00:31.802 2557 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-05:00:32.032 2787 INFO  f.m.microservice.auth.Application - Started Application in 2.54 seconds (process running for 2.891)
-09:07:44.146 461  INFO  f.m.microservice.auth.Application - Starting Application using Java 21.0.1 with PID 140373 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth)
-09:07:44.147 462  DEBUG f.m.microservice.auth.Application - Running with Spring Boot v3.2.3, Spring v6.1.4
-09:07:44.148 463  INFO  f.m.microservice.auth.Application - No active profile set, falling back to 1 default profile: "default"
-09:07:45.479 1794 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-09:07:45.480 1795 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-09:07:46.139 2454 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-09:07:46.376 2691 INFO  f.m.microservice.auth.Application - Started Application in 2.454 seconds (process running for 2.804)
-09:07:54.511 10826 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:36910) - Name (Gateway)
-09:07:54.512 10827 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:07:54.582 10897 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Gateway
-09:08:08.017 24332 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:55004) - Name (Risque)
-09:08:08.017 24332 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Risque
-09:08:08.019 24334 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Risque
-09:08:13.981 30296 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:55012) - Name (Note)
-09:08:13.981 30296 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Note
-09:08:13.983 30298 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Note
-09:08:18.984 35299 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:51540) - Name (Patient)
-09:08:18.984 35299 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Patient
-09:08:18.986 35301 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Patient
-09:08:43.376 59691 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:34748) - Name (Gateway)
-09:08:43.376 59691 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:08:43.379 59694 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Gateway
-09:09:10.443 86758 INFO  f.m.m.a.c.AuthUserController - Call login - ip (127.0.0.1) - token (Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwODIyNjEsImV4cCI6MTcxMTA5NjY2MSwic3ViIjoib3JnYW5pc2F0ZXVyQG1haWwuY29tIiwiUm9sZSI6Ik9SR0FOSVNBVEVVUiJ9.wLqE13E9z2UxlmgV8PU3mV8ytoCr7aNRv-F-R28qt_c)
-09:09:10.443 86758 INFO  f.m.m.auth.services.UserService - Call authenticateUser - User Service
-09:09:10.990 87305 INFO  f.m.m.a.c.AuthUserController - Call tokenUpdate - ip (127.0.0.1) - token (null)
-09:09:11.044 87359 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:51540) - Name to find (Gateway)
-09:09:11.044 87359 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:09:12.417 88732 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:51540) - Name to find (Gateway)
-09:09:12.418 88733 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:09:30.808 460  INFO  f.m.microservice.auth.Application - Starting Application using Java 21.0.1 with PID 142891 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth)
-09:09:30.809 461  DEBUG f.m.microservice.auth.Application - Running with Spring Boot v3.2.3, Spring v6.1.4
-09:09:30.810 462  INFO  f.m.microservice.auth.Application - No active profile set, falling back to 1 default profile: "default"
-09:09:32.113 1765 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-09:09:32.115 1767 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-09:09:32.805 2457 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-09:09:33.026 2678 INFO  f.m.microservice.auth.Application - Started Application in 2.444 seconds (process running for 2.793)
-09:09:36.259 5911 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:36132) - Name to find (Gateway)
-09:09:36.259 5911 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:09:37.109 6761 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:36132) - Name to find (Gateway)
-09:09:37.109 6761 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:10:55.225 453  INFO  f.m.microservice.auth.Application - Starting Application using Java 21.0.1 with PID 144158 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth)
-09:10:55.227 455  DEBUG f.m.microservice.auth.Application - Running with Spring Boot v3.2.3, Spring v6.1.4
-09:10:55.227 455  INFO  f.m.microservice.auth.Application - No active profile set, falling back to 1 default profile: "default"
-09:10:56.591 1819 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-09:10:56.593 1821 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-09:10:57.269 2497 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-09:10:57.491 2719 INFO  f.m.microservice.auth.Application - Started Application in 2.493 seconds (process running for 2.83)
-09:11:00.340 5568 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:58238) - Name to find (Gateway)
-09:11:00.340 5568 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:11:15.059 20287 INFO  f.m.m.a.c.AuthUserController - Call login - ip (127.0.0.1) - token (null)
-09:11:15.059 20287 INFO  f.m.m.auth.services.UserService - Call authenticateUser - User Service
-09:11:15.425 20653 INFO  f.m.m.a.c.AuthUserController - Call tokenUpdate - ip (127.0.0.1) - token (null)
-09:11:15.425 20653 INFO  f.m.m.a.c.AuthUserController - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTUwNzUsImV4cCI6MTcxMTEwOTQ3NSwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.T7iHb52zXAEKDtGqGl0bGqEKva1SpHeaAmMPbQwu2m8
-09:11:15.453 20681 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:58238) - Name to find (Gateway)
-09:11:15.453 20681 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:12:44.313 109541 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:40876) - Name (Gateway)
-09:12:44.313 109541 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:12:44.316 109544 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Gateway
-09:12:46.387 111615 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:40882) - Name to find (Gateway)
-09:12:46.387 111615 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:12:59.918 125146 INFO  f.m.m.a.c.AuthUserController - Call login - ip (127.0.0.1) - token (null)
-09:12:59.919 125147 INFO  f.m.m.auth.services.UserService - Call authenticateUser - User Service
-09:13:00.285 125513 INFO  f.m.m.a.c.AuthUserController - Call tokenUpdate - ip (127.0.0.1) - token (null)
-09:13:00.285 125513 INFO  f.m.m.a.c.AuthUserController - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTUxODAsImV4cCI6MTcxMTEwOTU4MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Xm5CqjkT49hNXbZmIgPX2SGB-Fdj0ZtOMMJt0Jl_qEg
-09:13:00.305 125533 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:40882) - Name to find (Gateway)
-09:13:00.305 125533 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:13:02.483 127711 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:40882) - Name to find (Gateway)
-09:13:02.483 127711 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:13:03.677 128905 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:40882) - Name to find (Gateway)
-09:13:03.677 128905 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:15:59.740 304968 INFO  f.m.m.a.c.AuthUserController - Call login - ip (127.0.0.1) - token (null)
-09:15:59.741 304969 INFO  f.m.m.auth.services.UserService - Call authenticateUser - User Service
-09:16:00.312 305540 INFO  f.m.m.a.c.AuthUserController - Call tokenUpdate - ip (127.0.0.1) - token (null)
-09:16:00.313 305541 INFO  f.m.m.a.c.AuthUserController - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTUzNTksImV4cCI6MTcxMTEwOTc1OSwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.6lMmsHKVbr42isogh06DPWr_0YvULNm1UkxNUROp-ig
-09:16:00.338 305566 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:37768) - Name to find (Gateway)
-09:16:00.338 305566 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:16:31.129 336357 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:51478) - Name (Patient)
-09:16:31.129 336357 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Patient
-09:16:31.131 336359 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Patient
-09:16:43.744 348972 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:59032) - Name (Gateway)
-09:16:43.744 348972 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:16:43.746 348974 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Gateway
-09:16:47.060 522  INFO  f.m.microservice.auth.Application - Starting Application using Java 21.0.1 with PID 148976 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth)
-09:16:47.061 523  DEBUG f.m.microservice.auth.Application - Running with Spring Boot v3.2.3, Spring v6.1.4
-09:16:47.062 524  INFO  f.m.microservice.auth.Application - No active profile set, falling back to 1 default profile: "default"
-09:16:48.455 1917 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-09:16:48.456 1918 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-09:16:49.128 2590 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-09:16:49.352 2814 INFO  f.m.microservice.auth.Application - Started Application in 2.539 seconds (process running for 2.923)
-09:17:15.967 29429 INFO  f.m.m.a.c.AuthUserController - Call login - ip (127.0.0.1) - token (null)
-09:17:15.967 29429 INFO  f.m.m.auth.services.UserService - Call authenticateUser - User Service
-09:17:16.606 30068 INFO  f.m.m.a.c.AuthUserController - Call tokenUpdate - ip (127.0.0.1) - token (null)
-09:17:16.606 30068 INFO  f.m.m.a.c.AuthUserController - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU0MzYsImV4cCI6MTcxMTEwOTgzNiwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.dS8Kx_g7337q0MvYPXkhwhJoPEwivzdemWGRN71Yj0Q
-09:17:16.663 30125 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:46108) - Name to find (Gateway)
-09:17:16.663 30125 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:18:18.602 487  INFO  f.m.microservice.auth.Application - Starting Application using Java 21.0.1 with PID 150371 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.auth)
-09:18:18.603 488  DEBUG f.m.microservice.auth.Application - Running with Spring Boot v3.2.3, Spring v6.1.4
-09:18:18.603 488  INFO  f.m.microservice.auth.Application - No active profile set, falling back to 1 default profile: "default"
-09:18:19.979 1864 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-09:18:19.981 1866 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-09:18:20.663 2548 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-09:18:20.893 2778 INFO  f.m.microservice.auth.Application - Started Application in 2.511 seconds (process running for 2.886)
-09:18:35.570 17455 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:46646) - Name (Patient)
-09:18:35.570 17455 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Patient
-09:18:35.633 17518 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Patient
-09:18:44.262 26147 INFO  f.m.m.a.c.AuthUserController - Call login - ip (127.0.0.1) - token (null)
-09:18:44.262 26147 INFO  f.m.m.auth.services.UserService - Call authenticateUser - User Service
-09:18:44.660 26545 INFO  f.m.m.a.c.AuthUserController - Call tokenUpdate - ip (127.0.0.1) - token (null)
-09:18:44.661 26546 INFO  f.m.m.a.c.AuthUserController - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU1MjQsImV4cCI6MTcxMTEwOTkyNCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Jt02UFwP3N3FqTC51MLWIPU62e5pa0sFJNI12GM52DE
-09:18:44.717 26602 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:46646) - Name to find (Gateway)
-09:18:44.717 26602 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:19:14.085 55970 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:46646) - Name to find (Gateway)
-09:19:14.086 55971 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:24:27.460 369345 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:39568) - Name (Gateway)
-09:24:27.460 369345 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:24:27.462 369347 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Gateway
-09:24:28.758 370643 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:39580) - Name to find (Gateway)
-09:24:28.758 370643 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:24:36.501 378386 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:39580) - Name to find (Gateway)
-09:24:36.502 378387 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:24:37.979 379864 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:39580) - Name to find (Gateway)
-09:24:37.979 379864 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:25:42.878 444763 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:55228) - Name to find (Gateway)
-09:25:42.878 444763 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:26:00.120 462005 INFO  f.m.m.a.c.AuthUserController - Call login - ip (127.0.0.1) - token (null)
-09:26:00.121 462006 INFO  f.m.m.auth.services.UserService - Call authenticateUser - User Service
-09:26:00.468 462353 INFO  f.m.m.a.c.AuthUserController - Call tokenUpdate - ip (127.0.0.1) - token (null)
-09:26:00.468 462353 INFO  f.m.m.a.c.AuthUserController - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTU5NjAsImV4cCI6MTcxMTExMDM2MCwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.1NiX2PJcejCIyZNmDeO4EPfp4Gv2-Q32qG23EYtVQ7U
-09:26:00.488 462373 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:55228) - Name to find (Gateway)
-09:26:00.489 462374 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:26:57.981 519866 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:55228) - Name to find (Gateway)
-09:26:57.981 519866 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:27:09.359 531244 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:55228) - Name to find (Gateway)
-09:27:09.359 531244 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:28:19.367 601252 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:47426) - Name to find (Gateway)
-09:28:19.367 601252 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:32:17.749 839634 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:45200) - Name (Patient)
-09:32:17.750 839635 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Patient
-09:32:17.752 839637 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Patient
-09:32:26.625 848510 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:45200) - Name to find (Gateway)
-09:32:26.625 848510 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:32:29.030 850915 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:45200) - Name to find (Gateway)
-09:32:29.031 850916 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:33:39.832 921717 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:45972) - Name to find (Gateway)
-09:33:39.832 921717 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:34:53.695 995580 INFO  f.m.m.a.c.AuthUserController - Call login - ip (127.0.0.1) - token (null)
-09:34:53.695 995580 INFO  f.m.m.auth.services.UserService - Call authenticateUser - User Service
-09:34:54.253 996138 INFO  f.m.m.a.c.AuthUserController - Call tokenUpdate - ip (127.0.0.1) - token (null)
-09:34:54.254 996139 INFO  f.m.m.a.c.AuthUserController - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY0OTMsImV4cCI6MTcxMTExMDg5Mywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.ZAPQs-4xKo01LRn2BV10AXKO36zirpCDBuEetsAujbE
-09:34:54.282 996167 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:56358) - Name to find (Gateway)
-09:34:54.282 996167 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:35:03.864 1005749 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:42836) - Name (Patient)
-09:35:03.864 1005749 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Patient
-09:35:03.867 1005752 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Patient
-09:35:07.188 1009073 INFO  f.m.m.a.c.AuthUserController - Call tokenUpdate - ip (127.0.0.1) - token (null)
-09:35:07.188 1009073 INFO  f.m.m.a.c.AuthUserController - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY0OTMsImV4cCI6MTcxMTExMDg5Mywic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.ZAPQs-4xKo01LRn2BV10AXKO36zirpCDBuEetsAujbE
-09:35:07.242 1009127 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:42836) - Name to find (Gateway)
-09:35:07.243 1009128 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:36:04.499 1066384 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:42836) - Name to find (Gateway)
-09:36:04.499 1066384 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:36:18.518 1080403 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:42836) - Name to find (Gateway)
-09:36:18.518 1080403 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:36:25.956 1087841 INFO  f.m.m.a.c.AuthUserController - Call login - ip (127.0.0.1) - token (null)
-09:36:25.957 1087842 INFO  f.m.m.auth.services.UserService - Call authenticateUser - User Service
-09:36:31.541 1093426 INFO  f.m.m.a.c.AuthUserController - Call tokenUpdate - ip (127.0.0.1) - token (null)
-09:36:31.541 1093426 INFO  f.m.m.a.c.AuthUserController - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY1ODYsImV4cCI6MTcxMTExMDk4Niwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Rc9QgYcyVcNfzU4_SRE17YAWrPxS_fwjOIQTj5bmJls
-09:36:31.557 1093442 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:42836) - Name to find (Gateway)
-09:36:31.557 1093442 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:41:51.974 1413859 INFO  f.m.m.a.c.AuthUserController - Call tokenUpdate - ip (127.0.0.1) - token (null)
-09:41:51.974 1413859 INFO  f.m.m.a.c.AuthUserController - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY1ODYsImV4cCI6MTcxMTExMDk4Niwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Rc9QgYcyVcNfzU4_SRE17YAWrPxS_fwjOIQTj5bmJls
-09:41:52.006 1413891 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:59820) - Name to find (Gateway)
-09:41:52.006 1413891 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:41:55.507 1417392 INFO  f.m.m.a.c.AuthUserController - Call tokenUpdate - ip (127.0.0.1) - token (null)
-09:41:55.507 1417392 INFO  f.m.m.a.c.AuthUserController - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY1ODYsImV4cCI6MTcxMTExMDk4Niwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Rc9QgYcyVcNfzU4_SRE17YAWrPxS_fwjOIQTj5bmJls
-09:41:55.532 1417417 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:59820) - Name to find (Gateway)
-09:41:55.532 1417417 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:43:41.151 1523036 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:44800) - Name (Gateway)
-09:43:41.151 1523036 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:43:41.154 1523039 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Gateway
-09:43:43.328 1525213 INFO  f.m.m.a.c.AuthUserController - Call tokenUpdate - ip (127.0.0.1) - token (null)
-09:43:43.328 1525213 INFO  f.m.m.a.c.AuthUserController - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNZWRpX0xhYm9fQXBwbGkiLCJpYXQiOjE3MTEwOTY1ODYsImV4cCI6MTcxMTExMDk4Niwic3ViIjoidGVzdEBtYWlsLmNvbSIsIlJvbGUiOiJPUkdBTklTQVRFVVIifQ.Rc9QgYcyVcNfzU4_SRE17YAWrPxS_fwjOIQTj5bmJls
-09:43:43.341 1525226 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:44816) - Name to find (Gateway)
-09:43:43.341 1525226 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:43:51.144 1533029 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:44816) - Name to find (Gateway)
-09:43:51.144 1533029 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:46:18.124 1680009 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:59270) - Name (Gateway)
-09:46:18.124 1680009 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:46:18.127 1680012 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Gateway
-09:46:21.229 1683114 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:59278) - Name to find (Gateway)
-09:46:21.229 1683114 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:46:23.530 1685415 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:59278) - Name to find (Gateway)
-09:46:23.530 1685415 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:48:03.489 1785374 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:42224) - Name (Gateway)
-09:48:03.490 1785375 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:48:03.492 1785377 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Gateway
-09:48:10.230 1792115 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:57334) - Name to find (Gateway)
-09:48:10.230 1792115 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:48:29.117 1811002 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:37164) - Name (Patient)
-09:48:29.117 1811002 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Patient
-09:48:29.119 1811004 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Patient
-09:49:14.199 1856084 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:37164) - Name to find (Gateway)
-09:49:14.199 1856084 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:49:26.882 1868767 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:37164) - Name to find (Gateway)
-09:49:26.882 1868767 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:50:18.391 1920276 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:37164) - Name to find (Gateway)
-09:50:18.391 1920276 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:52:04.253 2026138 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:58030) - Name (Patient)
-09:52:04.254 2026139 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Patient
-09:52:04.256 2026141 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Patient
-09:52:08.933 2030818 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:58030) - Name to find (Gateway)
-09:52:08.933 2030818 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:52:56.511 2078396 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:58030) - Name to find (Gateway)
-09:52:56.512 2078397 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
-09:54:33.477 2175362 INFO  f.m.m.a.c.AuthBackendController - Call registrationService - ip (127.0.0.1:44818) - Name (Patient)
-09:54:33.478 2175363 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Patient
-09:54:33.480 2175365 INFO  f.m.m.a.s.BackendServiceService - Call save - BackendService Service - service saved: Patient
-09:54:38.704 2180589 INFO  f.m.m.a.c.AuthBackendController - Call findService - ip (127.0.0.1:44818) - Name to find (Gateway)
-09:54:38.706 2180591 INFO  f.m.m.a.s.BackendServiceService - Call findOneByName - BackendService Service - service searched: Gateway
+10:04:02.540 515  INFO  f.m.microservice.auth.Application - Starting Application using Java 21.0.1 with PID 111751 (/home/alexandrekerestes/Documents/mission_9/MediLabo_Projet_9_Final/microservice.auth/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/mission_9/MediLabo_Projet_9_Final/microservice.auth)
+10:04:02.542 517  DEBUG f.m.microservice.auth.Application - Running with Spring Boot v3.2.3, Spring v6.1.4
+10:04:02.542 517  INFO  f.m.microservice.auth.Application - No active profile set, falling back to 1 default profile: "default"
+10:04:04.706 2681 ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLSyntaxErrorException: Unknown database 'medilabo_auth'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:438)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:189)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:342)
+	at org.springframework.boot.jdbc.EmbeddedDatabaseConnection.isEmbedded(EmbeddedDatabaseConnection.java:168)
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.isEmbeddedDatabase(DataSourceScriptDatabaseInitializer.java:67)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.isEnabled(AbstractScriptDatabaseInitializer.java:84)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:107)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyDataScripts(AbstractScriptDatabaseInitializer.java:102)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:77)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1231)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:949)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at fr.medilabo.microservice.auth.Application.main(Application.java:10)
+10:04:05.938 3913 ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLSyntaxErrorException: Unknown database 'medilabo_auth'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:438)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:189)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:428)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:276)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:107)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:223)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:170)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1432)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1503)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:388)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:364)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1231)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:949)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at fr.medilabo.microservice.auth.Application.main(Application.java:10)
+10:04:05.941 3916 WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
+java.lang.NullPointerException: Cannot invoke "org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(java.sql.SQLException, String)" because the return value of "org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.sqlExceptionHelper()" is null
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:276)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:107)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:223)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:170)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1432)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1503)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:388)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:364)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1231)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:949)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at fr.medilabo.microservice.auth.Application.main(Application.java:10)
+10:04:05.950 3925 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+10:04:05.951 3926 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+10:04:07.447 5422 ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLSyntaxErrorException: Unknown database 'medilabo_auth'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:438)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:189)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:428)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:64)
+	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:232)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:117)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:286)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:145)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:142)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:315)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:388)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:364)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1231)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:949)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at fr.medilabo.microservice.auth.Application.main(Application.java:10)
+10:04:07.449 5424 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1049, SQLState: 42000
+10:04:07.449 5424 ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Unknown database 'medilabo_auth'
+10:04:07.457 5432 ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Unknown database 'medilabo_auth'] [n/a]
+10:04:07.457 5432 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Unknown database 'medilabo_auth'] [n/a]
+10:04:07.488 5463 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Unknown database 'medilabo_auth'] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1231)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:949)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at fr.medilabo.microservice.auth.Application.main(Application.java:10)
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Unknown database 'medilabo_auth'] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:364)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 16 common frames omitted
+Caused by: org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Unknown database 'medilabo_auth'] [n/a]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:66)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:64)
+	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:232)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:117)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:286)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:145)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:142)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:315)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:388)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 20 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'medilabo_auth'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:438)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:189)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:428)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46)
+	... 41 common frames omitted
+10:04:25.598 513  INFO  f.m.microservice.auth.Application - Starting Application using Java 21.0.1 with PID 112422 (/home/alexandrekerestes/Documents/mission_9/MediLabo_Projet_9_Final/microservice.auth/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/mission_9/MediLabo_Projet_9_Final/microservice.auth)
+10:04:25.599 514  DEBUG f.m.microservice.auth.Application - Running with Spring Boot v3.2.3, Spring v6.1.4
+10:04:25.600 515  INFO  f.m.microservice.auth.Application - No active profile set, falling back to 1 default profile: "default"
+10:04:27.715 2630 ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLSyntaxErrorException: Unknown database 'medilabo_auth'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:438)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:189)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:342)
+	at org.springframework.boot.jdbc.EmbeddedDatabaseConnection.isEmbedded(EmbeddedDatabaseConnection.java:168)
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.isEmbeddedDatabase(DataSourceScriptDatabaseInitializer.java:67)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.isEnabled(AbstractScriptDatabaseInitializer.java:84)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:107)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyDataScripts(AbstractScriptDatabaseInitializer.java:102)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:77)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1231)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:949)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at fr.medilabo.microservice.auth.Application.main(Application.java:10)
+10:04:28.960 3875 ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLSyntaxErrorException: Unknown database 'medilabo_auth'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:438)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:189)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:428)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:276)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:107)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:223)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:170)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1432)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1503)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:388)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:364)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1231)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:949)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at fr.medilabo.microservice.auth.Application.main(Application.java:10)
+10:04:28.963 3878 WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
+java.lang.NullPointerException: Cannot invoke "org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(java.sql.SQLException, String)" because the return value of "org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.sqlExceptionHelper()" is null
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:276)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:107)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:223)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:170)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1432)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1503)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:388)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:364)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1231)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:949)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at fr.medilabo.microservice.auth.Application.main(Application.java:10)
+10:04:28.972 3887 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+10:04:28.973 3888 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+10:04:30.423 5338 ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLSyntaxErrorException: Unknown database 'medilabo_auth'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:438)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:189)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:428)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:64)
+	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:232)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:117)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:286)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:145)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:142)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:315)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:388)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:364)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1231)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:949)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at fr.medilabo.microservice.auth.Application.main(Application.java:10)
+10:04:30.426 5341 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1049, SQLState: 42000
+10:04:30.426 5341 ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Unknown database 'medilabo_auth'
+10:04:30.432 5347 ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Unknown database 'medilabo_auth'] [n/a]
+10:04:30.432 5347 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Unknown database 'medilabo_auth'] [n/a]
+10:04:30.449 5364 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Unknown database 'medilabo_auth'] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1231)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:949)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at fr.medilabo.microservice.auth.Application.main(Application.java:10)
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Unknown database 'medilabo_auth'] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:364)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 16 common frames omitted
+Caused by: org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution [Unknown database 'medilabo_auth'] [n/a]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:66)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:64)
+	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:232)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:117)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:286)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:145)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:142)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:315)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:388)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 20 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'medilabo_auth'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:438)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:189)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:428)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46)
+	... 41 common frames omitted

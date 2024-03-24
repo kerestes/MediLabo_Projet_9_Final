@@ -53,6 +53,7 @@ public class VerifyTokenFilter extends AbstractGatewayFilterFactory<Object> {
                 String token = req.getHeaders().get("Authorization").get(0).toString().replace("Bearer ", "");
                 logger.info("Request with token: " + token);
                 Optional<User> optionalUser = userService.findById(token);
+                logger.info("User is present? " + optionalUser.isPresent());
 
                 if (optionalUser.isPresent()) {
                     try {
@@ -73,16 +74,19 @@ public class VerifyTokenFilter extends AbstractGatewayFilterFactory<Object> {
                                     setResponseTokenUpdate(exchange, newToken);
                                 }));
                             }
+                        } else {
+                            logger.info("Invalid Role for this Route in JWT");
                         }
                     } catch (JWTVerificationException e) {
                         logger.warn("Jwt is not valid");
                     }
+                } else {
+                    logger.warn("Jwt is not in the request");
                 }
             }
-            logger.warn("Jwt is not in the request");
             exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
             return exchange.getResponse().setComplete();
-        }, 1);
+        }, 0);
     }
 
     private void setResponseTokenUpdate(ServerWebExchange exchange, String Token){

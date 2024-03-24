@@ -1,0 +1,23 @@
+04:44:28.632 496  INFO  f.m.m.note.medecin.Application - Starting Application using Java 21.0.1 with PID 31301 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.note.medecin/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.note.medecin)
+04:44:28.634 498  INFO  f.m.m.note.medecin.Application - No active profile set, falling back to 1 default profile: "default"
+04:44:29.359 1223 INFO  f.m.m.n.m.c.BackendServiceContext - Backend Service authentication initialization
+04:44:29.364 1228 INFO  f.m.m.n.m.s.BackendServiceService - Backend Service Note initialization - with UUID: 561d1590-816d-4e5c-8407-9a0c0bd4f3cb
+04:44:29.960 1824 INFO  f.m.m.note.medecin.Application - Started Application in 1.564 seconds (process running for 1.919)
+04:46:01.797 468  INFO  f.m.m.note.medecin.Application - Starting Application using Java 21.0.1 with PID 32838 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.note.medecin/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.note.medecin)
+04:46:01.798 469  INFO  f.m.m.note.medecin.Application - No active profile set, falling back to 1 default profile: "default"
+04:46:02.505 1176 INFO  f.m.m.n.m.c.BackendServiceContext - Backend Service authentication initialization
+04:46:02.509 1180 INFO  f.m.m.n.m.s.BackendServiceService - Backend Service Note initialization - with UUID: de97cbb9-2829-4974-bd13-8ed1d744fdcd
+04:46:02.597 1268 INFO  f.m.m.n.m.s.BackendServiceService - Backend Service successfully initialized
+04:46:03.101 1772 INFO  f.m.m.note.medecin.Application - Started Application in 1.524 seconds (process running for 1.863)
+04:47:31.583 485  INFO  f.m.m.note.medecin.Application - Starting Application using Java 21.0.1 with PID 34435 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.note.medecin/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.note.medecin)
+04:47:31.585 487  INFO  f.m.m.note.medecin.Application - No active profile set, falling back to 1 default profile: "default"
+04:47:32.307 1209 INFO  f.m.m.n.m.c.BackendServiceContext - Backend Service authentication initialization
+04:47:32.312 1214 INFO  f.m.m.n.m.s.BackendServiceService - Backend Service Note initialization - with UUID: 3835f7c7-d5b6-4cd4-9aa0-88e5edd8d047
+04:47:32.401 1303 INFO  f.m.m.n.m.s.BackendServiceService - Backend Service successfully initialized
+04:47:32.903 1805 INFO  f.m.m.note.medecin.Application - Started Application in 1.539 seconds (process running for 1.91)
+09:08:13.251 453  INFO  f.m.m.note.medecin.Application - Starting Application using Java 21.0.1 with PID 141045 (/home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.note.medecin/target/classes started by alexandrekerestes in /home/alexandrekerestes/Documents/MediLabo_Projet_9_Final/microservice.note.medecin)
+09:08:13.253 455  INFO  f.m.m.note.medecin.Application - No active profile set, falling back to 1 default profile: "default"
+09:08:13.916 1118 INFO  f.m.m.n.m.c.BackendServiceContext - Backend Service authentication initialization
+09:08:13.921 1123 INFO  f.m.m.n.m.s.BackendServiceService - Backend Service Note initialization - with UUID: 4dce972e-30f8-4aff-b713-543c15e59c78
+09:08:14.004 1206 INFO  f.m.m.n.m.s.BackendServiceService - Backend Service successfully initialized
+09:08:14.484 1686 INFO  f.m.m.note.medecin.Application - Started Application in 1.465 seconds (process running for 1.795)
