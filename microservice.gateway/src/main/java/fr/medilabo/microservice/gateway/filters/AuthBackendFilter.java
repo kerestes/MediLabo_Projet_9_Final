@@ -1,7 +1,6 @@
 package fr.medilabo.microservice.gateway.filters;
 
 import fr.medilabo.microservice.gateway.models.BackendService;
-import fr.medilabo.microservice.gateway.services.BackendServiceService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,8 +8,6 @@ import org.springframework.cloud.gateway.filter.GatewayFilter;
 import org.springframework.cloud.gateway.filter.OrderedGatewayFilter;
 import org.springframework.cloud.gateway.filter.factory.AbstractGatewayFilterFactory;
 import org.springframework.stereotype.Component;
-
-import java.util.Map;
 
 @Component
 public class AuthBackendFilter extends AbstractGatewayFilterFactory<Object> {

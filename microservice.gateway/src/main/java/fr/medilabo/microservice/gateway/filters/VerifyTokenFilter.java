@@ -33,6 +33,7 @@ public class VerifyTokenFilter extends AbstractGatewayFilterFactory<Object> {
     @Autowired
     private JwtService jwtService;
     private RoleEnum roleRequired;
+    
     @Value("${auth.update}")
     private String URL_AUTH;
     private final String PATH_ORGANISATEUR = "patient";
@@ -43,28 +44,33 @@ public class VerifyTokenFilter extends AbstractGatewayFilterFactory<Object> {
     public GatewayFilter apply(final Object config) {
         logger.info("Call VerifyTokenFilter");
         return new OrderedGatewayFilter((exchange, chain) ->{
+
             ServerHttpRequest req = exchange.getRequest();
             roleRequired = req.getURI().toString().contains(PATH_ORGANISATEUR) ? RoleEnum.ORGANISATEUR : RoleEnum.PRATICIEN;
-            if (exchange.getRequest().getHeaders().containsKey("Authorization")) {
-                String token = exchange.getRequest().getHeaders().get("Authorization").get(0).toString().replace("Bearer ", "");
+
+            if (req.getHeaders().containsKey("Authorization")) {
+
+                String token = req.getHeaders().get("Authorization").get(0).toString().replace("Bearer ", "");
                 logger.info("Request with token: " + token);
                 Optional<User> optionalUser = userService.findById(token);
+
                 if (optionalUser.isPresent()) {
                     try {
                         RoleEnum role = RoleEnum.valueOf(jwtService.getRoleFromToken(token));
                         if (optionalUser.get().getExpirationDate().after(new Date()) && role.equals(roleRequired)) {
+
                             logger.info("Token Valid");
                             return chain.filter(exchange);
+                            
                         } else if (role.equals(roleRequired)) {
-                            RestTemplate template = new RestTemplate();
-                            String newToken = template.postForEntity(URL_AUTH, token, String.class).getBody().replace("Bearer ", "");
+
+                            String newToken = updateToken(token);
+                            
                             logger.info("Token expired - call Auth update token - New Token: " + newToken);
                             if (!newToken.isEmpty()) {
+
                                 return chain.filter(exchange).then(Mono.fromRunnable(() -> {
-                                    User user = new User(newToken, exchange.getRequest().getRemoteAddress().toString(), jwtService.halfTimeExpiredToken(newToken));
-                                    userService.save(user);
-                                    exchange.getResponse().getHeaders().setAccessControlExposeHeaders(Arrays.asList("Authorization_update"));
-                                    exchange.getResponse().getHeaders().add("Authorization_update", "Bearer " + newToken);
+                                    setResponseTokenUpdate(exchange, newToken);
                                 }));
                             }
                         }
@@ -77,5 +83,17 @@ public class VerifyTokenFilter extends AbstractGatewayFilterFactory<Object> {
             exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
             return exchange.getResponse().setComplete();
         }, 1);
+    }
+
+    private void setResponseTokenUpdate(ServerWebExchange exchange, String Token){
+        User user = new User(Token, exchange.getRequest().getRemoteAddress().toString(), jwtService.halfTimeExpiredToken(Token));
+        userService.save(user);
+        exchange.getResponse().getHeaders().setAccessControlExposeHeaders(Arrays.asList("Authorization_update"));
+        exchange.getResponse().getHeaders().add("Authorization_update", "Bearer " + Token);
+    }
+
+    private String updateToken(String token){
+        RestTemplate template = new RestTemplate();
+        return template.postForEntity(URL_AUTH, token, String.class).getBody().replace("Bearer ", "");
     }
 }

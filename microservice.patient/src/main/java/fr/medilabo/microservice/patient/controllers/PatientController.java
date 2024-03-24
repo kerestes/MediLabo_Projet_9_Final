@@ -6,12 +6,9 @@ import fr.medilabo.microservice.patient.services.AdresseService;
 import fr.medilabo.microservice.patient.services.PatientService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
-import org.apache.catalina.connector.Response;
-import org.hibernate.exception.ConstraintViolationException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.web.JsonPath;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
@@ -65,7 +62,7 @@ public class PatientController {
             if (patient.getAdresse() != null){
                 Optional<Adresse> optionalAdresse = adresseService.verifyAdresse(patient.getAdresse());
                 if(optionalAdresse.isEmpty()){
-                    Adresse adresse = adresseService.save(patient.getAdresse());
+                    adresseService.save(patient.getAdresse());
                 } else {
                     patient.setAdresse(optionalAdresse.get());
                 }

@@ -10,7 +10,7 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.time.ZoneId;
 import java.util.*;
-import java.util.stream.Collectors;
+import java.util.Map.Entry;
 
 @Component
 public class TerminologieUtil {
@@ -34,6 +34,18 @@ public class TerminologieUtil {
         Map<Long, Long> risquePoints = new HashMap<>();
         List<Risque> risques = new ArrayList<>();
 
+        createRisquePointMap(notes, risquePoints);
+
+        risquePoints.entrySet().forEach(risquePoint -> {
+            
+            Patient patient = patients.stream().filter(p -> p.id() == risquePoint.getKey()).findFirst().get();          
+            risques.add(verifyRisquePatient(patient, risquePoint));
+
+        });
+        return risques;
+    }
+
+    private void createRisquePointMap(List<Note> notes, Map<Long, Long> risquePoints){
         notes.forEach(note -> {
             if(risquePoints.containsKey(note.patId())){
                 risquePoints.put(note.patId(), risquePoints.get(note.patId()) + verifierTerminologie(note));
@@ -41,17 +53,19 @@ public class TerminologieUtil {
                 risquePoints.put(note.patId(), verifierTerminologie(note));
             }
         });
+    }    
+    
+    private Long verifierTerminologie(Note note){
+        return Arrays.stream(TERMINOLOGIE).filter(f -> note.note().toLowerCase().contains(f.toLowerCase())).count();
+    }
 
-        risquePoints.entrySet().forEach(risquePoint -> {
-            Risque risque = new Risque();
-            Patient patient = patients.stream().filter(p -> p.id() == risquePoint.getKey()).findFirst().get();
-            int age = Period.between(patient.dateNaissance().toInstant()
-                    .atZone(ZoneId.systemDefault())
-                    .toLocalDate(), LocalDate.now()).getYears();
+    private Risque verifyRisquePatient(Patient patient, Entry<Long, Long> risquePoint){
+        Risque risque = new Risque();
+        int age = getAge(patient);
+        risque.setPatId(patient.id());
+        risque.setPatient(patient.nom());
 
-            risque.setPatId(patient.id());
-            risque.setPatient(patient.nom());
-             if((age <= 30 && Character.compare(patient.genre(), 'M') == 0 && risquePoint.getValue() >=5) ||
+        if((age <= 30 && Character.compare(patient.genre(), 'M') == 0 && risquePoint.getValue() >=5) ||
                     (age <= 30 && Character.compare(patient.genre(), 'F') == 0 && risquePoint.getValue() >=7) ||
                     (age > 30 && risquePoint.getValue() >=8)){
                 risque.setRisque(RisqueEnum.EARLYONSET.getRisque());
@@ -64,12 +78,13 @@ public class TerminologieUtil {
             } else {
                  risque.setRisque(RisqueEnum.NONE.getRisque());
              }
-             risques.add(risque);
-        });
-        return risques;
+        return risque;
     }
 
-    private Long verifierTerminologie(Note note){
-        return Arrays.stream(TERMINOLOGIE).filter(f -> note.note().toLowerCase().contains(f.toLowerCase())).count();
+    private int getAge(Patient patient){
+        return Period.between(patient.dateNaissance().toInstant()
+        .atZone(ZoneId.systemDefault())
+        .toLocalDate(), LocalDate.now()).getYears();
     }
+
 }

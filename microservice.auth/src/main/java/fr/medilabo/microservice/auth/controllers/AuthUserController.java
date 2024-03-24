@@ -38,19 +38,10 @@ public class AuthUserController {
     public ResponseEntity<String> tokenUpdate(@RequestBody String token, HttpServletRequest request){
         logger.info("Call tokenUpdate - ip (" + request.getRemoteAddr() +") - token (" + request.getHeader("Authorization") +")");
         try{
-            logger.info("token: " + token);
-            StringBuilder sb = new StringBuilder(token);
-            if(sb.charAt(0) == '"' && sb.charAt(sb.length()-1) == '"'){
-                sb.replace(0,1, "");
-                sb.replace(sb.length()-1, sb.length(), "");
-                token = sb.toString();
-            }
+            token = trimQuotesToken(token);
             Date expiredDate = jwtTokenService.getExpireDateFromToken(token);
             if (expiredDate.after(new Date())){
-                User user = new User();
-                user.setEmail(jwtTokenService.getSubjectFromToken(token));
-                user.setRole(RoleEnum.valueOf(jwtTokenService.getRoleFromToken(token)));
-                return ResponseEntity.ok(jwtTokenService.generateToken(user));
+                return ResponseEntity.ok(createNewUserAndTokenGeneration(token));
             }
         } catch (JWTVerificationException e){
             logger.warn("Token invalid or expired");
@@ -79,5 +70,22 @@ public class AuthUserController {
             logger.info("User not found");
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
+    }
+
+    private String trimQuotesToken(String token){
+        StringBuilder sb = new StringBuilder(token);
+            if(sb.charAt(0) == '"' && sb.charAt(sb.length()-1) == '"'){
+                sb.replace(0,1, "");
+                sb.replace(sb.length()-1, sb.length(), "");
+                token = sb.toString();
+            }
+        return sb.toString();
+    }
+
+    private String createNewUserAndTokenGeneration(String token){
+        User user = new User();
+        user.setEmail(jwtTokenService.getSubjectFromToken(token));
+        user.setRole(RoleEnum.valueOf(jwtTokenService.getRoleFromToken(token)));
+        return jwtTokenService.generateToken(user);
     }
 }

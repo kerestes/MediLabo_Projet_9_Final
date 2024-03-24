@@ -28,10 +28,7 @@ public class PatientService {
     public List<Patient> getAllPatient(){
         logger.info("Call getAllPatient - Patient Service - with Backend Service, name (" + backendService.getName() +") - reg number (" + backendService.getRegNumber() + ")");
         RestTemplate restTemplate = new RestTemplate();
-        HttpHeaders headers = new HttpHeaders();
-        headers.add("Backend-name", backendService.getName());
-        headers.add("Backend-reg-number", backendService.getRegNumber().toString());
-        HttpEntity<String> request = new HttpEntity<String>(headers);
+        HttpEntity<String> request = new HttpEntity<String>(setHeaders());
         try{
             Patient[] patients = restTemplate.exchange(URL_PATIENT, HttpMethod.GET, request, Patient[].class).getBody();
             return Arrays.asList(patients);
@@ -39,5 +36,12 @@ public class PatientService {
             logger.error("Patient service is not responding - connection fail");
         }
         return Arrays.asList();
+    }
+
+    private HttpHeaders setHeaders(){
+        HttpHeaders headers = new HttpHeaders();
+        headers.add("Backend-name", backendService.getName());
+        headers.add("Backend-reg-number", backendService.getRegNumber().toString());
+        return headers;
     }
 }

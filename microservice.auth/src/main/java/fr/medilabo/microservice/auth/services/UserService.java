@@ -37,8 +37,7 @@ public class UserService {
         Optional<User> userOptional = userRepository.findOneByEmail(userDTO.username());
         if(userOptional.isPresent() && BCrypt.checkpw(userDTO.password(), userOptional.get().getPassword())){
             String token = jwtTokenService.generateToken(userOptional.get());
-            LoginResponseDTO response = new LoginResponseDTO(token, userOptional.get().getRole().getRole());
-            return response;
+            return new LoginResponseDTO(token, userOptional.get().getRole().getRole());
         }else{
             throw new BadCredentialsException("Incorrect username or Password");
         }

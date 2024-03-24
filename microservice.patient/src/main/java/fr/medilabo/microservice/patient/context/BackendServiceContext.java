@@ -1,16 +1,12 @@
 package fr.medilabo.microservice.patient.context;
 
 import fr.medilabo.microservice.patient.models.BackendService;
-import fr.medilabo.microservice.patient.services.BackendServiceService;
-import jakarta.annotation.PostConstruct;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
-import org.springframework.web.context.annotation.ApplicationScope;
 
 import java.util.*;
 

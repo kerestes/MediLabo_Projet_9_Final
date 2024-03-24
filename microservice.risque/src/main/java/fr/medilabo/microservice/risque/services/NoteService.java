@@ -30,10 +30,7 @@ public class NoteService {
     public List<Note> getAllNotes(){
         logger.info("Call getAllNotes - Note Service - with Backend Service, name (" + backendService.getName() +") - reg number (" + backendService.getRegNumber() + ")");
         RestTemplate restTemplate = new RestTemplate();
-        HttpHeaders headers = new HttpHeaders();
-        headers.add("Backend-name", backendService.getName());
-        headers.add("Backend-reg-number", backendService.getRegNumber().toString());
-        HttpEntity<String> request = new HttpEntity<String>(headers);
+        HttpEntity<String> request = new HttpEntity<String>(setHeaders());
         try{
             Note[] notes = restTemplate.exchange(URL_NOTES, HttpMethod.GET, request, Note[].class).getBody();
             return Arrays.asList(notes);
@@ -41,5 +38,12 @@ public class NoteService {
             logger.error("Note service is not responding - connection fail");
         }
         return Arrays.asList();
+    }
+
+    private HttpHeaders setHeaders(){
+        HttpHeaders headers = new HttpHeaders();
+        headers.add("Backend-name", backendService.getName());
+        headers.add("Backend-reg-number", backendService.getRegNumber().toString());
+        return headers;
     }
 }
