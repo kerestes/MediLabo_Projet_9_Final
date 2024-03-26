@@ -49,7 +49,7 @@
         4. Risque
         5. Auth
         6. Angular
-5. Gree Code
+5. Green Code
 
 
 ## Introduction
@@ -64,9 +64,17 @@ Il n’y avait aucune détermination en amont quant à l’utilisation d'une tec
 
 ### Sécurité
 
-L'un des prérequis pour ce projet était l'utilisation de la bibliothèque Spring Security, cependant nous n'avons pas trouvé approprié l'utilisation de cette bibliothèque pour deux raisons. Premièrement, son implémentation devrait se faire pour chaque microservice, ce qui pourrait générer des problèmes de cohérence ou des failles de sécurité, et deuxièmement, implémenter la sécurité Spring dans un seul microservice d'authentification n'avait pas beaucoup de sens, puisque la force de cette bibliothèque réside dans l'autorisation et l'authentification. dans un contexte, ce qui ne serait pas le cas, puisque nous travaillons dans une architecture de microservices.
+La securité du projet repose sur deux axes :
 
-Cependant, comme c'était un des prérequis du projet, il est possible de trouver une Branche avec cette implémentation
+    1. Authentification d'utilisateur
+
+L'authentification de l'utilisateur est effectuée par le service Auth. Lorsqu'un utilisateur accède à la page de connexion et envoie ses identifiants (identifiant et mot de passe), le service Auth vérifie si ces identifiants correspondent à un utilisateur enregistré dans sa base de données. Si la réponse est positive, il génère un token qui est envoyé à l'utilisateur et est stocké dans le local storage du navigateur, tout comme il est stocké dans la base de données Redis du service Gateway. Ainsi, lorsque l'utilisateur fait une nouvelle requête, le service Gateway peut vérifier si le JWT existe et n'a pas besoin d'appeler à nouveau le service Auth.
+
+    2. Authentification des services backend
+
+Lorsqu'un service démarre, il génère un UUID et enregistre son nom et son UUID auprès du service Auth. Lorsqu'un utilisateur fait une requête le service Gateway, par exemple, qui est également enregistré auprès du service Auth, crée deux Headers un avec son nom et l'outre avec son UUID, le service qui reçoit cette requête vérifie si l'UUID reçu correspond au nom du service qui a fait la requête, si la réponse est positive il enregistre cette information dans un Bean et autorise la requête, sinon il refuse la requête.
+
+L'ensemble de ce réseau d'authentification entre microservices est géré par Spring Security.
 
 ## Mise en place
 
@@ -118,7 +126,7 @@ Ensuite, vous devez configurer toutes les variables d'environnement, vérifier l
  - microservice.note.medecin
  - microservice.risque 
 
-Pour le service frontend, il est important de remarquer qu'il se communique avec le gateway par le biais de la porte 9001, si vous changez cette porte, il faut bien penser à le faire aussi dans le dossier microservice.frontEnd.
+Pour le service frontend, il est important de remarquer qu'il communique avec le gateway par le biais de la porte 9001, si vous changez cette porte, il faut bien penser à le faire aussi dans le dossier microservice.frontEnd.
 
 #### Démarage de l'application
 
@@ -131,14 +139,14 @@ Assurez-vous que tous les bases de données sont disponibles et bien configurée
     * Risque
     * Gateway
 
-Le service Front End est indépendant et peut être démarré de manière isolée sans planter.
+Le service Front End est indépendant et peut être démarré de manière isolée sans erreur.
 Cependant, il existe une dépendance de tous les services backend vis-à-vis du service Auth en raison du système d'authentification des services backend, il doit donc être démarré avant tous les autres.
 
 Si tout se passe bien, il sera possible d'accéder au système via le endpoint de Gateway, ainsi que depuis le endpoint Angular.
 
 #### Accès au système
 
-le point de terminaison d'entrée par défaut est l'url http://localhost:9001
+Le point d'entrée par défaut est l'url http://localhost:9001
 
 Les identifiants pour accéder et gérer la table des patients sont :
     
@@ -171,7 +179,7 @@ Pour que le Dockerfile de chaque projet fonctionne, il doit y avoir un fichier .
     mvn install -DskipTests
 ```
 
-Il est important de faire sauter les tests, car pour qu'ils fonctionnent, tous les services doivent être disponibles, ainsi que les bases de données.
+Il est important de ne pas faire les tests, car pour qu'ils fonctionnent, tous les services doivent être disponibles, ainsi que les bases de données.
 
 #### Le dossier dist
 
@@ -196,7 +204,7 @@ Toute la logique de l'ordre de démarrage est déjà configurée dans le fichier
 
 #### Accès au système
 
-le point de terminaison d'entrée par défaut est l'url http://localhost:9001
+le point d'entrée par défaut est l'url http://localhost:9001
 
 Les identifiants pour accéder et gérer la table des patients sont :
     
@@ -265,4 +273,4 @@ Le service Frontend a été développé en Angular avec TypeScript. Ce service e
 Le Green Code fait référence à la pratique consistant à créer des programmes qui tentent de minimiser la consommation d'énergie. En ce sens, il est possible d’essayer de minimiser la consommation d’énergie en utilisant un code qui évite les traitements inutiles, ainsi que le stockage inutile.
 
 Comme exemple de code vert dans notre projet, nous avons l'utilisation de la base de données Redis.
-L'utilisation de cette base de données dans le microservice gateway évite les appels inutiles au service Auth, économisant ainsi le traitement, tout en économisant également le stockage, car les données d'authentification sont stockées en mémoire et non sur disque.
+L'utilisation de cette base de données dans le microservice gateway évite les appels inutiles au service Auth, économisant ainsi le traitement, tout en économisant également le stockage, car les données d'authentification sont stockées en mémoire et non sur disque, ainsi il est possible de minimiser les fonctionnalités peu utilisées et optimiser les données stockées dans la BDD.
